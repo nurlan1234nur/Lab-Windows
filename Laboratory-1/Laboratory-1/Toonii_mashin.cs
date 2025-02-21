@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces1;
+using Abstract_class;
+using Memorys;
 
-namespace Laboratory_1
+namespace TooniiMashins1
 {
     public class Toonii_mashin : TooniiMashin, Interface1
     {

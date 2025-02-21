@@ -4,8 +4,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MemoryItems1;
 
-namespace Laboratory_1
+namespace Memorys
 {
     public class Memory
     {
@@ -39,7 +40,7 @@ namespace Laboratory_1
         public void print()
         {
             int count = 0;
-            
+            Console.WriteLine();
             foreach (var item in _memoryItems)
             {
                 Console.WriteLine(item.value);

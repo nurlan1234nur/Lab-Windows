@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces1;
 
-namespace Laboratory_1
+namespace MemoryItems1
 {
     public class MemoryItem: Interface1
     {

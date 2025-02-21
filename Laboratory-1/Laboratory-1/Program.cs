@@ -1,6 +1,6 @@
 ﻿using System;
-using Laboratory_1;
-
+using TooniiMashins1;
+using Memorys;
 class Program
 {
     public static void Main(string[] args)
@@ -28,10 +28,6 @@ class Program
         if (item != null)
         {
             item.Add(5);
-        }
-        else
-        {
-            Console.WriteLine("tuhayn index deer hadgalagdsan too baihgui");
         }
                 
         memory.print();

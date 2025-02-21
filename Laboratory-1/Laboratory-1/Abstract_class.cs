@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboratory_1
+namespace Abstract_class
 {
     public abstract class TooniiMashin
     {

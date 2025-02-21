@@ -5,7 +5,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboratory_1
+namespace Interfaces1
 {
      public interface Interface1
     {
