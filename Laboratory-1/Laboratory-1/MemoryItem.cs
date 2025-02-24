@@ -18,6 +18,7 @@ namespace MemoryItems1
         public void Add(int Value)
         {
             this.value += Value;
+            
         }
 
         public void Substract(int Value)

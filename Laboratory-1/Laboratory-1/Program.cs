@@ -1,38 +1,81 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using TooniiMashins1;
 using Memorys;
+
 class Program
 {
     public static void Main(string[] args)
     {
-        Toonii_mashin toonii_Mashin = new Toonii_mashin(5);
+        Toonii_mashin toonii_Mashin = new Toonii_mashin();
         Memory memory = new Memory();
 
-        toonii_Mashin.Add(6);
         Console.WriteLine(toonii_Mashin.result);
-        memory.Store(toonii_Mashin.result);
-        toonii_Mashin.Substract(8);
-        Console.WriteLine(toonii_Mashin.result);
-        memory.Store(toonii_Mashin.result);
-        toonii_Mashin.Add(6);
-        Console.WriteLine(toonii_Mashin.result);
-        memory.Store(toonii_Mashin.result);
-
-        memory.print();
-
-        memory._memoryItems[0].Add(6);
-        memory._memoryItems[2].Substract(-1);
-
-        var item = memory.GetMemoryItem(4);
-        
-        if (item != null)
+        while (true)
         {
-            item.Add(5);
-        }
-                
-        memory.print();
-        memory.Clear();
-        memory.print();
+            Console.Write(":");
+            var uildel = Console.ReadLine()?.ToLower();
 
+            if (uildel == "memory")
+            {
+                memory.print();
+            }
+            else if (uildel == "+")
+            {
+                Console.Write("Enter number: ");
+                int.TryParse(Console.ReadLine(), out int x);
+
+                toonii_Mashin.Add(x);
+
+            }
+            else if (uildel == "-") 
+            {
+                Console.Write("Enter number: ");
+                int.TryParse(Console.ReadLine(), out int y);
+
+                toonii_Mashin.Substract(y);
+            }
+            else if (uildel == "ms")
+            {
+                memory.Store(toonii_Mashin.result);
+            }
+            else if(uildel == "m-")
+            {
+                int.TryParse(Console.ReadLine(), out int e);
+                int.TryParse(Console.ReadLine(), out int i);
+
+                if (memory._memoryItems.Count > e)
+                {
+                    memory._memoryItems[e].Substract(i);
+                }
+                else
+                {
+                    Console.WriteLine("baihguee tiim bairand");
+                }
+            }
+            else if (uildel == "m+")
+            {
+                int.TryParse(Console.ReadLine(), out int e);
+                int.TryParse(Console.ReadLine(), out int i);
+
+                if (memory._memoryItems.Count > e)
+                {
+                    memory._memoryItems[e].Add(i);
+                }
+                else
+                {
+                    Console.WriteLine("baihguee tiim bairand");
+                }
+            }
+
+            else if (uildel == "exit")
+            {
+                break;
+            }
+            
+        }
     }
 }

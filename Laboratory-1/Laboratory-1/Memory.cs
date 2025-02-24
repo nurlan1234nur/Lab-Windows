@@ -40,16 +40,12 @@ namespace Memorys
         public void print()
         {
             int count = 0;
-            Console.WriteLine();
             foreach (var item in _memoryItems)
             {
                 Console.WriteLine(item.value);
                 count++;
             }
-            if (count == 0)
-            {
-                Console.WriteLine("-----------------------");
-            }
+
         }
 
 
