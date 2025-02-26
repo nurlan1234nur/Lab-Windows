@@ -22,19 +22,11 @@ namespace Memorys
             _memoryItems.Clear();
         }
 
-        public MemoryItem? GetMemoryItem(int x)
+        public void clearItem(int x)
         {
-            if(_memoryItems.Count == 0)
+            if (x >= 0 && _memoryItems.Count >= x)
             {
-                return null;
-            }
-            else if(x < 0 ||  x >= _memoryItems.Count) 
-            {
-                return null;
-            }
-            else
-            {
-                return _memoryItems[x];
+                _memoryItems.RemoveAt(x);
             }
         }
         public void print()
@@ -42,9 +34,10 @@ namespace Memorys
             int count = 0;
             foreach (var item in _memoryItems)
             {
-                Console.WriteLine(item.value);
+                Console.Write(item.value+" ");
                 count++;
             }
+            Console.WriteLine();    
 
         }
 

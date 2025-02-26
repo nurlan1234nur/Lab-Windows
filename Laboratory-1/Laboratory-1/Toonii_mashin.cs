@@ -13,7 +13,7 @@ namespace TooniiMashins1
     {
         public Toonii_mashin(int result = 0) {
             this.result = result; }
-        
+
         public Memory memory;
         public void Add(int x)
         {
@@ -26,5 +26,10 @@ namespace TooniiMashins1
             Console.WriteLine("Result: " + result);
         }
 
+        public void resetResult()
+        {
+            result = 0;
+            Console.WriteLine("Result: " +result);
+        }
     }
 }
