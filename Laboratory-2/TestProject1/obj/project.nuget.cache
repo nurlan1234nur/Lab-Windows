@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eWZYbhfTrIk=",
+  "dgSpecHash": "QxZB225MkVE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\source\\repos\\Toonii mashin\\TestProject1\\TestProject1.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",

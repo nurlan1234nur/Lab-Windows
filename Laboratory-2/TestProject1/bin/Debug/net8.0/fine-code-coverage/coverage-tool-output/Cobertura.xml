@@ -1,203 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.757281553398058" branch-rate="0.5" lines-covered="78" lines-valid="103" branches-covered="3" branches-valid="6" complexity="25" version="0" timestamp="1740708484">
+<coverage line-rate="0.916666666666667" branch-rate="0.5" lines-covered="99" lines-valid="108" branches-covered="3" branches-valid="6" complexity="26" version="0" timestamp="1740785561">
   <sources>
-    <source>C:\Users\USER\source\repos\Toonii mashin\</source>
+    <source>C:\Users\USER\</source>
   </sources>
   <packages>
-    <package name="CalculatorLibrary" line-rate="0.479166666666667" branch-rate="0.5" complexity="16">
+    <package name="CalculatorLibrary" line-rate="0.8125" branch-rate="0.5" complexity="16">
       <classes>
-        <class name="CalculatorApp.Memory.Memory" filename="C:\Users\USER\source\repos\Toonii mashin\CalculatorLibrary\CalculatorApp.Memory.cs" line-rate="0.590909090909091" branch-rate="0.5" complexity="9">
+        <class name="CalculatorApp.Memory.Memory" filename="C:\Users\USER\source\repos\Toonii mashin\CalculatorLibrary\CalculatorApp.Memory.cs" line-rate="1" branch-rate="1" complexity="9">
           <methods>
             <method name="Store" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="15" hits="9" branch="false" />
-                <line number="16" hits="9" branch="false" />
-                <line number="17" hits="9" branch="false" />
-              </lines>
+              <lines />
             </method>
             <method name="Clear" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="20" hits="2" branch="false" />
-                <line number="21" hits="2" branch="false" />
-                <line number="22" hits="2" branch="false" />
-              </lines>
+              <lines />
             </method>
-            <method name="clearItem" signature="(...)" line-rate="1" branch-rate="0.75" complexity="4">
-              <lines>
-                <line number="25" hits="2" branch="false" />
-                <line number="26" hits="2" branch="true" condition-coverage="75% (3/4)" />
-                <line number="27" hits="1" branch="false" />
-                <line number="28" hits="1" branch="false" />
-                <line number="29" hits="1" branch="false" />
-                <line number="30" hits="2" branch="false" />
-              </lines>
+            <method name="clearItem" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines />
             </method>
-            <method name="print" signature="()" line-rate="0" branch-rate="0" complexity="2">
-              <lines>
-                <line number="32" hits="0" branch="false" />
-                <line number="33" hits="0" branch="false" />
-                <line number="34" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="35" hits="0" branch="false" />
-                <line number="36" hits="0" branch="false" />
-                <line number="37" hits="0" branch="false" />
-                <line number="38" hits="0" branch="false" />
-                <line number="39" hits="0" branch="false" />
-                <line number="41" hits="0" branch="false" />
-              </lines>
+            <method name="print" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines />
             </method>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="12" hits="9" branch="false" />
-              </lines>
+              <lines />
             </method>
           </methods>
-          <lines>
-            <line number="12" hits="9" branch="false" />
-            <line number="15" hits="9" branch="false" />
-            <line number="16" hits="9" branch="false" />
-            <line number="17" hits="9" branch="false" />
-            <line number="20" hits="2" branch="false" />
-            <line number="21" hits="2" branch="false" />
-            <line number="22" hits="2" branch="false" />
-            <line number="25" hits="2" branch="false" />
-            <line number="26" hits="2" branch="true" condition-coverage="75% (3/4)" />
-            <line number="27" hits="1" branch="false" />
-            <line number="28" hits="1" branch="false" />
-            <line number="29" hits="1" branch="false" />
-            <line number="30" hits="2" branch="false" />
-            <line number="32" hits="0" branch="false" />
-            <line number="33" hits="0" branch="false" />
-            <line number="34" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="35" hits="0" branch="false" />
-            <line number="36" hits="0" branch="false" />
-            <line number="37" hits="0" branch="false" />
-            <line number="38" hits="0" branch="false" />
-            <line number="39" hits="0" branch="false" />
-            <line number="41" hits="0" branch="false" />
-          </lines>
+          <lines />
         </class>
         <class name="CalculatorApp.Memory.MemoryItem" filename="C:\Users\USER\source\repos\Toonii mashin\CalculatorLibrary\CalculatorApp.MemoryItem.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="Add" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="20" hits="2" branch="false" />
-                <line number="21" hits="2" branch="false" />
-                <line number="23" hits="2" branch="false" />
-              </lines>
+              <lines />
             </method>
             <method name="Substract" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="26" hits="2" branch="false" />
-                <line number="27" hits="2" branch="false" />
-                <line number="28" hits="2" branch="false" />
-              </lines>
+              <lines />
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="14" hits="9" branch="false" />
-                <line number="15" hits="9" branch="false" />
-                <line number="16" hits="9" branch="false" />
-                <line number="17" hits="9" branch="false" />
-              </lines>
+              <lines />
             </method>
           </methods>
-          <lines>
-            <line number="14" hits="9" branch="false" />
-            <line number="15" hits="9" branch="false" />
-            <line number="16" hits="9" branch="false" />
-            <line number="17" hits="9" branch="false" />
-            <line number="20" hits="2" branch="false" />
-            <line number="21" hits="2" branch="false" />
-            <line number="23" hits="2" branch="false" />
-            <line number="26" hits="2" branch="false" />
-            <line number="27" hits="2" branch="false" />
-            <line number="28" hits="2" branch="false" />
-          </lines>
+          <lines />
         </class>
-        <class name="CalculatorApp.Toonii_mashin" filename="C:\Users\USER\source\repos\Toonii mashin\CalculatorLibrary\Calculator.cs" line-rate="0" branch-rate="1" complexity="4">
+        <class name="CalculatorApp.Toonii_mashin" filename="C:\Users\USER\source\repos\Toonii mashin\CalculatorLibrary\Calculator.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
-            <method name="Add" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="21" hits="0" branch="false" />
-                <line number="22" hits="0" branch="false" />
-                <line number="23" hits="0" branch="false" />
-                <line number="24" hits="0" branch="false" />
-              </lines>
+            <method name="Add" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
             </method>
-            <method name="Substract" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="26" hits="0" branch="false" />
-                <line number="27" hits="0" branch="false" />
-                <line number="28" hits="0" branch="false" />
-                <line number="29" hits="0" branch="false" />
-              </lines>
+            <method name="Substract" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
             </method>
-            <method name="resetResult" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="32" hits="0" branch="false" />
-                <line number="33" hits="0" branch="false" />
-                <line number="34" hits="0" branch="false" />
-                <line number="35" hits="0" branch="false" />
-              </lines>
+            <method name="resetResult" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
             </method>
-            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="15" hits="0" branch="false" />
-                <line number="16" hits="0" branch="false" />
-                <line number="17" hits="0" branch="false" />
-                <line number="18" hits="0" branch="false" />
-              </lines>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines />
             </method>
           </methods>
-          <lines>
-            <line number="15" hits="0" branch="false" />
-            <line number="16" hits="0" branch="false" />
-            <line number="17" hits="0" branch="false" />
-            <line number="18" hits="0" branch="false" />
-            <line number="21" hits="0" branch="false" />
-            <line number="22" hits="0" branch="false" />
-            <line number="23" hits="0" branch="false" />
-            <line number="24" hits="0" branch="false" />
-            <line number="26" hits="0" branch="false" />
-            <line number="27" hits="0" branch="false" />
-            <line number="28" hits="0" branch="false" />
-            <line number="29" hits="0" branch="false" />
-            <line number="32" hits="0" branch="false" />
-            <line number="33" hits="0" branch="false" />
-            <line number="34" hits="0" branch="false" />
-            <line number="35" hits="0" branch="false" />
-          </lines>
+          <lines />
         </class>
       </classes>
     </package>
-    <package name="TestProject1" line-rate="1" branch-rate="1" complexity="9">
+    <package name="TestProject1" line-rate="1" branch-rate="1" complexity="10">
       <classes>
-        <class name="TestProject1.MemoryTests" filename="C:\Users\USER\source\repos\Toonii mashin\TestProject1\Test1.cs" line-rate="1" branch-rate="1" complexity="9">
+        <class name="TestProject1.MemoryTests" filename="C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\TestProject1\Memorytest.cs" line-rate="1" branch-rate="1" complexity="5">
           <methods>
             <method name="Test_StoreMemoryItem" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="1" branch="false" />
                 <line number="11" hits="1" branch="false" />
                 <line number="12" hits="1" branch="false" />
                 <line number="13" hits="1" branch="false" />
                 <line number="14" hits="1" branch="false" />
                 <line number="15" hits="1" branch="false" />
+                <line number="16" hits="1" branch="false" />
               </lines>
             </method>
             <method name="Test_ClearMemory" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="1" branch="false" />
                 <line number="20" hits="1" branch="false" />
                 <line number="21" hits="1" branch="false" />
                 <line number="22" hits="1" branch="false" />
                 <line number="23" hits="1" branch="false" />
                 <line number="24" hits="1" branch="false" />
+                <line number="25" hits="1" branch="false" />
               </lines>
             </method>
-            <method name="Test_ClearSpecificMemoryItem" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="Test_ClearMemoryItem" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="28" hits="1" branch="false" />
                 <line number="29" hits="1" branch="false" />
                 <line number="30" hits="1" branch="false" />
                 <line number="31" hits="1" branch="false" />
@@ -205,82 +93,43 @@
                 <line number="33" hits="1" branch="false" />
                 <line number="34" hits="1" branch="false" />
                 <line number="35" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
               </lines>
             </method>
-            <method name="Test_ClearSpecificMemoryItem_OutOfBounds" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="Test_AddToMemoryItem" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="39" hits="1" branch="false" />
                 <line number="40" hits="1" branch="false" />
                 <line number="41" hits="1" branch="false" />
                 <line number="42" hits="1" branch="false" />
                 <line number="43" hits="1" branch="false" />
                 <line number="44" hits="1" branch="false" />
+                <line number="45" hits="1" branch="false" />
               </lines>
             </method>
-            <method name="Test_AddToMemoryItem" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="Test_SubtractFromMemoryItem" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="48" hits="1" branch="false" />
                 <line number="49" hits="1" branch="false" />
                 <line number="50" hits="1" branch="false" />
                 <line number="51" hits="1" branch="false" />
                 <line number="52" hits="1" branch="false" />
                 <line number="53" hits="1" branch="false" />
-              </lines>
-            </method>
-            <method name="Test_AddToMemoryItem_Negative" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="57" hits="1" branch="false" />
-                <line number="58" hits="1" branch="false" />
-                <line number="59" hits="1" branch="false" />
-                <line number="60" hits="1" branch="false" />
-                <line number="61" hits="1" branch="false" />
-                <line number="62" hits="1" branch="false" />
-              </lines>
-            </method>
-            <method name="Test_SubtractFromMemoryItem" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="66" hits="1" branch="false" />
-                <line number="67" hits="1" branch="false" />
-                <line number="68" hits="1" branch="false" />
-                <line number="69" hits="1" branch="false" />
-                <line number="70" hits="1" branch="false" />
-                <line number="71" hits="1" branch="false" />
-              </lines>
-            </method>
-            <method name="Test_SubtractFromMemoryItem_BelowZero" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="75" hits="1" branch="false" />
-                <line number="76" hits="1" branch="false" />
-                <line number="77" hits="1" branch="false" />
-                <line number="78" hits="1" branch="false" />
-                <line number="79" hits="1" branch="false" />
-                <line number="80" hits="1" branch="false" />
-              </lines>
-            </method>
-            <method name="Test_Memory_Clear_EmptyList" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="84" hits="1" branch="false" />
-                <line number="85" hits="1" branch="false" />
-                <line number="86" hits="1" branch="false" />
-                <line number="87" hits="1" branch="false" />
-                <line number="88" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="10" hits="1" branch="false" />
             <line number="11" hits="1" branch="false" />
             <line number="12" hits="1" branch="false" />
             <line number="13" hits="1" branch="false" />
             <line number="14" hits="1" branch="false" />
             <line number="15" hits="1" branch="false" />
-            <line number="19" hits="1" branch="false" />
+            <line number="16" hits="1" branch="false" />
             <line number="20" hits="1" branch="false" />
             <line number="21" hits="1" branch="false" />
             <line number="22" hits="1" branch="false" />
             <line number="23" hits="1" branch="false" />
             <line number="24" hits="1" branch="false" />
-            <line number="28" hits="1" branch="false" />
+            <line number="25" hits="1" branch="false" />
             <line number="29" hits="1" branch="false" />
             <line number="30" hits="1" branch="false" />
             <line number="31" hits="1" branch="false" />
@@ -288,41 +137,101 @@
             <line number="33" hits="1" branch="false" />
             <line number="34" hits="1" branch="false" />
             <line number="35" hits="1" branch="false" />
-            <line number="39" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
             <line number="40" hits="1" branch="false" />
             <line number="41" hits="1" branch="false" />
             <line number="42" hits="1" branch="false" />
             <line number="43" hits="1" branch="false" />
             <line number="44" hits="1" branch="false" />
-            <line number="48" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
             <line number="49" hits="1" branch="false" />
             <line number="50" hits="1" branch="false" />
             <line number="51" hits="1" branch="false" />
             <line number="52" hits="1" branch="false" />
             <line number="53" hits="1" branch="false" />
-            <line number="57" hits="1" branch="false" />
-            <line number="58" hits="1" branch="false" />
-            <line number="59" hits="1" branch="false" />
-            <line number="60" hits="1" branch="false" />
-            <line number="61" hits="1" branch="false" />
-            <line number="62" hits="1" branch="false" />
-            <line number="66" hits="1" branch="false" />
-            <line number="67" hits="1" branch="false" />
-            <line number="68" hits="1" branch="false" />
-            <line number="69" hits="1" branch="false" />
-            <line number="70" hits="1" branch="false" />
-            <line number="71" hits="1" branch="false" />
-            <line number="75" hits="1" branch="false" />
-            <line number="76" hits="1" branch="false" />
-            <line number="77" hits="1" branch="false" />
-            <line number="78" hits="1" branch="false" />
-            <line number="79" hits="1" branch="false" />
-            <line number="80" hits="1" branch="false" />
-            <line number="84" hits="1" branch="false" />
-            <line number="85" hits="1" branch="false" />
-            <line number="86" hits="1" branch="false" />
-            <line number="87" hits="1" branch="false" />
-            <line number="88" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="TestProject1.TooniiMashinTests" filename="C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\TestProject1\TooniiMashinTest.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="Test_InitialResult_ShouldBeZero" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="1" branch="false" />
+                <line number="12" hits="1" branch="false" />
+                <line number="13" hits="1" branch="false" />
+                <line number="14" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Test_Addition" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="1" branch="false" />
+                <line number="19" hits="1" branch="false" />
+                <line number="20" hits="1" branch="false" />
+                <line number="21" hits="1" branch="false" />
+                <line number="22" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Test_Subtraction" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+                <line number="31" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Test_MultipleOperations" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+                <line number="37" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Test_ResetResult" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="1" branch="false" />
+                <line number="46" hits="1" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="48" hits="1" branch="false" />
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="1" branch="false" />
+            <line number="12" hits="1" branch="false" />
+            <line number="13" hits="1" branch="false" />
+            <line number="14" hits="1" branch="false" />
+            <line number="18" hits="1" branch="false" />
+            <line number="19" hits="1" branch="false" />
+            <line number="20" hits="1" branch="false" />
+            <line number="21" hits="1" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="31" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="37" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="46" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
           </lines>
         </class>
       </classes>

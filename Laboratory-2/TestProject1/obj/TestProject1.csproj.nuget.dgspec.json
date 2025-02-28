@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\source\\repos\\Toonii mashin\\TestProject1\\TestProject1.csproj": {}
+    "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\TestProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\source\\repos\\Toonii mashin\\CalculatorLibrary\\CalculatorLibrary.csproj": {
+    "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\CalculatorLibrary.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Toonii mashin\\CalculatorLibrary\\CalculatorLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\CalculatorLibrary.csproj",
         "projectName": "CalculatorLibrary",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\Toonii mashin\\CalculatorLibrary\\CalculatorLibrary.csproj",
+        "projectPath": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\CalculatorLibrary.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net472": {
@@ -20,14 +20,14 @@
         "net472": {}
       }
     },
-    "C:\\Users\\USER\\source\\repos\\Toonii mashin\\TestProject1\\TestProject1.csproj": {
+    "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\TestProject1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Toonii mashin\\TestProject1\\TestProject1.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\TestProject1.csproj",
         "projectName": "TestProject1",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\Toonii mashin\\TestProject1\\TestProject1.csproj",
+        "projectPath": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\TestProject1.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\source\\repos\\Toonii mashin\\TestProject1\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,8 +49,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\USER\\source\\repos\\Toonii mashin\\CalculatorLibrary\\CalculatorLibrary.csproj": {
-                "projectPath": "C:\\Users\\USER\\source\\repos\\Toonii mashin\\CalculatorLibrary\\CalculatorLibrary.csproj"
+              "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\CalculatorLibrary.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\CalculatorLibrary.csproj"
               }
             }
           }

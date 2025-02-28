@@ -16,3 +16,22 @@ C:\Users\USER\source\repos\Toonii mashin\Toonii mashin\obj\Debug\net8.0\refint\T
 C:\Users\USER\source\repos\Toonii mashin\Toonii mashin\obj\Debug\net8.0\Toonii mashin.pdb
 C:\Users\USER\source\repos\Toonii mashin\Toonii mashin\obj\Debug\net8.0\Toonii mashin.genruntimeconfig.cache
 C:\Users\USER\source\repos\Toonii mashin\Toonii mashin\obj\Debug\net8.0\ref\Toonii mashin.dll
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\bin\Debug\net8.0\Toonii mashin.exe
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\bin\Debug\net8.0\Toonii mashin.deps.json
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\bin\Debug\net8.0\Toonii mashin.runtimeconfig.json
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\bin\Debug\net8.0\Toonii mashin.dll
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\bin\Debug\net8.0\Toonii mashin.pdb
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\bin\Debug\net8.0\CalculatorLibrary.dll
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\bin\Debug\net8.0\CalculatorLibrary.pdb
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\Toonii mashin.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\Toonii mashin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\Toonii mashin.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\Toonii mashin.AssemblyInfo.cs
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\Toonii mashin.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\Toonii mashin.sourcelink.json
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\Toonii m.90793EAF.Up2Date
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\Toonii mashin.dll
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\refint\Toonii mashin.dll
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\Toonii mashin.pdb
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\Toonii mashin.genruntimeconfig.cache
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\Toonii mashin\obj\Debug\net8.0\ref\Toonii mashin.dll
