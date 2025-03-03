@@ -1,0 +1,16 @@
+2025-02-26T18:25:33.9209316+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.4.3+c252b64ad913ea9411fc5d17bfd5580d2d061497
+2025-02-26T18:25:33.9359511+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2025-02-26T18:25:33.9371185+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2025-02-26T18:25:33.9371246+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 18:25:33.896
+2025-02-26T18:25:33.9392649+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 3992
+2025-02-26T18:25:33.9394190+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 8.0.13
+2025-02-26T18:25:33.9394307+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.13\System.Private.CoreLib.dll
+2025-02-26T18:25:33.9394387+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2025-02-26T18:25:33.9394419+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\USER\source\repos\Toonii mashin\TestProject1\bin\Debug\net8.0\TestProject1.dll
+2025-02-26T18:25:33.9396700+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\USER\source\repos\Toonii mashin\TestProject1\bin\Debug\net8.0\Log --results-directory C:\Users\USER\source\repos\Toonii mashin\TestResults --client-port 49197'
+2025-02-26T18:25:33.9408183+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2025-02-26T18:25:33.9632517+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2025-02-26T18:25:33.9670258+00:00 Microsoft.Testing.Platform.Configurations.JsonConfigurationSource+JsonConfigurationProvider INFORMATION Config file 'C:\Users\USER\source\repos\Toonii mashin\TestProject1\bin\Debug\net8.0\TestProject1.testconfig.json' not found.
+2025-02-26T18:25:33.9682263+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+2025-02-26T18:25:34.1301651+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: 'MSTestExtension' Version: '3.6.4' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
+2025-02-26T18:25:34.2238045+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter INFORMATION Test Parallelization enabled for C:\Users\USER\source\repos\Toonii mashin\TestProject1\bin\Debug\net8.0\TestProject1.dll (Workers: 12, Scope: MethodLevel)
