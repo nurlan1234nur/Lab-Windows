@@ -11,10 +11,13 @@ namespace TooniiMashins1
 {
     public class Toonii_mashin : TooniiMashin, Interface1
     {
+        public Memory memory { get; private set; }
         public Toonii_mashin(int result = 0) {
-            this.result = result; }
+        
+        this.result = result; 
+        memory = new Memory();
+        }
 
-        public Memory memory;
         public void Add(int x)
         {
             result += x;
