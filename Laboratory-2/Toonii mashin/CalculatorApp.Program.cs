@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CalculatorApp;
-using CalculatorApp.Memory;
+using CalculatorApp.MemoryName;
 
 
 class Program
@@ -12,8 +12,7 @@ class Program
     public static void Main(string[] args)
     {
         Toonii_mashin toonii_Mashin = new Toonii_mashin();
-        Memory memory = new Memory();
-
+        
         Console.WriteLine(toonii_Mashin.result);
         while (true)
         {
@@ -22,7 +21,7 @@ class Program
 
             if (uildel == "memory")
             {
-                memory.print();
+                toonii_Mashin.memory.print();
             }
             else if (uildel == "+")
             {
@@ -45,16 +44,16 @@ class Program
             }
             else if (uildel == "ms")
             {
-                memory.Store(toonii_Mashin.result);
+                toonii_Mashin.memory.Store(toonii_Mashin.result);
             }
             else if (uildel == "m-")
             {
                 int.TryParse(Console.ReadLine(), out int e);
                 int.TryParse(Console.ReadLine(), out int i);
 
-                if (memory._memoryItems.Count > e && e >= 0)
+                if (toonii_Mashin.memory._memoryItems.Count > e && e >= 0)
                 {
-                    memory._memoryItems[e].Substract(i);
+                    toonii_Mashin.memory._memoryItems[e].Substract(i);
                 }
                 else
                 {
@@ -66,9 +65,9 @@ class Program
                 int.TryParse(Console.ReadLine(), out int e);
                 int.TryParse(Console.ReadLine(), out int i);
 
-                if (memory._memoryItems.Count > e)
+                if (toonii_Mashin.memory._memoryItems.Count > e)
                 {
-                    memory._memoryItems[e].Add(i);
+                    toonii_Mashin.memory._memoryItems[e].Add(i);
                 }
                 else
                 {
@@ -78,14 +77,14 @@ class Program
             else if (uildel == "mc")
             {
                 int.TryParse(Console.ReadLine(), out int e);
-                if (memory._memoryItems.Count > e)
+                if (toonii_Mashin.memory._memoryItems.Count > e)
                 {
-                    memory.clearItem(e);
+                    toonii_Mashin.memory.clearItem(e);
                 }
             }
             else if (uildel == "clear")
             {
-                memory.Clear();
+                toonii_Mashin.memory.Clear();
             }
 
             else if (uildel == "exit")

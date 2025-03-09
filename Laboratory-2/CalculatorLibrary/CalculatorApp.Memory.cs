@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculatorApp.Memory
+namespace CalculatorApp.MemoryName
 {
     public class Memory
     {
-        public List<MemoryItem> _memoryItems = new List<MemoryItem>();
+        public List<MemoryItem> _memoryItems {  get; private set; }
+        public Memory(){         
+        _memoryItems = new List<MemoryItem>();
 
+        }
         public void Store(int value)
         {
             _memoryItems.Add(new MemoryItem(value));
@@ -23,7 +27,7 @@ namespace CalculatorApp.Memory
 
         public void clearItem(int x)
         {
-            if (x >= 0 && _memoryItems.Count >= x)
+            if (x >= 0 && _memoryItems.Count > x)
             {
                 _memoryItems.RemoveAt(x);
             }

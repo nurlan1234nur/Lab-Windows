@@ -1,0 +1,19 @@
+2025-03-09T15:33:07.1515608+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.4.3+c252b64ad913ea9411fc5d17bfd5580d2d061497
+2025-03-09T15:33:07.1744780+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2025-03-09T15:33:07.1766851+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2025-03-09T15:33:07.1767011+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 15:33:07.106
+2025-03-09T15:33:07.1788986+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 31832
+2025-03-09T15:33:07.1790541+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 8.0.13
+2025-03-09T15:33:07.1790658+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.13\System.Private.CoreLib.dll
+2025-03-09T15:33:07.1790743+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2025-03-09T15:33:07.1790781+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\TestProject1\bin\Debug\net8.0\TestProject1.dll
+2025-03-09T15:33:07.1793092+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\TestProject1\bin\Debug\net8.0\Log --results-directory C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\TestProject1\bin\Debug\net8.0\fine-code-coverage\coverage-tool-output --client-port 62089'
+2025-03-09T15:33:07.1810977+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2025-03-09T15:33:07.2126984+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2025-03-09T15:33:07.2171286+00:00 Microsoft.Testing.Platform.Configurations.JsonConfigurationSource+JsonConfigurationProvider INFORMATION Config file 'C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\TestProject1\bin\Debug\net8.0\TestProject1.testconfig.json' not found.
+2025-03-09T15:33:07.2187810+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+2025-03-09T15:33:07.4150233+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: 'MSTestExtension' Version: '3.6.4' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
+2025-03-09T15:33:07.4330471+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter WARNING Runsettings datacollectors are not supported by Microsoft.Testing.Platform and will be ignored
+2025-03-09T15:33:07.4338570+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter WARNING Runsettings attribute 'TestAdaptersPaths' is not supported by Microsoft.Testing.Platform and will be ignored
+2025-03-09T15:33:07.5269484+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter INFORMATION Test Parallelization enabled for C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-2\TestProject1\bin\Debug\net8.0\TestProject1.dll (Workers: 12, Scope: MethodLevel)
+2025-03-09T15:33:10.6289154+00:00 Microsoft.Testing.Extensions.Telemetry.AppInsightsProvider WARNING Telemetry task didn't flush after '3', some payload could be lost
