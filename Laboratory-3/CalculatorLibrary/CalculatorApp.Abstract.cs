@@ -8,7 +8,6 @@ namespace CalculatorApp.Abstract
 {
     public abstract class TooniiMashin
     {
-        public int result;
-
+        public int result {  get; set; }    
     }
 }

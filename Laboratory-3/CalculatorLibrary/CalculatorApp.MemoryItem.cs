@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using CalculatorApp.IOperation;
 
 
-namespace CalculatorApp.Memory
+namespace CalculatorApp.MemoryName
 {
     public class MemoryItem : Operations
     {

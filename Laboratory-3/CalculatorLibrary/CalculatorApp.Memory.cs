@@ -5,12 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculatorApp.Memory
+namespace CalculatorApp.MemoryName
 {
     public class Memory
     {
-        public List<MemoryItem> _memoryItems = new List<MemoryItem>();
-
+        
+        public List<MemoryItem> _memoryItems{ get; private set; }
+        
+        public Memory()
+        {
+            this._memoryItems = new List<MemoryItem>();
+        }
         public void Store(int value)
         {
             _memoryItems.Add(new MemoryItem(value));

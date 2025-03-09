@@ -4,3 +4,9 @@ C:\Users\USER\source\repos\Toonii mashin\CalculatorLibrary\obj\Debug\CalculatorL
 C:\Users\USER\source\repos\Toonii mashin\CalculatorLibrary\obj\Debug\CalculatorLibrary.csproj.CoreCompileInputs.cache
 C:\Users\USER\source\repos\Toonii mashin\CalculatorLibrary\obj\Debug\CalculatorLibrary.dll
 C:\Users\USER\source\repos\Toonii mashin\CalculatorLibrary\obj\Debug\CalculatorLibrary.pdb
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-3\CalculatorLibrary\bin\Debug\CalculatorLibrary.dll
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-3\CalculatorLibrary\bin\Debug\CalculatorLibrary.pdb
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-3\CalculatorLibrary\obj\Debug\CalculatorLibrary.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-3\CalculatorLibrary\obj\Debug\CalculatorLibrary.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-3\CalculatorLibrary\obj\Debug\CalculatorLibrary.dll
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\Laboratory-3\CalculatorLibrary\obj\Debug\CalculatorLibrary.pdb
