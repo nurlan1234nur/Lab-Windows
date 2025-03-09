@@ -28,7 +28,7 @@ namespace CalculatorApp.MemoryName
 
         public void clearItem(int x)
         {
-            if (x >= 0 && _memoryItems.Count >= x)
+            if (x >= 0 && _memoryItems.Count > x)
             {
                 _memoryItems.RemoveAt(x);
             }

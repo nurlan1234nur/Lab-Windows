@@ -48,7 +48,7 @@
             SubstractFromMemoryItem = new Button();
             buttonClearMemory = new Button();
             ResetResult = new Button();
-            MemoryItems = new TextBox();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // button1
@@ -164,10 +164,10 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(12, 55);
+            textBox1.Location = new Point(12, 40);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(267, 68);
+            textBox1.Size = new Size(449, 83);
             textBox1.TabIndex = 11;
             textBox1.TextAlign = HorizontalAlignment.Right;
             textBox1.TextChanged += textBox1_TextChanged;
@@ -271,22 +271,20 @@
             ResetResult.UseVisualStyleBackColor = true;
             ResetResult.Click += ResetResult_Click;
             // 
-            // MemoryItems
+            // panel1
             // 
-            MemoryItems.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            MemoryItems.Location = new Point(477, 41);
-            MemoryItems.Multiline = true;
-            MemoryItems.Name = "MemoryItems";
-            MemoryItems.Size = new Size(124, 513);
-            MemoryItems.TabIndex = 21;
-            MemoryItems.TextChanged += MemoryItems_TextChanged;
+            panel1.Location = new Point(467, 27);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(278, 527);
+            panel1.TabIndex = 22;
+            panel1.Paint += panel1_Paint;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(613, 601);
-            Controls.Add(MemoryItems);
+            ClientSize = new Size(757, 601);
+            Controls.Add(panel1);
             Controls.Add(ResetResult);
             Controls.Add(buttonClearMemory);
             Controls.Add(SubstractFromMemoryItem);
@@ -311,6 +309,7 @@
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -337,6 +336,6 @@
         private Button SubstractFromMemoryItem;
         private Button buttonClearMemory;
         private Button ResetResult;
-        private TextBox MemoryItems;
+        private Panel panel1;
     }
 }
