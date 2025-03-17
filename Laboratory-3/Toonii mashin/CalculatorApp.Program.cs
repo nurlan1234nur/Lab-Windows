@@ -70,10 +70,6 @@ class Program
                 {
                     toonii_Mashin.memory._memoryItems[e].Add(i);
                 }
-                else
-                {
-                    Console.WriteLine("baihguee tiim bairand");
-                }
             }
             else if (uildel == "mc")
             {

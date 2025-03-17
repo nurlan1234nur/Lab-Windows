@@ -1,4 +1,4 @@
-using CalculatorApp;
+﻿using CalculatorApp;
 using CalculatorApp.Abstract;
 using CalculatorApp.MemoryName;
 using System;
@@ -12,55 +12,98 @@ namespace WinFormsApp2
     {
         private Toonii_mashin toonii_mashin = new Toonii_mashin();
         private string operator_tuluv = "";
+        private bool ehnii_too_oruulsan = false;
 
         public Form1()
         {   InitializeComponent(); }
         private void button1_Click(object sender, EventArgs e)
-        {  textBox1.Text += "1";}
+        {  
+            if(sender is Button b)
+            {
+                textBox1.Text += b.Text;
+            }
+        }
         private void button0_Click(object sender, EventArgs e)
-        {   textBox1.Text += "0";}
+        { }
         private void button2_Click(object sender, EventArgs e)
-        {    textBox1.Text += "2"; }
+        { }
         private void button3_Click(object sender, EventArgs e)
-        {   textBox1.Text += "3"; }
+        { }
         private void button4_Click(object sender, EventArgs e)
-        {   textBox1.Text += "4"; }
+        { }
         private void button5_Click(object sender, EventArgs e)
-        {    textBox1.Text += "5"; }
+        { }
         private void button6_Click(object sender, EventArgs e)
-        {  textBox1.Text += "6"; }
+        { }
         private void button7_Click(object sender, EventArgs e)
-        {   textBox1.Text += "7"; }
+        { }
         private void button8_Click(object sender, EventArgs e)
-        {    textBox1.Text += "8"; }
+        { }
         private void button9_Click(object sender, EventArgs e)
-        {   textBox1.Text += "9";}
+        { }
         private void button10_Click(object sender, EventArgs e)
-        {    textBox1.Text += "."; }
+        { }
 
+        // =
         private void buttonEquals_Click(object sender, EventArgs e)
         {
             if (int.TryParse(textBox1.Text, out int Number))
             {
                 if (operator_tuluv == "+")
+                {
                     toonii_mashin.Add(Number);
+                }
                 else if (operator_tuluv == "-")
+                { 
                     toonii_mashin.Substract(Number);
-
+                }
                 textBox1.Text = toonii_mashin.result.ToString();
+                ehnii_too_oruulsan = false;
+                operator_tuluv = "";
             }
         }
 
+        //+
         private void buttonPlus_Click(object sender, EventArgs e)
         {
             if (int.TryParse(textBox1.Text, out int num))
             {
-                toonii_mashin.result = num;
-                operator_tuluv = "+";
+                if (ehnii_too_oruulsan)
+                {
+                    if (operator_tuluv == "+") toonii_mashin.Add(num);
+                    else if (operator_tuluv == "-") toonii_mashin.Substract(num);
+                }
+                else
+                {
+                    toonii_mashin.result = num;
+                    ehnii_too_oruulsan = true;
+                }
                 textBox1.Clear();
+                operator_tuluv = "+";
             }
         }
 
+        // -
+        private void buttonMinus_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(textBox1.Text, out int num))
+            {
+                if (ehnii_too_oruulsan) 
+                {
+                    if (operator_tuluv == "+") toonii_mashin.Add(num);
+                    else if (operator_tuluv == "-") toonii_mashin.Substract(num);
+                }
+                else
+                {
+                    toonii_mashin.result = num;
+                    ehnii_too_oruulsan = true;
+                }
+                textBox1.Clear();
+                operator_tuluv = "-";
+            } 
+        }
+
+        // M+
         private void AddtoMemoryItem_Click(object sender, EventArgs e)
         {
             if (int.TryParse(textBox1.Text, out int value))
@@ -69,8 +112,8 @@ namespace WinFormsApp2
                 if (lastItem != null)
                 {
                     lastItem.Add(value);
+                    UpdateMemoryDisplay(); 
                 }
-                UpdateMemoryDisplay();
             }
         }
 
@@ -82,32 +125,25 @@ namespace WinFormsApp2
                 if (lastItem != null)
                 {
                     lastItem.Substract(value);
+                    UpdateMemoryDisplay(); 
                 }
-                UpdateMemoryDisplay();
+              
             }
         }
 
-
-        private void buttonMinus_Click(object sender, EventArgs e)
-        {
-            if (int.TryParse(textBox1.Text, out int num))
-            {
-                toonii_mashin.result = num;
-                operator_tuluv = "-";
-                textBox1.Clear();
-            }
-        }
-
+        //ms button
         private void buttonAddNumbertoMemory_Click(object sender, EventArgs e)
         {
             if (int.TryParse(textBox1.Text, out int y))
             {
                 toonii_mashin.memory.Store(y);
-                AddMemoryItemToPanel(y);
+                var addedItem = toonii_mashin.memory._memoryItems.Last();
+                AddMemoryItemToPanel(addedItem);
             }
         }
 
-        private void AddMemoryItemToPanel(int value)
+        // uusgesen panel iig undsen paneld 
+        private void AddMemoryItemToPanel(MemoryItem memoryItem)
         {
             Panel itemPanel = new Panel
             {
@@ -117,44 +153,43 @@ namespace WinFormsApp2
 
             Label label = new Label
             {
-                Text = value.ToString(),
+                Text = memoryItem.value.ToString(),
                 Size = new Size(100, 30),
                 Location = new Point(10, 10),
                 TextAlign = ContentAlignment.MiddleCenter,
                 BackColor = Color.White,
             };
 
+            // Panel ийн MC
             Button buttonMC = CreateButton("MC", () =>
             {
                 panel1.Controls.Remove(itemPanel);
-                toonii_mashin.memory.clearItem(value);
+                toonii_mashin.memory.clearItem(memoryItem);
+                 
             });
 
-            Button buttonMPlus = CreateButton("M+", () =>
+            // Panel ийн M+
+        Button buttonMPlus = CreateButton("M+", () =>
+        {
+            if (int.TryParse(textBox1.Text, out int y))
             {
-                if (int.TryParse(textBox1.Text, out int y))
-                {
-                    var memoryItem = toonii_mashin.memory._memoryItems.FirstOrDefault(memoryItem => memoryItem.value == value);
-                    if (memoryItem != null)
-                    {
-                        memoryItem.Add(y);
-                        label.Text = memoryItem.value.ToString();
-                    }
-                }
-            });
 
+                memoryItem.Add(y);
+                label.Text = memoryItem.value.ToString();
+            }
+        });
+
+            // Panel ийн M-
             Button buttonMMinus = CreateButton("M-", () =>
+        {
+            if (int.TryParse(textBox1.Text, out int y))
             {
-                if (int.TryParse(textBox1.Text, out int y))
-                {
-                    var memoryItem = toonii_mashin.memory._memoryItems.FirstOrDefault(memoryItem => memoryItem.value == value);
-                    if (memoryItem != null)
-                    {
-                        memoryItem.Substract(y);
-                        label.Text = memoryItem.value.ToString();
-                    }
-                }
-            });
+            
+            memoryItem.Substract(y);
+            label.Text = memoryItem.value.ToString();
+                
+            }
+        });
 
             buttonMC.Location = new Point(120, 10);
             buttonMPlus.Location = new Point(170, 10);
@@ -165,17 +200,19 @@ namespace WinFormsApp2
             itemPanel.Controls.Add(buttonMPlus);
             itemPanel.Controls.Add(buttonMMinus);
 
-            panel1.Controls.Add( itemPanel);
+            panel1.Controls.Add(itemPanel);
             panel1.Controls.SetChildIndex(itemPanel, 0);
 
             UpdatePanelLocations();
         }
-
+        //suullinhiig deesh bairluulah
         private void UpdatePanelLocations()
         {
-            for (int i = 0; i < panel1.Controls.Count; i++)
+            int y = 10;
+            foreach (Control control in panel1.Controls)
             {
-                panel1.Controls[i].Location = new Point(10, i * 55);
+                control.Location = new Point(10, y);
+                y += control.Height + 5;
             }
         }
 
@@ -192,6 +229,8 @@ namespace WinFormsApp2
             return btn;
         }
 
+
+        //undsen Calculatoriin MC
         private void buttonClearMemory_Click(object sender, EventArgs e)
         {
             toonii_mashin.memory.Clear();
@@ -199,6 +238,7 @@ namespace WinFormsApp2
             
         }
 
+        //C
         private void ResetResult_Click(object sender, EventArgs e)
         {
             toonii_mashin.resetResult();
@@ -206,12 +246,14 @@ namespace WinFormsApp2
             operator_tuluv = "";
         }
 
+
+
         private void UpdateMemoryDisplay()
         {
             panel1.Controls.Clear();
             foreach (var item in toonii_mashin.memory._memoryItems)
             {
-                AddMemoryItemToPanel(item.value);
+                AddMemoryItemToPanel(item);
             }
         }
 

@@ -25,18 +25,15 @@ namespace CalculatorApp
         public void Add(int x)
         {
             result += x;
-            Console.WriteLine("Result: " + result);
         }
         public void Substract(int x)
         {
             result -= x;
-            Console.WriteLine("Result: " + result);
         }
 
         public void resetResult()
         {
             result = 0;
-            Console.WriteLine("Result: " + result);
         }
 
      

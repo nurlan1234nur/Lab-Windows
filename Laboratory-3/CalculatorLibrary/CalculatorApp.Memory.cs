@@ -26,12 +26,10 @@ namespace CalculatorApp.MemoryName
             _memoryItems.Clear();
         }
 
-        public void clearItem(int x)
+        public void clearItem(MemoryItem m)
         {
-            if (x >= 0 && _memoryItems.Count > x)
-            {
-                _memoryItems.RemoveAt(x);
-            }
+            _memoryItems.Remove(m);
+            
         }
         public void print()
         {
@@ -44,6 +42,8 @@ namespace CalculatorApp.MemoryName
             Console.WriteLine();
 
         }
+        
+
 
 
     }

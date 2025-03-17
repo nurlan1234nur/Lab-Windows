@@ -15,13 +15,19 @@ namespace CalculatorApp.MemoryName
         {
             this.value = value;
         }
-
+        /// <summary>
+        /// memoryitem iig nemegduulne
+        /// </summary>
+        /// <param name="Value"></param>
         public void Add(int Value)
         {
             this.value += Value;
 
         }
-
+        /// <summary>
+        /// memoryItem iig horogduulna
+        /// </summary>
+        /// <param name="Value"></param>
         public void Substract(int Value)
         {
             this.value -= Value;

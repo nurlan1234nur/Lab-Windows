@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Toonii mashin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f308076fc4ea551cfc56898af5670768ed13b2f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71a540dd4db6bea034f51ba69df83bfeb37f45b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Toonii mashin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Toonii mashin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

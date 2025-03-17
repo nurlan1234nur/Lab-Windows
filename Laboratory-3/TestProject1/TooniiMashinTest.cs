@@ -7,7 +7,7 @@ namespace TestProject1
     public class TooniiMashinTests
     {
         [TestMethod]
-        public void Test_InitialResult_ShouldBeZero()
+        public void Test_InResult()
         {
             Toonii_mashin tooniiMashin = new Toonii_mashin();
             Assert.AreEqual(0, tooniiMashin.result);
