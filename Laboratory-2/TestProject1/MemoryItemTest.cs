@@ -12,6 +12,7 @@ namespace TestProject1
         {
             MemoryItem memoryItem = new MemoryItem(0);
             memoryItem.Add(10);
+            memoryItem.Add(5);
             Assert.AreEqual(15, memoryItem.value);
         }
 
@@ -20,7 +21,7 @@ namespace TestProject1
         {
             MemoryItem memoryItem = new MemoryItem(0);
             memoryItem.Substract(5);
-            Assert.AreEqual(0, memoryItem.value);
+            Assert.AreEqual(-5, memoryItem.value);
         }
 
         [TestMethod]
@@ -28,7 +29,7 @@ namespace TestProject1
         {
             MemoryItem memoryItem = new MemoryItem(0);
             memoryItem.Add(-3);
-            Assert.AreEqual(2, memoryItem.value);
+            Assert.AreEqual(-3, memoryItem.value);
         }
 
         [TestMethod]
@@ -36,7 +37,7 @@ namespace TestProject1
         {
             MemoryItem memoryItem = new MemoryItem(0);
             memoryItem.Substract(-3);
-            Assert.AreEqual(8, memoryItem.value);
+            Assert.AreEqual(3, memoryItem.value);
         }
 
         [TestMethod]
@@ -46,7 +47,7 @@ namespace TestProject1
             memoryItem.Add(10);
             memoryItem.Substract(5);
             memoryItem.Add(2);
-            Assert.AreEqual(12, memoryItem.value);
+            Assert.AreEqual(7, memoryItem.value);
         }
     }
 }

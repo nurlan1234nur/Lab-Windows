@@ -79,7 +79,7 @@ class Program
                 int.TryParse(Console.ReadLine(), out int e);
                 if (toonii_Mashin.memory._memoryItems.Count > e)
                 {
-                    toonii_Mashin.memory.clearItem(e);
+                    toonii_Mashin.memory.ClearItem(e);
                 }
             }
             else if (uildel == "clear")
