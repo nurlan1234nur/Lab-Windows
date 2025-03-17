@@ -20,17 +20,29 @@ namespace CalculatorApp
             memory = new Memory();
         }
 
+        /// <summary>
+        /// Result - д  нэмнэ.
+        /// </summary>
+        /// <param name="x"></param>
         public void Add(int x)
         {
             result += x;
             Console.WriteLine("Result: " + result);
         }
+
+        /// <summary>
+        /// Result - аас хасна.
+        /// </summary>
+        /// <param name="x"></param>
         public void Substract(int x)
         {
             result -= x;
             Console.WriteLine("Result: " + result);
         }
 
+        /// <summary>
+        /// Result ийг 0 болгож шинэчилнэ. 
+        /// </summary>
         public void resetResult()
         {
             result = 0;

@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-2\\calculatorlibrary\\calculatorapp.memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculatorapp.memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBDF0565-961D-4252-A0C5-D79349EE1A8A}|TestProject1\\TestProject1.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-2\\testproject1\\memoryitemtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBDF0565-961D-4252-A0C5-D79349EE1A8A}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\memoryitemtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBDF0565-961D-4252-A0C5-D79349EE1A8A}|TestProject1\\TestProject1.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-2\\testproject1\\memorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBDF0565-961D-4252-A0C5-D79349EE1A8A}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\memorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBDF0565-961D-4252-A0C5-D79349EE1A8A}|TestProject1\\TestProject1.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-2\\testproject1\\tooniimashintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBDF0565-961D-4252-A0C5-D79349EE1A8A}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\tooniimashintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-2\\calculatorlibrary\\calculatorapp.memoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\calculatorlibrary\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\calculatorlibrary\\calculatorapp.memoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculatorapp.memoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-2\\calculatorlibrary\\calculatorapp.abstract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculatorapp.abstract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-2\\calculatorlibrary\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\calculatorlibrary\\calculatorapp.memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculatorapp.memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC6052A3-B840-43EE-9C57-184BD7EEB98E}|Toonii mashin\\Toonii mashin.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-2\\toonii mashin\\calculatorapp.program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC6052A3-B840-43EE-9C57-184BD7EEB98E}|Toonii mashin\\Toonii mashin.csproj|solutionrelative:toonii mashin\\calculatorapp.program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\calculatorlibrary\\calculatorapp.abstract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculatorapp.abstract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,63 +42,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "MemoryItemTest.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\MemoryItemTest.cs",
+              "RelativeDocumentMoniker": "TestProject1\\MemoryItemTest.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\MemoryItemTest.cs",
+              "RelativeToolTip": "TestProject1\\MemoryItemTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T08:03:20.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MemoryTest.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\MemoryTest.cs",
+              "RelativeDocumentMoniker": "TestProject1\\MemoryTest.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\MemoryTest.cs",
+              "RelativeToolTip": "TestProject1\\MemoryTest.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T08:02:45.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Calculator.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\Calculator.cs",
               "RelativeDocumentMoniker": "CalculatorLibrary\\Calculator.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\Calculator.cs",
               "RelativeToolTip": "CalculatorLibrary\\Calculator.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswCoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T15:12:50.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TooniiMashinTest.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\TooniiMashinTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\TooniiMashinTest.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\TooniiMashinTest.cs",
               "RelativeToolTip": "TestProject1\\TooniiMashinTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAmwEcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T15:19:38.264Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "CalculatorApp.Memory.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\CalculatorApp.Memory.cs",
               "RelativeDocumentMoniker": "CalculatorLibrary\\CalculatorApp.Memory.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\CalculatorApp.Memory.cs",
               "RelativeToolTip": "CalculatorLibrary\\CalculatorApp.Memory.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwCoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T15:12:44.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CalculatorApp.MemoryItem.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\CalculatorApp.MemoryItem.cs",
               "RelativeDocumentMoniker": "CalculatorLibrary\\CalculatorApp.MemoryItem.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\CalculatorApp.MemoryItem.cs",
               "RelativeToolTip": "CalculatorLibrary\\CalculatorApp.MemoryItem.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA8wCYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T15:12:34.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "CalculatorApp.Abstract.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\CalculatorLibrary\\CalculatorApp.Abstract.cs",
               "RelativeDocumentMoniker": "CalculatorLibrary\\CalculatorApp.Abstract.cs",
@@ -98,25 +136,19 @@
               "RelativeToolTip": "CalculatorLibrary\\CalculatorApp.Abstract.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T15:12:15.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2025-03-09T15:12:15.793Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CalculatorApp.Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\Toonii mashin\\CalculatorApp.Program.cs",
               "RelativeDocumentMoniker": "Toonii mashin\\CalculatorApp.Program.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\Toonii mashin\\CalculatorApp.Program.cs",
               "RelativeToolTip": "Toonii mashin\\CalculatorApp.Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwEAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T19:49:38.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T19:49:38.75Z"
             }
           ]
         }

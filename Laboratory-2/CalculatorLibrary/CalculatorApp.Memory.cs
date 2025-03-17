@@ -15,23 +15,37 @@ namespace CalculatorApp.MemoryName
         _memoryItems = new List<MemoryItem>();
 
         }
+        /// <summary>
+        /// Memory дотор memoryItem нэмнэ.
+        /// </summary>
+        /// <param name="value"></param>
         public void Store(int value)
         {
             _memoryItems.Add(new MemoryItem(value));
         }
-
+        /// <summary>
+        /// Memory - г цэвэрлэнэ.
+        /// </summary>
         public void Clear()
         {
             _memoryItems.Clear();
         }
 
-        public void clearItem(int x)
+        /// <summary>
+        /// MemoryItem хасна.
+        /// </summary>
+        /// <param name="x"></param>
+        public void ClearItem(int x)
         {
             if (x >= 0 && _memoryItems.Count > x)
             {
                 _memoryItems.RemoveAt(x);
             }
         }
+
+        /// <summary>
+        /// Memory д хадгалагдсан memoryItem жагсаалтыг хэвлэнэ.
+        /// </summary>
         public void print()
         {
             int count = 0;

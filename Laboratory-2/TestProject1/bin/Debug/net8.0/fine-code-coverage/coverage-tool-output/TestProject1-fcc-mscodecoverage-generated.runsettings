@@ -12,9 +12,7 @@
           <CodeCoverage>
             <ModulePaths>
               <Exclude></Exclude>
-              <Include>
-                <ModulePath>C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-2\\TestProject1\\bin\\Debug\\net8.0\\TestProject1.dll</ModulePath>
-              </Include>
+              <Include></Include>
             </ModulePaths>
             <Functions>
               <Exclude></Exclude>
