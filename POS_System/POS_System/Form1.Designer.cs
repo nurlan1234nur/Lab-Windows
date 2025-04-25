@@ -30,20 +30,24 @@
         {
             menuStrip1 = new MenuStrip();
             productToolStripMenuItem = new ToolStripMenuItem();
-            categoriesToolStripMenuItem = new ToolStripMenuItem();
-            helpStripMenuItem1 = new ToolStripMenuItem();
-            productCodeTextBox = new TextBox();
-            quantityTextBox = new TextBox();
-            addProductButton = new Button();
-            cashPaidTextBox = new TextBox();
-            payButton = new Button();
-            cartListView = new ListView();
-            productNameTextBox = new TextBox();
-            productPriceTextBox = new TextBox();
             yutyuiToolStripMenuItem = new ToolStripMenuItem();
             hjkjhlToolStripMenuItem = new ToolStripMenuItem();
             nmnlToolStripMenuItem = new ToolStripMenuItem();
+            categoriesToolStripMenuItem = new ToolStripMenuItem();
+            helpStripMenuItem1 = new ToolStripMenuItem();
+            productCodeTextBox = new TextBox();
+            addProductBtn = new Button();
+            cashPaidTextBox = new TextBox();
+            payButton = new Button();
+            CategoriesPanel = new Panel();
+            editProductBtn = new Button();
+            deleteProductBtn = new Button();
+            dataGridView2 = new DataGridView();
+            ProductsPanel = new Panel();
+            searchButton = new Button();
+            label1 = new Label();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -51,7 +55,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { productToolStripMenuItem, categoriesToolStripMenuItem, helpStripMenuItem1 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(1524, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -62,6 +66,24 @@
             productToolStripMenuItem.Size = new Size(61, 20);
             productToolStripMenuItem.Text = "product";
             productToolStripMenuItem.Click += toolStripMenuItem1_Click;
+            // 
+            // yutyuiToolStripMenuItem
+            // 
+            yutyuiToolStripMenuItem.Name = "yutyuiToolStripMenuItem";
+            yutyuiToolStripMenuItem.Size = new Size(107, 22);
+            yutyuiToolStripMenuItem.Text = "yutyui";
+            // 
+            // hjkjhlToolStripMenuItem
+            // 
+            hjkjhlToolStripMenuItem.Name = "hjkjhlToolStripMenuItem";
+            hjkjhlToolStripMenuItem.Size = new Size(107, 22);
+            hjkjhlToolStripMenuItem.Text = "hjkjhl";
+            // 
+            // nmnlToolStripMenuItem
+            // 
+            nmnlToolStripMenuItem.Name = "nmnlToolStripMenuItem";
+            nmnlToolStripMenuItem.Size = new Size(107, 22);
+            nmnlToolStripMenuItem.Text = "nm,nl";
             // 
             // categoriesToolStripMenuItem
             // 
@@ -79,95 +101,119 @@
             // 
             // productCodeTextBox
             // 
-            productCodeTextBox.Location = new Point(21, 146);
+            productCodeTextBox.Location = new Point(581, 52);
             productCodeTextBox.Name = "productCodeTextBox";
-            productCodeTextBox.Size = new Size(100, 23);
+            productCodeTextBox.Size = new Size(138, 23);
             productCodeTextBox.TabIndex = 1;
             // 
-            // quantityTextBox
+            // addProductBtn
             // 
-            quantityTextBox.Location = new Point(21, 188);
-            quantityTextBox.Name = "quantityTextBox";
-            quantityTextBox.Size = new Size(100, 23);
-            quantityTextBox.TabIndex = 2;
-            // 
-            // addProductButton
-            // 
-            addProductButton.Location = new Point(29, 231);
-            addProductButton.Name = "addProductButton";
-            addProductButton.Size = new Size(75, 23);
-            addProductButton.TabIndex = 3;
-            addProductButton.Text = "Add";
-            addProductButton.UseVisualStyleBackColor = true;
+            addProductBtn.Location = new Point(581, 224);
+            addProductBtn.Name = "addProductBtn";
+            addProductBtn.Size = new Size(138, 28);
+            addProductBtn.TabIndex = 3;
+            addProductBtn.Text = "Add";
+            addProductBtn.UseVisualStyleBackColor = true;
+            addProductBtn.Click += addProductBtn_Click_1;
             // 
             // cashPaidTextBox
             // 
-            cashPaidTextBox.Location = new Point(272, 146);
+            cashPaidTextBox.Location = new Point(22, 463);
             cashPaidTextBox.Name = "cashPaidTextBox";
-            cashPaidTextBox.Size = new Size(100, 23);
+            cashPaidTextBox.Size = new Size(116, 23);
             cashPaidTextBox.TabIndex = 4;
             // 
             // payButton
             // 
-            payButton.Location = new Point(272, 187);
+            payButton.Location = new Point(22, 492);
             payButton.Name = "payButton";
-            payButton.Size = new Size(75, 23);
+            payButton.Size = new Size(91, 48);
             payButton.TabIndex = 5;
             payButton.Text = "Pay";
             payButton.UseVisualStyleBackColor = true;
             // 
-            // cartListView
+            // CategoriesPanel
             // 
-            cartListView.Location = new Point(432, 27);
-            cartListView.Name = "cartListView";
-            cartListView.Size = new Size(356, 411);
-            cartListView.TabIndex = 6;
-            cartListView.UseCompatibleStateImageBehavior = false;
+            CategoriesPanel.BackColor = SystemColors.ControlLightLight;
+            CategoriesPanel.Location = new Point(734, 27);
+            CategoriesPanel.Name = "CategoriesPanel";
+            CategoriesPanel.Size = new Size(148, 513);
+            CategoriesPanel.TabIndex = 9;
+            CategoriesPanel.Paint += CategoriesPanel_Paint;
             // 
-            // productNameTextBox
+            // editProductBtn
             // 
-            productNameTextBox.Location = new Point(127, 146);
-            productNameTextBox.Name = "productNameTextBox";
-            productNameTextBox.Size = new Size(100, 23);
-            productNameTextBox.TabIndex = 7;
+            editProductBtn.Location = new Point(581, 258);
+            editProductBtn.Name = "editProductBtn";
+            editProductBtn.Size = new Size(138, 28);
+            editProductBtn.TabIndex = 10;
+            editProductBtn.Text = "Edit";
+            editProductBtn.UseVisualStyleBackColor = true;
+            editProductBtn.Click += editProductBtn_Click;
             // 
-            // productPriceTextBox
+            // deleteProductBtn
             // 
-            productPriceTextBox.Location = new Point(127, 188);
-            productPriceTextBox.Name = "productPriceTextBox";
-            productPriceTextBox.Size = new Size(100, 23);
-            productPriceTextBox.TabIndex = 8;
+            deleteProductBtn.Location = new Point(581, 292);
+            deleteProductBtn.Name = "deleteProductBtn";
+            deleteProductBtn.Size = new Size(138, 28);
+            deleteProductBtn.TabIndex = 11;
+            deleteProductBtn.Text = "Delete";
+            deleteProductBtn.UseVisualStyleBackColor = true;
+            deleteProductBtn.Click += deleteProductBtn_Click;
             // 
-            // yutyuiToolStripMenuItem
+            // dataGridView2
             // 
-            yutyuiToolStripMenuItem.Name = "yutyuiToolStripMenuItem";
-            yutyuiToolStripMenuItem.Size = new Size(180, 22);
-            yutyuiToolStripMenuItem.Text = "yutyui";
+            dataGridView2.BackgroundColor = SystemColors.ControlLightLight;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(12, 52);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(563, 368);
+            dataGridView2.TabIndex = 13;
+            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
-            // hjkjhlToolStripMenuItem
+            // ProductsPanel
             // 
-            hjkjhlToolStripMenuItem.Name = "hjkjhlToolStripMenuItem";
-            hjkjhlToolStripMenuItem.Size = new Size(180, 22);
-            hjkjhlToolStripMenuItem.Text = "hjkjhl";
+            ProductsPanel.BackColor = SystemColors.ControlLightLight;
+            ProductsPanel.Location = new Point(905, 27);
+            ProductsPanel.Name = "ProductsPanel";
+            ProductsPanel.Size = new Size(607, 522);
+            ProductsPanel.TabIndex = 14;
             // 
-            // nmnlToolStripMenuItem
+            // searchButton
             // 
-            nmnlToolStripMenuItem.Name = "nmnlToolStripMenuItem";
-            nmnlToolStripMenuItem.Size = new Size(180, 22);
-            nmnlToolStripMenuItem.Text = "nm,nl";
+            searchButton.Location = new Point(581, 94);
+            searchButton.Name = "searchButton";
+            searchButton.Size = new Size(138, 25);
+            searchButton.TabIndex = 15;
+            searchButton.Text = "Search";
+            searchButton.UseVisualStyleBackColor = true;
+            searchButton.Click += searchButton_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(12, 27);
+            label1.Name = "label1";
+            label1.Size = new Size(40, 21);
+            label1.TabIndex = 16;
+            label1.Text = "POS";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(productPriceTextBox);
-            Controls.Add(productNameTextBox);
-            Controls.Add(cartListView);
+            ClientSize = new Size(1524, 561);
+            Controls.Add(label1);
+            Controls.Add(searchButton);
+            Controls.Add(ProductsPanel);
+            Controls.Add(dataGridView2);
+            Controls.Add(deleteProductBtn);
+            Controls.Add(editProductBtn);
+            Controls.Add(CategoriesPanel);
             Controls.Add(payButton);
             Controls.Add(cashPaidTextBox);
-            Controls.Add(addProductButton);
-            Controls.Add(quantityTextBox);
+            Controls.Add(addProductBtn);
             Controls.Add(productCodeTextBox);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -176,6 +222,7 @@
             Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -187,15 +234,19 @@
         private ToolStripMenuItem categoriesToolStripMenuItem;
         private ToolStripMenuItem helpStripMenuItem1;
         private TextBox productCodeTextBox;
-        private TextBox quantityTextBox;
-        private Button addProductButton;
+        private Button addProductBtn;
         private TextBox cashPaidTextBox;
         private Button payButton;
-        private ListView cartListView;
-        private TextBox productNameTextBox;
-        private TextBox productPriceTextBox;
         private ToolStripMenuItem yutyuiToolStripMenuItem;
         private ToolStripMenuItem hjkjhlToolStripMenuItem;
         private ToolStripMenuItem nmnlToolStripMenuItem;
+        private Panel CategoriesPanel;
+        private Button editProductBtn;
+        private Button deleteProductBtn;
+        private DataGridView dataGridView1;
+        private DataGridView dataGridView2;
+        private Panel ProductsPanel;
+        private Button searchButton;
+        private Label label1;
     }
 }

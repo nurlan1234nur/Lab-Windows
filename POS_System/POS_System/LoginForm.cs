@@ -27,16 +27,15 @@ namespace POS_System
         {
             string DbPath = DatabaseConfig.DbPath;
 
-            try
-            {
-                if (!File.Exists(DbPath))
-                {
-                    SQLiteConnection.CreateFile(DbPath);
-                    using (var connection = new SQLiteConnection(DatabaseConfig.ConnectionString))
-                    {
-                        connection.Open();
 
-                        string createUsers = @"
+            if (!File.Exists(DbPath))
+            {
+                SQLiteConnection.CreateFile(DbPath);
+                using (var connection = new SQLiteConnection(DatabaseConfig.ConnectionString))
+                {
+                    connection.Open();
+
+                    string createUsers = @"
                             CREATE TABLE Users (
                                 Id INTEGER PRIMARY KEY AUTOINCREMENT,
                                 Username TEXT NOT NULL,
@@ -44,7 +43,7 @@ namespace POS_System
                                 Role TEXT NOT NULL
                             );";
 
-                        string createProducts = @"
+                    string createProducts = @"
                             CREATE TABLE Products (
                                 Barcode INTEGER PRIMARY KEY,
                                 Name TEXT NOT NULL,
@@ -54,24 +53,35 @@ namespace POS_System
                                 CategoryId INTEGER
                             );";
 
-                        string insertUsers = @"
+                    string insertUsers = @"
                             INSERT INTO Users (Username, Password, Role) VALUES 
                             ('manager', '1234', 'Manager'),
                             ('cashier1', '1234', 'Cashier'),
                             ('cashier2', '1234', 'Cashier');";
 
-                        new SQLiteCommand(createUsers, connection).ExecuteNonQuery();
-                        new SQLiteCommand(createProducts, connection).ExecuteNonQuery();
-                        new SQLiteCommand(insertUsers, connection).ExecuteNonQuery();
+                    string createCategories = @"
+                            CREATE TABLE Categories (
+                                CategoryId INTEGER PRIMARY KEY AUTOINCREMENT,
+                                CategoryName TEXT NOT NULL
+                            );";
 
-                        MessageBox.Show("Successfully.");
-                    }
+                    string insertCategories = @"
+                            INSERT INTO Categories (CategoryName) VALUES 
+                            ('Snacks'),
+                            ('Drinks'),
+                            ('Beverages');";
+
+                    new SQLiteCommand(createUsers, connection).ExecuteNonQuery();
+                    new SQLiteCommand(createProducts, connection).ExecuteNonQuery();
+                    new SQLiteCommand(insertUsers, connection).ExecuteNonQuery();
+                    new SQLiteCommand(createCategories, connection).ExecuteNonQuery();
+                    new SQLiteCommand(insertCategories, connection).ExecuteNonQuery();
+
+                    MessageBox.Show("Successfully.");
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Өгөгдлийн сан үүсгэхэд алдаа гарлаа: " + ex.Message);
-            }
+
+
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -81,39 +91,38 @@ namespace POS_System
 
             using (var connection = new SQLiteConnection(DatabaseConfig.ConnectionString))
             {
-                try
+
+                connection.Open();
+                string query = "SELECT Role FROM Users WHERE Username = @username AND Password = @password";
+
+                using (var command = new SQLiteCommand(query, connection))
                 {
-                    connection.Open();
-                    string query = "SELECT Role FROM Users WHERE Username = @username AND Password = @password";
+                    command.Parameters.AddWithValue("@username", username.ToLower());
+                    command.Parameters.AddWithValue("@password", password.ToLower());
 
-                    using (var command = new SQLiteCommand(query, connection))
+                    object result = command.ExecuteScalar();
+                    if (result != null)
                     {
-                        command.Parameters.AddWithValue("@username", username);
-                        command.Parameters.AddWithValue("@password", password);
-
-                        object result = command.ExecuteScalar();
-                        if (result != null)
-                        {
-                            string role = result.ToString();
-                            Form1 mainForm = new Form1(role ?? "Guest");
-                            this.Hide();
-                            mainForm.FormClosed += (s, args) => this.Close();
-                            mainForm.Show();
-                        }
-                        else
-                        {
-                            lblError.Text = "Нэр эсвэл нууц үг буруу!";
-                        }
+                        string role = result.ToString();
+                        Form1 mainForm = new Form1(role ?? "Guest");
+                        this.Hide();
+                        mainForm.FormClosed += (s, args) => this.Close();
+                        mainForm.Show();
+                    }
+                    else
+                    {
+                        lblError.Text = "Нэр эсвэл нууц үг буруу!";
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Алдаа гарлаа: " + ex.Message);
-                }
             }
+
+
         }
 
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
 

@@ -17,13 +17,6 @@ namespace Library
         public void InsertProduct(Product product)
         {
         }
-        public Product GetProduct(int id)
-        {
-            
-        }
-        public List<Product> GetAllProducts()
-        {
-            
-        }
+   
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+9QI+NXE2JE=",
+  "dgSpecHash": "s5H+3OiOIOU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\POS_System\\POS_System\\POS_System.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\POS_System.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.1\\microsoft.data.sqlite.core.8.0.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
@@ -30,5 +30,12 @@
     "C:\\Users\\USER\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

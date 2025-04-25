@@ -71,14 +71,6 @@ class Program
                     toonii_Mashin.memory._memoryItems[e].Add(i);
                 }
             }
-            else if (uildel == "mc")
-            {
-                int.TryParse(Console.ReadLine(), out int e);
-                if (toonii_Mashin.memory._memoryItems.Count > e)
-                {
-                    toonii_Mashin.memory.clearItem(e);
-                }
-            }
             else if (uildel == "clear")
             {
                 toonii_Mashin.memory.Clear();

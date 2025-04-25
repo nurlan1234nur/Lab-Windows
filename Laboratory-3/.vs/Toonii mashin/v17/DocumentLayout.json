@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC6052A3-B840-43EE-9C57-184BD7EEB98E}|Toonii mashin\\Toonii mashin.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-3\\toonii mashin\\calculatorapp.program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC6052A3-B840-43EE-9C57-184BD7EEB98E}|Toonii mashin\\Toonii mashin.csproj|solutionrelative:toonii mashin\\calculatorapp.program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADCD86B7-F896-469E-A36F-44F56978B128}|WinFormsApp2\\WinFormsApp2.csproj|C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\winformsapp2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ADCD86B7-F896-469E-A36F-44F56978B128}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ADCD86B7-F896-469E-A36F-44F56978B128}|WinFormsApp2\\WinFormsApp2.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-3\\winformsapp2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADCD86B7-F896-469E-A36F-44F56978B128}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-3\\calculatorlibrary\\calculatorapp.memoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculatorapp.memoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBDF0565-961D-4252-A0C5-D79349EE1A8A}|TestProject1\\TestProject1.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-3\\testproject1\\memorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBDF0565-961D-4252-A0C5-D79349EE1A8A}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\memorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBDF0565-961D-4252-A0C5-D79349EE1A8A}|TestProject1\\TestProject1.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-3\\testproject1\\tooniimashintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculatorapp.abstract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADCD86B7-F896-469E-A36F-44F56978B128}|WinFormsApp2\\WinFormsApp2.csproj|C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\winformsapp2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ADCD86B7-F896-469E-A36F-44F56978B128}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ADCD86B7-F896-469E-A36F-44F56978B128}|WinFormsApp2\\WinFormsApp2.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-3\\winformsapp2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADCD86B7-F896-469E-A36F-44F56978B128}|WinFormsApp2\\WinFormsApp2.csproj|solutionrelative:winformsapp2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,20 +39,8 @@
       "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculatorapp.memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\calculatorlibrary\\calculatorapp.memoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculatorapp.memoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBDF0565-961D-4252-A0C5-D79349EE1A8A}|TestProject1\\TestProject1.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-3\\testproject1\\memorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBDF0565-961D-4252-A0C5-D79349EE1A8A}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\memorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\calculatorlibrary\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F82D4364-651E-4FE8-A182-6061DE864EE1}|CalculatorLibrary\\CalculatorLibrary.csproj|solutionrelative:calculatorlibrary\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC6052A3-B840-43EE-9C57-184BD7EEB98E}|Toonii mashin\\Toonii mashin.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\laboratory-3\\toonii mashin\\calculatorapp.program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC6052A3-B840-43EE-9C57-184BD7EEB98E}|Toonii mashin\\Toonii mashin.csproj|solutionrelative:toonii mashin\\calculatorapp.program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,17 +50,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\WinFormsApp2\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp2\\Form1.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\WinFormsApp2\\Form1.cs",
               "RelativeToolTip": "WinFormsApp2\\Form1.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAgwJEAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAUwKMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T06:17:08.115Z",
               "IsPinned": true,
@@ -72,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Memorytest.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\TestProject1\\Memorytest.cs",
               "RelativeDocumentMoniker": "TestProject1\\Memorytest.cs",
@@ -84,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "CalculatorApp.Abstract.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\CalculatorLibrary\\CalculatorApp.Abstract.cs",
               "RelativeDocumentMoniker": "CalculatorLibrary\\CalculatorApp.Abstract.cs",
@@ -96,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\WinFormsApp2\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp2\\Form1.Designer.cs",
@@ -104,34 +104,37 @@
               "RelativeToolTip": "WinFormsApp2\\Form1.Designer.cs",
               "ViewState": "AgIAAK0AAAAAAAAAAAAcwNMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T06:16:53.456Z"
+              "WhenOpened": "2025-03-09T06:16:53.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\WinFormsApp2\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp2\\Form1.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\WinFormsApp2\\Form1.cs [Design]",
               "RelativeToolTip": "WinFormsApp2\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T06:16:44.154Z"
+              "WhenOpened": "2025-03-09T06:16:44.154Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "CalculatorApp.Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\Toonii mashin\\CalculatorApp.Program.cs",
               "RelativeDocumentMoniker": "Toonii mashin\\CalculatorApp.Program.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\Toonii mashin\\CalculatorApp.Program.cs",
               "RelativeToolTip": "Toonii mashin\\CalculatorApp.Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAjwEIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T06:15:45.271Z"
+              "WhenOpened": "2025-03-09T06:15:45.271Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "CalculatorApp.Memory.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\CalculatorLibrary\\CalculatorApp.Memory.cs",
               "RelativeDocumentMoniker": "CalculatorLibrary\\CalculatorApp.Memory.cs",
@@ -143,19 +146,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "CalculatorApp.MemoryItem.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\CalculatorLibrary\\CalculatorApp.MemoryItem.cs",
               "RelativeDocumentMoniker": "CalculatorLibrary\\CalculatorApp.MemoryItem.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\CalculatorLibrary\\CalculatorApp.MemoryItem.cs",
               "RelativeToolTip": "CalculatorLibrary\\CalculatorApp.MemoryItem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T05:51:05.639Z"
+              "WhenOpened": "2025-03-09T05:51:05.639Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "TooniiMashinTest.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\TestProject1\\TooniiMashinTest.cs",
               "RelativeDocumentMoniker": "TestProject1\\TooniiMashinTest.cs",
@@ -167,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Calculator.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\Laboratory-3\\CalculatorLibrary\\Calculator.cs",
               "RelativeDocumentMoniker": "CalculatorLibrary\\Calculator.cs",
