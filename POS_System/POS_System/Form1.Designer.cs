@@ -37,7 +37,6 @@
             helpStripMenuItem1 = new ToolStripMenuItem();
             productCodeTextBox = new TextBox();
             addProductBtn = new Button();
-            cashPaidTextBox = new TextBox();
             payButton = new Button();
             CategoriesPanel = new Panel();
             editProductBtn = new Button();
@@ -46,6 +45,7 @@
             ProductsPanel = new Panel();
             searchButton = new Button();
             label1 = new Label();
+            Clear = new Button();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
@@ -101,36 +101,30 @@
             // 
             // productCodeTextBox
             // 
-            productCodeTextBox.Location = new Point(581, 52);
+            productCodeTextBox.Location = new Point(602, 52);
             productCodeTextBox.Name = "productCodeTextBox";
-            productCodeTextBox.Size = new Size(138, 23);
+            productCodeTextBox.Size = new Size(117, 23);
             productCodeTextBox.TabIndex = 1;
             // 
             // addProductBtn
             // 
-            addProductBtn.Location = new Point(581, 224);
+            addProductBtn.Location = new Point(602, 224);
             addProductBtn.Name = "addProductBtn";
-            addProductBtn.Size = new Size(138, 28);
+            addProductBtn.Size = new Size(117, 28);
             addProductBtn.TabIndex = 3;
             addProductBtn.Text = "Add";
             addProductBtn.UseVisualStyleBackColor = true;
             addProductBtn.Click += addProductBtn_Click_1;
             // 
-            // cashPaidTextBox
-            // 
-            cashPaidTextBox.Location = new Point(22, 463);
-            cashPaidTextBox.Name = "cashPaidTextBox";
-            cashPaidTextBox.Size = new Size(116, 23);
-            cashPaidTextBox.TabIndex = 4;
-            // 
             // payButton
             // 
-            payButton.Location = new Point(22, 492);
+            payButton.Location = new Point(12, 481);
             payButton.Name = "payButton";
-            payButton.Size = new Size(91, 48);
+            payButton.Size = new Size(193, 59);
             payButton.TabIndex = 5;
             payButton.Text = "Pay";
             payButton.UseVisualStyleBackColor = true;
+            payButton.Click += payButton_Click;
             // 
             // CategoriesPanel
             // 
@@ -143,9 +137,9 @@
             // 
             // editProductBtn
             // 
-            editProductBtn.Location = new Point(581, 258);
+            editProductBtn.Location = new Point(602, 258);
             editProductBtn.Name = "editProductBtn";
-            editProductBtn.Size = new Size(138, 28);
+            editProductBtn.Size = new Size(117, 28);
             editProductBtn.TabIndex = 10;
             editProductBtn.Text = "Edit";
             editProductBtn.UseVisualStyleBackColor = true;
@@ -153,9 +147,9 @@
             // 
             // deleteProductBtn
             // 
-            deleteProductBtn.Location = new Point(581, 292);
+            deleteProductBtn.Location = new Point(602, 292);
             deleteProductBtn.Name = "deleteProductBtn";
-            deleteProductBtn.Size = new Size(138, 28);
+            deleteProductBtn.Size = new Size(117, 28);
             deleteProductBtn.TabIndex = 11;
             deleteProductBtn.Text = "Delete";
             deleteProductBtn.UseVisualStyleBackColor = true;
@@ -167,7 +161,7 @@
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Location = new Point(12, 52);
             dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(563, 368);
+            dataGridView2.Size = new Size(584, 423);
             dataGridView2.TabIndex = 13;
             dataGridView2.CellContentClick += dataGridView2_CellContentClick;
             // 
@@ -181,9 +175,9 @@
             // 
             // searchButton
             // 
-            searchButton.Location = new Point(581, 94);
+            searchButton.Location = new Point(602, 94);
             searchButton.Name = "searchButton";
-            searchButton.Size = new Size(138, 25);
+            searchButton.Size = new Size(117, 25);
             searchButton.TabIndex = 15;
             searchButton.Text = "Search";
             searchButton.UseVisualStyleBackColor = true;
@@ -199,11 +193,22 @@
             label1.TabIndex = 16;
             label1.Text = "POS";
             // 
+            // Clear
+            // 
+            Clear.Location = new Point(479, 496);
+            Clear.Name = "Clear";
+            Clear.Size = new Size(117, 28);
+            Clear.TabIndex = 17;
+            Clear.Text = "Clear";
+            Clear.UseVisualStyleBackColor = true;
+            Clear.Click += Clear_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1524, 561);
+            Controls.Add(Clear);
             Controls.Add(label1);
             Controls.Add(searchButton);
             Controls.Add(ProductsPanel);
@@ -212,7 +217,6 @@
             Controls.Add(editProductBtn);
             Controls.Add(CategoriesPanel);
             Controls.Add(payButton);
-            Controls.Add(cashPaidTextBox);
             Controls.Add(addProductBtn);
             Controls.Add(productCodeTextBox);
             Controls.Add(menuStrip1);
@@ -235,7 +239,6 @@
         private ToolStripMenuItem helpStripMenuItem1;
         private TextBox productCodeTextBox;
         private Button addProductBtn;
-        private TextBox cashPaidTextBox;
         private Button payButton;
         private ToolStripMenuItem yutyuiToolStripMenuItem;
         private ToolStripMenuItem hjkjhlToolStripMenuItem;
@@ -248,5 +251,6 @@
         private Panel ProductsPanel;
         private Button searchButton;
         private Label label1;
+        private Button Clear;
     }
 }

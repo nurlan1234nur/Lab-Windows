@@ -104,7 +104,7 @@ namespace POS_System
                     if (result != null)
                     {
                         string role = result.ToString();
-                        Form1 mainForm = new Form1(role ?? "Guest");
+                        Form1 mainForm = new Form1(role);
                         this.Hide();
                         mainForm.FormClosed += (s, args) => this.Close();
                         mainForm.Show();

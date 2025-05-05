@@ -10,15 +10,17 @@ namespace POS_System
 {
     public partial class Form1 : Form
     {
-        private string? userRole;
+        private string userRole;
         public int barcode;
         private bool columnsInitialized = false;
+        private decimal TotalAll;
 
 
-        public Form1(string? role)
+        public Form1(string role)
         {
             InitializeComponent();
-            userRole = role ?? "Guest";
+            userRole = role;
+            InitializeProductTable();
             Load += Form1_Load;
 
         }
@@ -26,7 +28,7 @@ namespace POS_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (userRole == "Manager")
+            if (userRole.ToLower() == "manager")
             {
                 productToolStripMenuItem.Enabled = true;
                 categoriesToolStripMenuItem.Enabled = true;
@@ -49,27 +51,27 @@ namespace POS_System
 
             LoadCategoriesToPanel();
             dataGridView2.CellClick += dataGridView2_CellClick;
-
         }
 
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Products цэс дарсан!");
+            MessageBox.Show("Products!");
         }
 
         private void categoriesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (userRole == "Manager")
             {
-                MessageBox.Show("Categories цэс дарсан!");
+                MessageBox.Show("Categories!");
             }
         }
 
         private void helpStripMenuItem1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Help цэс дарсан!");
+            MessageBox.Show("Help!");
         }
+
 
 
         private void editProductBtn_Click(object sender, EventArgs e)
@@ -106,7 +108,6 @@ namespace POS_System
             form.ShowDialog();
 
         }
-
         private Product GetProductByCode(int barcode)
         {
             using (var connection = new SQLiteConnection(DatabaseConfig.ConnectionString))
@@ -148,12 +149,12 @@ namespace POS_System
                 connection.Open();
                 string query = "SELECT DISTINCT * FROM Categories WHERE CategoryId IS NOT NULL";
                 using (SQLiteCommand cmd = new SQLiteCommand(query, connection))
-                using (SQLiteDataReader reader = cmd.ExecuteReader())
+                using (var reader = cmd.ExecuteReader())
                 {
                     int y = 10;
                     while (reader.Read())
                     {
-                        string? category = reader["CategoryId"].ToString();
+                        string? categoryId = reader["CategoryId"].ToString();
                         string? categoryName = reader["CategoryName"].ToString();
                         Button btn = new Button();
                         btn.Text = $"{categoryName}";
@@ -161,7 +162,7 @@ namespace POS_System
                         btn.Top = y;
                         btn.Left = 10;
                         //btn.Click += (s, e) => LoadProductsByCategory(category);
-                        btn.Click += (s, e) => LoadCategoriesByCategoryToPanel(Convert.ToInt32(category));
+                        btn.Click += (s, e) => LoadCategoriesByCategoryToPanel(Convert.ToInt32(categoryId));
                         CategoriesPanel.Controls.Add(btn);
                         y += 40;
                     }
@@ -223,16 +224,19 @@ namespace POS_System
             if (columnName == "Plus" || columnName == "Minus")
             {
                 DataGridViewRow row = dataGridView2.Rows[e.RowIndex];
-                int qty = Convert.ToInt32(row.Cells["Quantity"].Value ?? 1);
+                int qty = Convert.ToInt32(row.Cells["Quantity"].Value ?? 0);
                 decimal price = Convert.ToDecimal(row.Cells["Price"].Value);
 
                 if (columnName == "Plus")
                 {
                     qty = qty + 1;
+                    TotalAll = TotalAll + (int)(price);
+                    productCodeTextBox.Text +=  "0"; 
                 }
                 else if (columnName == "Minus" && qty > 1)
                 {
                     qty = qty - 1;
+                    TotalAll = TotalAll - (int)(price);
                 }
 
                 row.Cells["Quantity"].Value = qty;
@@ -242,10 +246,8 @@ namespace POS_System
 
 
 
-        private void LoadProductsByName(string? productName)
+        private void LoadProductsByName(string productName)
         {
-            InitializeProductTable();
-
             using (var connection = new SQLiteConnection(DatabaseConfig.ConnectionString))
             {
                 connection.Open();
@@ -257,7 +259,7 @@ namespace POS_System
                     {
                         while (reader.Read())
                         {
-                            string? name = reader["Name"].ToString();
+                            string name = reader["Name"].ToString();
                             decimal price = Convert.ToDecimal(reader["Price"]);
                             string? discount = reader["Discount"]?.ToString();
 
@@ -268,8 +270,9 @@ namespace POS_System
                             {
                                 if (row.Cells["Name"].Value?.ToString() == name)
                                 {
-                                    int currentQty = row.Cells["Quantity"].Value == null ? 1 : Convert.ToInt32(row.Cells["Quantity"].Value);
+                                    int currentQty = Convert.ToInt32(row.Cells["Quantity"].Value);
                                     currentQty++;
+                                    TotalAll = TotalAll + (int)(price);
                                     row.Cells["Quantity"].Value = currentQty;
                                     row.Cells["Total"].Value = price * currentQty;
                                     found = true;
@@ -282,6 +285,7 @@ namespace POS_System
                             {
                                 int qty = 1;
                                 decimal total = price * qty;
+                                TotalAll = TotalAll + (int)total;
                                 dataGridView2.Rows.Add(name, price, "+", qty, "-", total, discount);
                             }
                         }
@@ -363,14 +367,6 @@ namespace POS_System
                     }
                 }
             }
-        }
-
-
-
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void CategoriesPanel_Paint(object sender, PaintEventArgs e)
@@ -468,6 +464,17 @@ namespace POS_System
             LoadByBarcodeToPanel(barcode);
         }
 
-   
+        private void payButton_Click(object sender, EventArgs e)
+        {
+            Form paymentForm = new Payment(TotalAll);
+            paymentForm.ShowDialog();
+
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            dataGridView2.Rows.Clear();
+            TotalAll = 0;
+        }
     }
 }

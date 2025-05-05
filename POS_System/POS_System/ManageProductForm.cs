@@ -16,7 +16,7 @@ namespace POS_System
 {
     public partial class ManageProductForm : Form
     {
-        private string mode; // "Add", "Edit", "Delete"
+        private string mode; 
         private int? barcode;
 
         public ManageProductForm(string mode, int? barcode = null)

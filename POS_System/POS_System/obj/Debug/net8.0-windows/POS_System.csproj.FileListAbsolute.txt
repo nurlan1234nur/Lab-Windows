@@ -68,3 +68,4 @@ C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_System\POS_System
 C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_System\POS_System\bin\Debug\net8.0-windows\Library.dll
 C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_System\POS_System\bin\Debug\net8.0-windows\Library.pdb
 C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_System\POS_System\obj\Debug\net8.0-windows\POS_System.Properties.Resources.resources
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_System\POS_System\obj\Debug\net8.0-windows\POS_System.Payment.resources

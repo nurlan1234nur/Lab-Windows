@@ -121,6 +121,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
             "RFBCodeWorks.DatabaseObjects.SqLite": {
               "target": "Package",
               "version": "[1.0.0.8, )"

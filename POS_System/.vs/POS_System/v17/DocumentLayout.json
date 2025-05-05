@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,28 +15,32 @@
       "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\pos_system\\manageproductform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\manageproductform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14BC25B3-33D2-47CA-81FA-04DFB1D67A71}|Library\\Library.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\library\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14BC25B3-33D2-47CA-81FA-04DFB1D67A71}|Library\\Library.csproj|solutionrelative:library\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\manageproductform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\manageproductform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\payment.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\payment.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14BC25B3-33D2-47CA-81FA-04DFB1D67A71}|Library\\Library.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\library\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14BC25B3-33D2-47CA-81FA-04DFB1D67A71}|Library\\Library.csproj|solutionrelative:library\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|solutionrelative:pos_system\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55BA9B35-C2B0-4CFB-846F-B155ED013602}|POS_System\\POS_System.csproj|c:\\users\\user\\documents\\002 hicheeluud\\windows\\lab-windows\\pos_system\\pos_system\\pos_system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -50,15 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Program.cs",
+              "RelativeDocumentMoniker": "POS_System\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Program.cs",
+              "RelativeToolTip": "POS_System\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T12:01:43.109Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
@@ -82,62 +95,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\LoginForm.cs",
-              "RelativeDocumentMoniker": "POS_System\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\LoginForm.cs [Design]",
-              "RelativeToolTip": "POS_System\\LoginForm.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "POS_System\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Form1.Designer.cs",
+              "RelativeToolTip": "POS_System\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T06:34:22.796Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-05T07:18:29.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Payment.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Payment.Designer.cs",
+              "RelativeDocumentMoniker": "POS_System\\Payment.Designer.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Payment.Designer.cs",
+              "RelativeToolTip": "POS_System\\Payment.Designer.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwFIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T06:52:49.334Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ManageProductForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\ManageProductForm.cs",
-              "RelativeDocumentMoniker": "POS_System\\ManageProductForm.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\ManageProductForm.cs [Design]",
-              "RelativeToolTip": "POS_System\\ManageProductForm.cs [Design]",
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Payment.cs",
+              "RelativeDocumentMoniker": "POS_System\\Payment.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Payment.cs",
+              "RelativeToolTip": "POS_System\\Payment.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAtwEQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T06:23:28.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\Library\\Product.cs",
-              "RelativeDocumentMoniker": "Library\\Product.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\Library\\Product.cs",
-              "RelativeToolTip": "Library\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T07:09:08.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ManageProductForm.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\ManageProductForm.cs",
-              "RelativeDocumentMoniker": "POS_System\\ManageProductForm.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\ManageProductForm.cs",
-              "RelativeToolTip": "POS_System\\ManageProductForm.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAA9wE8AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T06:17:13.484Z"
+              "WhenOpened": "2025-05-05T06:42:26.228Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Payment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Payment.cs",
+              "RelativeDocumentMoniker": "POS_System\\Payment.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Payment.cs [Design]",
+              "RelativeToolTip": "POS_System\\Payment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T06:38:03.816Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\LoginForm.cs",
               "RelativeDocumentMoniker": "POS_System\\LoginForm.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\LoginForm.cs",
               "RelativeToolTip": "POS_System\\LoginForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowGoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T06:38:32.408Z",
+              "WhenOpened": "2025-04-28T09:19:15.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Form1.cs",
+              "RelativeDocumentMoniker": "POS_System\\Form1.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Form1.cs",
+              "RelativeToolTip": "POS_System\\Form1.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAvwMUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T06:18:40.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\Library\\Product.cs",
+              "RelativeDocumentMoniker": "Library\\Product.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\Library\\Product.cs",
+              "RelativeToolTip": "Library\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T07:09:08.261Z",
               "EditorCaption": ""
             },
             {
@@ -149,47 +192,24 @@
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Form1.cs [Design]",
               "RelativeToolTip": "POS_System\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T17:29:04.554Z"
+              "WhenOpened": "2025-04-18T17:29:04.554Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\Library\\User.cs",
-              "RelativeDocumentMoniker": "Library\\User.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\Library\\User.cs",
-              "RelativeToolTip": "Library\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T07:36:13.025Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Form1.cs",
-              "RelativeDocumentMoniker": "POS_System\\Form1.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\Form1.cs",
-              "RelativeToolTip": "POS_System\\Form1.cs",
-              "ViewState": "AgIAANYBAAAAAAAAAAAowDwBAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T06:18:40.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "DatabaseConfig.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\DatabaseConfig.cs",
               "RelativeDocumentMoniker": "POS_System\\DatabaseConfig.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\DatabaseConfig.cs",
               "RelativeToolTip": "POS_System\\DatabaseConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T12:44:00.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "POS_System.csproj",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\Lab-Windows\\POS_System\\POS_System\\POS_System.csproj",
               "RelativeDocumentMoniker": "POS_System\\POS_System.csproj",
