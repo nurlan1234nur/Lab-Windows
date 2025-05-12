@@ -28,40 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            Paid_textbox = new TextBox();
             label2 = new Label();
             button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
-            button9 = new Button();
-            button10 = new Button();
-            button11 = new Button();
-            button12 = new Button();
+            value9 = new Button();
+            value8 = new Button();
+            value7 = new Button();
+            value4 = new Button();
+            value5 = new Button();
+            value6 = new Button();
+            value3 = new Button();
+            value2 = new Button();
+            value1 = new Button();
+            cash = new Button();
+            card = new Button();
             CloseBtn = new Button();
-            button15 = new Button();
+            confirm = new Button();
             button16 = new Button();
-            button17 = new Button();
+            clear = new Button();
             label1 = new Label();
             AmountTextBox = new TextBox();
-            button18 = new Button();
-            button19 = new Button();
-            button20 = new Button();
+            valueDot = new Button();
+            value00 = new Button();
+            value0 = new Button();
             Change = new TextBox();
             label3 = new Label();
             SuspendLayout();
             // 
-            // textBox1
+            // Paid_textbox
             // 
-            textBox1.Location = new Point(312, 30);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(226, 40);
-            textBox1.TabIndex = 2;
+            Paid_textbox.Location = new Point(312, 30);
+            Paid_textbox.Multiline = true;
+            Paid_textbox.Name = "Paid_textbox";
+            Paid_textbox.Size = new Size(226, 40);
+            Paid_textbox.TabIndex = 2;
             // 
             // label2
             // 
@@ -82,113 +82,113 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
+            // value9
             // 
-            button2.Location = new Point(428, 76);
-            button2.Name = "button2";
-            button2.Size = new Size(52, 50);
-            button2.TabIndex = 5;
-            button2.Text = "9";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button10_Click;
+            value9.Location = new Point(428, 76);
+            value9.Name = "value9";
+            value9.Size = new Size(52, 50);
+            value9.TabIndex = 5;
+            value9.Text = "9";
+            value9.UseVisualStyleBackColor = true;
+            value9.Click += button10_Click;
             // 
-            // button3
+            // value8
             // 
-            button3.Location = new Point(370, 76);
-            button3.Name = "button3";
-            button3.Size = new Size(52, 50);
-            button3.TabIndex = 6;
-            button3.Text = "8";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button10_Click;
+            value8.Location = new Point(370, 76);
+            value8.Name = "value8";
+            value8.Size = new Size(52, 50);
+            value8.TabIndex = 6;
+            value8.Text = "8";
+            value8.UseVisualStyleBackColor = true;
+            value8.Click += button10_Click;
             // 
-            // button4
+            // value7
             // 
-            button4.Location = new Point(312, 76);
-            button4.Name = "button4";
-            button4.Size = new Size(52, 50);
-            button4.TabIndex = 7;
-            button4.Text = "7";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button10_Click;
+            value7.Location = new Point(312, 76);
+            value7.Name = "value7";
+            value7.Size = new Size(52, 50);
+            value7.TabIndex = 7;
+            value7.Text = "7";
+            value7.UseVisualStyleBackColor = true;
+            value7.Click += button10_Click;
             // 
-            // button5
+            // value4
             // 
-            button5.Location = new Point(312, 132);
-            button5.Name = "button5";
-            button5.Size = new Size(52, 50);
-            button5.TabIndex = 10;
-            button5.Text = "4";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button10_Click;
+            value4.Location = new Point(312, 132);
+            value4.Name = "value4";
+            value4.Size = new Size(52, 50);
+            value4.TabIndex = 10;
+            value4.Text = "4";
+            value4.UseVisualStyleBackColor = true;
+            value4.Click += button10_Click;
             // 
-            // button6
+            // value5
             // 
-            button6.Location = new Point(370, 132);
-            button6.Name = "button6";
-            button6.Size = new Size(52, 50);
-            button6.TabIndex = 9;
-            button6.Text = "5";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button10_Click;
+            value5.Location = new Point(370, 132);
+            value5.Name = "value5";
+            value5.Size = new Size(52, 50);
+            value5.TabIndex = 9;
+            value5.Text = "5";
+            value5.UseVisualStyleBackColor = true;
+            value5.Click += button10_Click;
             // 
-            // button7
+            // value6
             // 
-            button7.Location = new Point(428, 132);
-            button7.Name = "button7";
-            button7.Size = new Size(52, 50);
-            button7.TabIndex = 8;
-            button7.Text = "6";
-            button7.UseVisualStyleBackColor = true;
-            button7.Click += button10_Click;
+            value6.Location = new Point(428, 132);
+            value6.Name = "value6";
+            value6.Size = new Size(52, 50);
+            value6.TabIndex = 8;
+            value6.Text = "6";
+            value6.UseVisualStyleBackColor = true;
+            value6.Click += button10_Click;
             // 
-            // button8
+            // value3
             // 
-            button8.Location = new Point(428, 189);
-            button8.Name = "button8";
-            button8.Size = new Size(52, 50);
-            button8.TabIndex = 8;
-            button8.Text = "3";
-            button8.UseVisualStyleBackColor = true;
-            button8.Click += button10_Click;
+            value3.Location = new Point(428, 189);
+            value3.Name = "value3";
+            value3.Size = new Size(52, 50);
+            value3.TabIndex = 8;
+            value3.Text = "3";
+            value3.UseVisualStyleBackColor = true;
+            value3.Click += button10_Click;
             // 
-            // button9
+            // value2
             // 
-            button9.Location = new Point(370, 189);
-            button9.Name = "button9";
-            button9.Size = new Size(52, 50);
-            button9.TabIndex = 9;
-            button9.Text = "2";
-            button9.UseVisualStyleBackColor = true;
-            button9.Click += button10_Click;
+            value2.Location = new Point(370, 189);
+            value2.Name = "value2";
+            value2.Size = new Size(52, 50);
+            value2.TabIndex = 9;
+            value2.Text = "2";
+            value2.UseVisualStyleBackColor = true;
+            value2.Click += button10_Click;
             // 
-            // button10
+            // value1
             // 
-            button10.Location = new Point(312, 189);
-            button10.Name = "button10";
-            button10.Size = new Size(52, 50);
-            button10.TabIndex = 10;
-            button10.Text = "1";
-            button10.UseVisualStyleBackColor = true;
-            button10.Click += button10_Click;
+            value1.Location = new Point(312, 189);
+            value1.Name = "value1";
+            value1.Size = new Size(52, 50);
+            value1.TabIndex = 10;
+            value1.Text = "1";
+            value1.UseVisualStyleBackColor = true;
+            value1.Click += button10_Click;
             // 
-            // button11
+            // cash
             // 
-            button11.Location = new Point(12, 94);
-            button11.Name = "button11";
-            button11.Size = new Size(86, 50);
-            button11.TabIndex = 11;
-            button11.Text = "CASH";
-            button11.UseVisualStyleBackColor = true;
+            cash.Location = new Point(12, 94);
+            cash.Name = "cash";
+            cash.Size = new Size(86, 50);
+            cash.TabIndex = 11;
+            cash.Text = "CASH";
+            cash.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // card
             // 
-            button12.Location = new Point(104, 94);
-            button12.Name = "button12";
-            button12.Size = new Size(86, 50);
-            button12.TabIndex = 11;
-            button12.Text = "CARD";
-            button12.UseVisualStyleBackColor = true;
+            card.Location = new Point(104, 94);
+            card.Name = "card";
+            card.Size = new Size(86, 50);
+            card.TabIndex = 11;
+            card.Text = "CARD";
+            card.UseVisualStyleBackColor = true;
             // 
             // CloseBtn
             // 
@@ -200,15 +200,15 @@
             CloseBtn.UseVisualStyleBackColor = true;
             CloseBtn.Click += CloseBtn_Click;
             // 
-            // button15
+            // confirm
             // 
-            button15.Location = new Point(486, 379);
-            button15.Name = "button15";
-            button15.Size = new Size(52, 50);
-            button15.TabIndex = 8;
-            button15.Text = "Confirm";
-            button15.UseVisualStyleBackColor = true;
-            button15.Click += button15_Click;
+            confirm.Location = new Point(486, 379);
+            confirm.Name = "confirm";
+            confirm.Size = new Size(52, 50);
+            confirm.TabIndex = 8;
+            confirm.Text = "Confirm";
+            confirm.UseVisualStyleBackColor = true;
+            confirm.Click += button15_Click;
             // 
             // button16
             // 
@@ -219,21 +219,21 @@
             button16.Text = "button7";
             button16.UseVisualStyleBackColor = true;
             // 
-            // button17
+            // clear
             // 
-            button17.Location = new Point(370, 379);
-            button17.Name = "button17";
-            button17.Size = new Size(52, 50);
-            button17.TabIndex = 8;
-            button17.Text = "Clear";
-            button17.UseVisualStyleBackColor = true;
+            clear.Location = new Point(370, 379);
+            clear.Name = "clear";
+            clear.Size = new Size(52, 50);
+            clear.TabIndex = 8;
+            clear.Text = "Clear";
+            clear.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(12, 19);
             label1.Name = "label1";
-            label1.Size = new Size(58, 15);
+            label1.Size = new Size(59, 15);
             label1.TabIndex = 0;
             label1.Text = "AMOUNT";
             // 
@@ -246,35 +246,35 @@
             AmountTextBox.TabIndex = 12;
             AmountTextBox.TextChanged += AmountTextBox_TextChanged;
             // 
-            // button18
+            // valueDot
             // 
-            button18.Location = new Point(428, 248);
-            button18.Name = "button18";
-            button18.Size = new Size(52, 50);
-            button18.TabIndex = 8;
-            button18.Text = ".";
-            button18.UseVisualStyleBackColor = true;
-            button18.Click += button10_Click;
+            valueDot.Location = new Point(428, 248);
+            valueDot.Name = "valueDot";
+            valueDot.Size = new Size(52, 50);
+            valueDot.TabIndex = 8;
+            valueDot.Text = ".";
+            valueDot.UseVisualStyleBackColor = true;
+            valueDot.Click += button10_Click;
             // 
-            // button19
+            // value00
             // 
-            button19.Location = new Point(370, 248);
-            button19.Name = "button19";
-            button19.Size = new Size(52, 50);
-            button19.TabIndex = 9;
-            button19.Text = "00";
-            button19.UseVisualStyleBackColor = true;
-            button19.Click += button10_Click;
+            value00.Location = new Point(370, 248);
+            value00.Name = "value00";
+            value00.Size = new Size(52, 50);
+            value00.TabIndex = 9;
+            value00.Text = "00";
+            value00.UseVisualStyleBackColor = true;
+            value00.Click += button10_Click;
             // 
-            // button20
+            // value0
             // 
-            button20.Location = new Point(312, 248);
-            button20.Name = "button20";
-            button20.Size = new Size(52, 50);
-            button20.TabIndex = 10;
-            button20.Text = "0";
-            button20.UseVisualStyleBackColor = true;
-            button20.Click += button10_Click;
+            value0.Location = new Point(312, 248);
+            value0.Name = "value0";
+            value0.Size = new Size(52, 50);
+            value0.TabIndex = 10;
+            value0.Text = "0";
+            value0.UseVisualStyleBackColor = true;
+            value0.Click += button10_Click;
             // 
             // Change
             // 
@@ -300,27 +300,27 @@
             Controls.Add(label3);
             Controls.Add(Change);
             Controls.Add(AmountTextBox);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(button20);
-            Controls.Add(button10);
-            Controls.Add(button5);
-            Controls.Add(button19);
-            Controls.Add(button9);
-            Controls.Add(button6);
-            Controls.Add(button17);
+            Controls.Add(card);
+            Controls.Add(cash);
+            Controls.Add(value0);
+            Controls.Add(value1);
+            Controls.Add(value4);
+            Controls.Add(value00);
+            Controls.Add(value2);
+            Controls.Add(value5);
+            Controls.Add(clear);
             Controls.Add(button16);
-            Controls.Add(button15);
-            Controls.Add(button18);
+            Controls.Add(confirm);
+            Controls.Add(valueDot);
             Controls.Add(CloseBtn);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(value3);
+            Controls.Add(value6);
+            Controls.Add(value7);
+            Controls.Add(value8);
+            Controls.Add(value9);
             Controls.Add(button1);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(Paid_textbox);
             Controls.Add(label1);
             Name = "Payment";
             Text = "Payment";
@@ -330,29 +330,29 @@
         }
 
         #endregion
-        private TextBox textBox1;
+        private TextBox Paid_textbox;
         private Label label2;
         private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button9;
-        private Button button10;
-        private Button button11;
-        private Button button12;
+        private Button value9;
+        private Button value8;
+        private Button value7;
+        private Button value4;
+        private Button value5;
+        private Button value6;
+        private Button value3;
+        private Button value2;
+        private Button value1;
+        private Button cash;
+        private Button card;
         private Button button14;
-        private Button button15;
+        private Button confirm;
         private Button button16;
-        private Button button17;
+        private Button clear;
         private Label label1;
         private TextBox textBox2;
-        private Button button18;
-        private Button button19;
-        private Button button20;
+        private Button valueDot;
+        private Button value00;
+        private Button value0;
         private Button CloseBtn;
         private TextBox AmountTextBox;
         private TextBox Change;

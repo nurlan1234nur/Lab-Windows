@@ -44,15 +44,15 @@ namespace POS_System
         {
             if (sender is Button button)
             {
-                textBox1.Text += button.Text;
+                Paid_textbox.Text += button.Text;
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string text = textBox1.Text;
+            string text = Paid_textbox.Text;
 
-            textBox1.Text = text.Substring(0, text.Length - 1);
+            Paid_textbox.Text = text.Substring(0, text.Length - 1);
         }
 
         private void CloseBtn_Click(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace POS_System
 
         private void button15_Click(object sender, EventArgs e)
         {
-            int y = int.Parse(textBox1.Text);
+            int y = int.Parse(Paid_textbox.Text);
             int x = (int)(y - TotalAmount);
             Change.Text = x.ToString();
         }

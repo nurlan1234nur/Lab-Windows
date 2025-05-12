@@ -231,7 +231,6 @@ namespace POS_System
                 {
                     qty = qty + 1;
                     TotalAll = TotalAll + (int)(price);
-                    productCodeTextBox.Text +=  "0"; 
                 }
                 else if (columnName == "Minus" && qty > 1)
                 {
