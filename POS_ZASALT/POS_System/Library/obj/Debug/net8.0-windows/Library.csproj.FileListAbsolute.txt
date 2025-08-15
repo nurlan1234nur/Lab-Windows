@@ -1,0 +1,13 @@
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\bin\Debug\net8.0-windows\Library.deps.json
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\bin\Debug\net8.0-windows\Library.dll
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\bin\Debug\net8.0-windows\Library.pdb
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\obj\Debug\net8.0-windows\Library.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\obj\Debug\net8.0-windows\Library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\obj\Debug\net8.0-windows\Library.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\obj\Debug\net8.0-windows\Library.AssemblyInfo.cs
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\obj\Debug\net8.0-windows\Library.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\obj\Debug\net8.0-windows\Library.sourcelink.json
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\obj\Debug\net8.0-windows\Library.dll
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\obj\Debug\net8.0-windows\refint\Library.dll
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\obj\Debug\net8.0-windows\Library.pdb
+C:\Users\USER\Documents\002 HICHEELUUD\windows\Lab-Windows\POS_ZASALT\POS_System\Library\obj\Debug\net8.0-windows\ref\Library.dll

@@ -30,9 +30,6 @@
         {
             menuStrip1 = new MenuStrip();
             productToolStripMenuItem = new ToolStripMenuItem();
-            yutyuiToolStripMenuItem = new ToolStripMenuItem();
-            hjkjhlToolStripMenuItem = new ToolStripMenuItem();
-            nmnlToolStripMenuItem = new ToolStripMenuItem();
             categoriesToolStripMenuItem = new ToolStripMenuItem();
             helpStripMenuItem1 = new ToolStripMenuItem();
             productCodeTextBox = new TextBox();
@@ -41,13 +38,14 @@
             CategoriesPanel = new Panel();
             editProductBtn = new Button();
             deleteProductBtn = new Button();
-            dataGridView2 = new DataGridView();
-            ProductsPanel = new Panel();
+            ProductsPanel = new FlowLayoutPanel();
             searchButton = new Button();
             label1 = new Label();
             Clear = new Button();
+            OrderPanel = new Panel();
+            textBox1 = new TextBox();
+            label2 = new Label();
             menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
@@ -61,29 +59,10 @@
             // 
             // productToolStripMenuItem
             // 
-            productToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { yutyuiToolStripMenuItem, hjkjhlToolStripMenuItem, nmnlToolStripMenuItem });
             productToolStripMenuItem.Name = "productToolStripMenuItem";
             productToolStripMenuItem.Size = new Size(61, 20);
             productToolStripMenuItem.Text = "product";
             productToolStripMenuItem.Click += toolStripMenuItem1_Click;
-            // 
-            // yutyuiToolStripMenuItem
-            // 
-            yutyuiToolStripMenuItem.Name = "yutyuiToolStripMenuItem";
-            yutyuiToolStripMenuItem.Size = new Size(107, 22);
-            yutyuiToolStripMenuItem.Text = "yutyui";
-            // 
-            // hjkjhlToolStripMenuItem
-            // 
-            hjkjhlToolStripMenuItem.Name = "hjkjhlToolStripMenuItem";
-            hjkjhlToolStripMenuItem.Size = new Size(107, 22);
-            hjkjhlToolStripMenuItem.Text = "hjkjhl";
-            // 
-            // nmnlToolStripMenuItem
-            // 
-            nmnlToolStripMenuItem.Name = "nmnlToolStripMenuItem";
-            nmnlToolStripMenuItem.Size = new Size(107, 22);
-            nmnlToolStripMenuItem.Text = "nm,nl";
             // 
             // categoriesToolStripMenuItem
             // 
@@ -101,14 +80,15 @@
             // 
             // productCodeTextBox
             // 
-            productCodeTextBox.Location = new Point(602, 52);
+            productCodeTextBox.Location = new Point(568, 57);
             productCodeTextBox.Name = "productCodeTextBox";
             productCodeTextBox.Size = new Size(117, 23);
             productCodeTextBox.TabIndex = 1;
+            productCodeTextBox.TextChanged += productCodeTextBox_TextChanged;
             // 
             // addProductBtn
             // 
-            addProductBtn.Location = new Point(602, 224);
+            addProductBtn.Location = new Point(568, 229);
             addProductBtn.Name = "addProductBtn";
             addProductBtn.Size = new Size(117, 28);
             addProductBtn.TabIndex = 3;
@@ -118,9 +98,9 @@
             // 
             // payButton
             // 
-            payButton.Location = new Point(12, 481);
+            payButton.Location = new Point(5, 411);
             payButton.Name = "payButton";
-            payButton.Size = new Size(193, 59);
+            payButton.Size = new Size(165, 46);
             payButton.TabIndex = 5;
             payButton.Text = "Pay";
             payButton.UseVisualStyleBackColor = true;
@@ -129,15 +109,14 @@
             // CategoriesPanel
             // 
             CategoriesPanel.BackColor = SystemColors.ControlLightLight;
-            CategoriesPanel.Location = new Point(734, 27);
+            CategoriesPanel.Location = new Point(691, 41);
             CategoriesPanel.Name = "CategoriesPanel";
-            CategoriesPanel.Size = new Size(148, 513);
+            CategoriesPanel.Size = new Size(148, 398);
             CategoriesPanel.TabIndex = 9;
-            CategoriesPanel.Paint += CategoriesPanel_Paint;
             // 
             // editProductBtn
             // 
-            editProductBtn.Location = new Point(602, 258);
+            editProductBtn.Location = new Point(568, 263);
             editProductBtn.Name = "editProductBtn";
             editProductBtn.Size = new Size(117, 28);
             editProductBtn.TabIndex = 10;
@@ -147,7 +126,7 @@
             // 
             // deleteProductBtn
             // 
-            deleteProductBtn.Location = new Point(602, 292);
+            deleteProductBtn.Location = new Point(568, 297);
             deleteProductBtn.Name = "deleteProductBtn";
             deleteProductBtn.Size = new Size(117, 28);
             deleteProductBtn.TabIndex = 11;
@@ -155,27 +134,19 @@
             deleteProductBtn.UseVisualStyleBackColor = true;
             deleteProductBtn.Click += deleteProductBtn_Click;
             // 
-            // dataGridView2
-            // 
-            dataGridView2.BackgroundColor = SystemColors.ControlLightLight;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(12, 52);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(584, 423);
-            dataGridView2.TabIndex = 13;
-            dataGridView2.CellContentClick += dataGridView2_CellContentClick;
-            // 
             // ProductsPanel
             // 
+            ProductsPanel.AutoScroll = true;
             ProductsPanel.BackColor = SystemColors.ControlLightLight;
-            ProductsPanel.Location = new Point(905, 27);
+            ProductsPanel.Location = new Point(854, 32);
             ProductsPanel.Name = "ProductsPanel";
-            ProductsPanel.Size = new Size(607, 522);
+            ProductsPanel.Size = new Size(443, 407);
             ProductsPanel.TabIndex = 14;
+            ProductsPanel.Paint += ProductsPanel_Paint;
             // 
             // searchButton
             // 
-            searchButton.Location = new Point(602, 94);
+            searchButton.Location = new Point(568, 99);
             searchButton.Name = "searchButton";
             searchButton.Size = new Size(117, 25);
             searchButton.TabIndex = 15;
@@ -195,7 +166,7 @@
             // 
             // Clear
             // 
-            Clear.Location = new Point(479, 496);
+            Clear.Location = new Point(432, 411);
             Clear.Name = "Clear";
             Clear.Size = new Size(117, 28);
             Clear.TabIndex = 17;
@@ -203,16 +174,43 @@
             Clear.UseVisualStyleBackColor = true;
             Clear.Click += Clear_Click;
             // 
+            // OrderPanel
+            // 
+            OrderPanel.BackColor = SystemColors.ControlLightLight;
+            OrderPanel.Location = new Point(5, 52);
+            OrderPanel.Name = "OrderPanel";
+            OrderPanel.Size = new Size(544, 348);
+            OrderPanel.TabIndex = 18;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(568, 200);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(117, 23);
+            textBox1.TabIndex = 19;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(568, 182);
+            label2.Name = "label2";
+            label2.Size = new Size(50, 15);
+            label2.TabIndex = 20;
+            label2.Text = "Barcode";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1524, 561);
+            ClientSize = new Size(1524, 468);
+            Controls.Add(label2);
+            Controls.Add(textBox1);
+            Controls.Add(OrderPanel);
             Controls.Add(Clear);
             Controls.Add(label1);
             Controls.Add(searchButton);
             Controls.Add(ProductsPanel);
-            Controls.Add(dataGridView2);
             Controls.Add(deleteProductBtn);
             Controls.Add(editProductBtn);
             Controls.Add(CategoriesPanel);
@@ -226,7 +224,6 @@
             Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -240,17 +237,16 @@
         private TextBox productCodeTextBox;
         private Button addProductBtn;
         private Button payButton;
-        private ToolStripMenuItem yutyuiToolStripMenuItem;
-        private ToolStripMenuItem hjkjhlToolStripMenuItem;
-        private ToolStripMenuItem nmnlToolStripMenuItem;
         private Panel CategoriesPanel;
         private Button editProductBtn;
         private Button deleteProductBtn;
         private DataGridView dataGridView1;
-        private DataGridView dataGridView2;
-        private Panel ProductsPanel;
+        private FlowLayoutPanel ProductsPanel;
         private Button searchButton;
         private Label label1;
         private Button Clear;
+        private Panel OrderPanel;
+        private TextBox textBox1;
+        private Label label2;
     }
 }

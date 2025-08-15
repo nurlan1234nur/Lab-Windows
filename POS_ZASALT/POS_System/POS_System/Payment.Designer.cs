@@ -44,7 +44,6 @@
             card = new Button();
             CloseBtn = new Button();
             confirm = new Button();
-            button16 = new Button();
             clear = new Button();
             label1 = new Label();
             AmountTextBox = new TextBox();
@@ -180,6 +179,7 @@
             cash.TabIndex = 11;
             cash.Text = "CASH";
             cash.UseVisualStyleBackColor = true;
+            cash.Click += cash_Click;
             // 
             // card
             // 
@@ -189,6 +189,7 @@
             card.TabIndex = 11;
             card.Text = "CARD";
             card.UseVisualStyleBackColor = true;
+            card.Click += card_Click;
             // 
             // CloseBtn
             // 
@@ -202,26 +203,17 @@
             // 
             // confirm
             // 
-            confirm.Location = new Point(486, 379);
+            confirm.Location = new Point(439, 379);
             confirm.Name = "confirm";
-            confirm.Size = new Size(52, 50);
+            confirm.Size = new Size(99, 50);
             confirm.TabIndex = 8;
             confirm.Text = "Confirm";
             confirm.UseVisualStyleBackColor = true;
             confirm.Click += button15_Click;
             // 
-            // button16
-            // 
-            button16.Location = new Point(428, 379);
-            button16.Name = "button16";
-            button16.Size = new Size(52, 50);
-            button16.TabIndex = 8;
-            button16.Text = "button7";
-            button16.UseVisualStyleBackColor = true;
-            // 
             // clear
             // 
-            clear.Location = new Point(370, 379);
+            clear.Location = new Point(486, 248);
             clear.Name = "clear";
             clear.Size = new Size(52, 50);
             clear.TabIndex = 8;
@@ -236,6 +228,7 @@
             label1.Size = new Size(59, 15);
             label1.TabIndex = 0;
             label1.Text = "AMOUNT";
+            label1.Click += label1_Click;
             // 
             // AmountTextBox
             // 
@@ -309,7 +302,6 @@
             Controls.Add(value2);
             Controls.Add(value5);
             Controls.Add(clear);
-            Controls.Add(button16);
             Controls.Add(confirm);
             Controls.Add(valueDot);
             Controls.Add(CloseBtn);
@@ -346,7 +338,6 @@
         private Button card;
         private Button button14;
         private Button confirm;
-        private Button button16;
         private Button clear;
         private Label label1;
         private TextBox textBox2;

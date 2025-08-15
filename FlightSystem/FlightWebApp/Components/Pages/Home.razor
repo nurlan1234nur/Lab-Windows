@@ -1,0 +1,232 @@
+﻿@page "/home"
+@inject UserApiClient UserApi
+@inject OrderApiClient OrderApi
+@inject FlightApiClient FlightApi
+@layout Layout.MainLayout
+@rendermode InteractiveServer
+@using FlightWebApp.Components.Pages
+@using FlightSystem.Models
+
+<h2>Хэрэглэгчийн удирдлага</h2>
+
+<div class="btn-group mb-3">
+    <button type="button" class="btn btn-outline-primary" @onclick='() => ChangeView("all")'>Бүх хэрэглэгчид</button>
+    <button type="button" class="btn btn-outline-primary" @onclick='() => ChangeView("search")'>Хэрэглэгч хайх</button>
+    <button type="button" class="btn btn-outline-primary" @onclick='() => ChangeView("update")'>Мэдээлэл өөрчлөх</button>
+    <button type="button" class="btn btn-outline-danger" @onclick='() => ChangeView("delete")'>Хэрэглэгч устгах</button>
+</div>
+
+<hr />
+
+@RenderCurrentView()
+
+@code {
+    private string currentView = "all";
+    private List<CreateUserDto>? users;
+
+    private string errorMessage = "";
+    private string updateMessage = "";
+    private string deleteMessage = "";
+
+    private string searchId = "";
+    private CreateUserDto? foundUser;
+
+    private CreateUserDto updateUser = new CreateUserDto();
+    private string deleteId = "";
+
+    private List<FlightDto>? selectedUserFlights;
+    private string selectedUserName = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshUsers();
+    }
+
+    void ChangeView(string viewName)
+    {
+        currentView = viewName;
+        errorMessage = "";
+        selectedUserFlights = null;
+        foundUser = null;
+        updateMessage = "";
+        deleteMessage = "";
+    }
+
+    async Task RefreshUsers()
+    {
+        try
+        {
+            users = await UserApi.GetUsersAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Хэрэглэгчдийн жагсаалт татахад алдаа: {ex.Message}";
+        }
+    }
+
+    async Task ShowFlights(string userId, string userName)
+    {
+        selectedUserName = userName;
+        selectedUserFlights = new List<FlightDto>();
+        errorMessage = "";
+
+        try
+        {
+            var orders = await OrderApi.GetOrdersByCustomerIdAsync(userId);
+            foreach (var order in orders)
+            {
+                if (!string.IsNullOrEmpty(order.FlightId))
+                {
+                    var flight = await FlightApi.GetFlightByIdAsync(order.FlightId);
+                    if (flight != null) selectedUserFlights.Add(flight);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Нислэгийн мэдээлэл авахад алдаа: {ex.Message}";
+        }
+    }
+
+    private async Task SearchUser()
+    {
+        errorMessage = "";
+        foundUser = null;
+        try
+        {
+            foundUser = await UserApi.GetUserByIdAsync(searchId);
+            if (foundUser == null)
+                errorMessage = "Хэрэглэгч олдсонгүй.";
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Хайлт хийхэд алдаа: {ex.Message}";
+        }
+    }
+
+    private async Task UpdateUser()
+    {
+        updateMessage = "";
+        try
+        {
+            var result = await UserApi.UpdateUserAsync(updateUser);
+            updateMessage = result.Message;
+            await RefreshUsers();
+        }
+        catch (Exception ex)
+        {
+            updateMessage = $"Өөрчлөхөд алдаа: {ex.Message}";
+        }
+    }
+
+    private async Task DeleteUser()
+    {
+        deleteMessage = "";
+        try
+        {
+            var result = await UserApi.DeleteUserAsync(deleteId);
+            deleteMessage = result.Message;
+            await RefreshUsers();
+        }
+        catch (Exception ex)
+        {
+            deleteMessage = $"Устгахад алдаа: {ex.Message}";
+        }
+    }
+
+    RenderFragment RenderCurrentView() => currentView switch
+    {
+        "all" => @<div>
+        <h3>Хэрэглэгчид</h3>
+        @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <p class="text-danger">@errorMessage</p>
+    }
+        @if (users == null)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
+        <div class="d-flex flex-wrap gap-3">
+            @foreach (var u in users)
+        {
+            <div class="card p-2" style="width:200px;">
+                <p><b>ID:</b> @u.FirstName</p>
+                <p><b>Нэр:</b> @u.LastName</p>
+                <button type="button" class="btn btn-sm btn-primary" @onclick="() => ShowFlights(u.FirstName, u.LastName)">
+                    Захиалсан нислэгүүд
+                </button>
+            </div>
+        }
+        </div>
+
+        @if (selectedUserFlights != null)
+    {
+        <hr />
+        <h4>@selectedUserName - Захиалсан нислэгүүд</h4>
+        @if (!selectedUserFlights.Any())
+    {
+        <p>Нислэгийн мэдээлэл олдсонгүй.</p>
+    }
+    else
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Flight No</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Departure</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var f in selectedUserFlights)
+            {
+                <tr>
+                    <td>@f.FlightNumber</td>
+                    <td>@f.Origin</td>
+                    <td>@f.Destination</td>
+                    <td>@f.DepartureTime.ToString("yyyy-MM-dd HH:mm")</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+    }
+    }
+    </div>,
+
+        "search" => @<div>
+        <h3>Хэрэглэгч хайх</h3>
+        <input @bind="searchId" placeholder="ID оруулна уу" class="form-control mb-2" />
+        <button type="button" class="btn btn-primary mb-2" @onclick="SearchUser">Хайх</button>
+        @if (foundUser != null)
+    {
+        <p><b>ID:</b> @foundUser.FirstName</p>
+        <p><b>Нэр:</b> @foundUser.LastName</p>
+    }
+    else if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <p class="text-danger">@errorMessage</p>
+    }
+    </div>,
+
+        "update" => @<div>
+        <h3>Хэрэглэгчийн мэдээлэл өөрчлөх</h3>
+        <input @bind="updateUser.FirstName" placeholder="ID" class="form-control mb-2" />
+        <input @bind="updateUser.LastName" placeholder="Нэр" class="form-control mb-2" />
+        <button type="button" class="btn btn-primary" @onclick="UpdateUser">Хадгалах</button>
+        <p>@updateMessage</p>
+    </div>,
+
+        "delete" => @<div>
+        <h3>Хэрэглэгч устгах</h3>
+        <input @bind="deleteId" placeholder="ID" class="form-control mb-2" />
+        <button type="button" class="btn btn-danger" @onclick="DeleteUser">Устгах</button>
+        <p>@deleteMessage</p>
+    </div>,
+
+        _ => @<p>Invalid view</p>
+    };
+}

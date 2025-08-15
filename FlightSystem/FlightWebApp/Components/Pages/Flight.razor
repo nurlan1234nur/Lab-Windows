@@ -1,0 +1,267 @@
+﻿@page "/counter"
+@inject UserApiClient UserApi
+@inject FlightApiClient FlightApi
+@inject FlightInfoApiClient FlightInfoApi
+@layout Layout.MainLayout
+@rendermode InteractiveServer
+@using FlightSystem.Models
+
+<!-- View сонгох товчнууд -->
+<div class="btn-group mb-3">
+    <button type="button" class="btn btn-outline-primary" @onclick='() => ChangeView("all")'>Бүх нислэгүүд</button>
+    <button type="button" class="btn btn-outline-primary" @onclick='() => ChangeView("search")'>Нислэг хайх</button>
+    <button type="button" class="btn btn-outline-primary" @onclick='() => ChangeView("update")'>Мэдээлэл өөрчлөх</button>
+    <button type="button" class="btn btn-outline-danger" @onclick='() => ChangeView("delete")'>Нислэг устгах</button>
+</div>
+
+<hr />
+
+@RenderCurrentView()
+
+@code {
+    private string currentView = "all";
+    private List<FlightDto>? flights;
+    private FlightDto? flight;
+    private string errorMessage = "";
+    private string successMessage = "";
+
+    private FlightInfoDto? selectedFlightFlightInfo;
+    private string? selectedFlightNumber = "";
+
+    // Search
+    private string searchFlightId = "";
+
+    // Update
+    private string updateFlightId = "";
+    private FlightInfoDto updateFlightInfo = new();
+
+    // Delete
+    private string deleteFlightId = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshFlights();
+    }
+
+    void ChangeView(string viewName)
+    {
+        currentView = viewName;
+        errorMessage = "";
+        successMessage = "";
+        selectedFlightFlightInfo = null;
+        selectedFlightNumber = "";
+        updateFlightInfo = new();
+    }
+
+    async Task RefreshFlights()
+    {
+        try
+        {
+            flights = await FlightApi.GetFlightsAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Нислэгийн жагсаалт татахад алдаа: {ex.Message}";
+        }
+    }
+
+    async Task ShowFlightInfos(string flightId)
+    {
+        errorMessage = "";
+        try
+        {
+            flight = await FlightApi.GetFlightByIdAsync(flightId);
+            selectedFlightNumber = flight?.FlightNumber;
+            selectedFlightFlightInfo = await FlightInfoApi.GetFlightInfoByFlightIdAsync(flightId);
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Нислэгийн мэдээлэл авахад алдаа: {ex.Message}";
+            selectedFlightFlightInfo = null;
+        }
+    }
+
+    async Task SearchFlight()
+    {
+        errorMessage = "";
+        try
+        {
+            flight = await FlightApi.GetFlightByIdAsync(searchFlightId);
+            selectedFlightFlightInfo = await FlightInfoApi.GetFlightInfoByFlightIdAsync(searchFlightId);
+            if (flight == null) errorMessage = "Нислэг олдсонгүй";
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Хайлт хийхэд алдаа: {ex.Message}";
+        }
+    }
+
+    async Task UpdateFlightInfoAction()
+    {
+        if (string.IsNullOrEmpty(updateFlightInfo.FlightId))
+        {
+            errorMessage = "Flight ID байхгүй тул шинэчилж болохгүй.";
+            return;
+        }
+
+        try
+        {
+            var msg = await FlightInfoApi.UpdateFlightInfoAsync(updateFlightInfo);
+            successMessage = msg.Message;
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Өөрчлөхөд алдаа: {ex.Message}";
+        }
+    }
+
+    async Task DeleteFlight()
+    {
+        errorMessage = "";
+        successMessage = "";
+        try
+        {
+            await FlightApi.DeleteFlightAsync(deleteFlightId);
+            successMessage = "Нислэг амжилттай устгагдлаа";
+            await RefreshFlights();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Устгахад алдаа: {ex.Message}";
+        }
+    }
+
+    async Task LoadUpdateFlight()
+    {
+        errorMessage = "";
+        var result = await FlightInfoApi.GetFlightInfoByFlightIdAsync(updateFlightId);
+        if (result != null)
+        {
+            updateFlightInfo = result;
+        }
+        else
+        {
+            errorMessage = "Нислэг олдсонгүй.";
+        }
+    }
+
+    RenderFragment RenderCurrentView() => currentView switch
+    {
+        "all" => @<div>
+        <h3>Бүх нислэгүүд</h3>
+        @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <p class="text-danger">@errorMessage</p>
+    }
+        @if (!string.IsNullOrEmpty(successMessage))
+    {
+        <p class="text-success">@successMessage</p>
+    }
+        @if (flights == null)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
+        <div class="d-flex flex-wrap gap-3">
+            @foreach (var f in flights)
+        {
+            <div class="card p-2" style="width:200px;">
+                <p><b>ID:</b> @f.FlightId</p>
+                <p><b>Flight No:</b> @f.FlightNumber</p>
+                <p><b>Type:</b> @f.Type</p>
+                <button type="button" class="btn btn-primary btn-sm" @onclick="() => ShowFlightInfos(f.FlightId)">
+                    Нислэгийн мэдээлэл харах
+                </button>
+            </div>
+        }
+        </div>
+
+        @if (selectedFlightFlightInfo != null)
+    {
+        <hr />
+        <h4>@selectedFlightNumber - Нислэгийн мэдээлэл</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Flight Id</th>
+                    <th>Flight Number</th>
+                    <th>Pilot Name</th>
+                    <th>All Seats</th>
+                    <th>Available Seats</th>
+                    <th>Status</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@selectedFlightFlightInfo.FlightId</td>
+                    <td>@selectedFlightFlightInfo.FlightNumber</td>
+                    <td>@selectedFlightFlightInfo.PilotName</td>
+                    <td>@selectedFlightFlightInfo.FlightAllSeat</td>
+                    <td>@selectedFlightFlightInfo.FlightAvailableSeat</td>
+                    <td>@selectedFlightFlightInfo.Status</td>
+                    <td>@selectedFlightFlightInfo.Type</td>
+                </tr>
+            </tbody>
+        </table>
+    }
+    }
+    </div>,
+
+        "search" => @<div>
+        <h3>Нислэг хайх</h3>
+        <input placeholder="Flight ID" @bind="searchFlightId" class="form-control mb-2" />
+        <button type="button" class="btn btn-primary mb-2" @onclick="SearchFlight">Хайх</button>
+        @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <p class="text-danger">@errorMessage</p>
+    }
+        @if (flight != null)
+    {
+        <p><b>Flight:</b> @flight.FlightNumber (@flight.Type)</p>
+        @if (selectedFlightFlightInfo != null)
+    {
+        <p>Pilot: @selectedFlightFlightInfo.PilotName</p>
+        <p>All Seats: @selectedFlightFlightInfo.FlightAllSeat</p>
+        <p>Available Seats: @selectedFlightFlightInfo.FlightAvailableSeat</p>
+    }
+    }
+    </div>,
+
+        "update" => @<div>
+        <h3>Нислэгийн мэдээлэл өөрчлөх</h3>
+        <input placeholder="Flight ID" @bind="updateFlightId" class="form-control mb-2" />
+        <button type="button" class="btn btn-secondary mb-2" @onclick="LoadUpdateFlight">Ачаалах</button>
+        <hr />
+        <input placeholder="Pilot Name" @bind="updateFlightInfo.PilotName" class="form-control mb-2" />
+        <input placeholder="All Seats" type="number" @bind="updateFlightInfo.FlightAllSeat" class="form-control mb-2" />
+        <input placeholder="Available Seats" type="number" @bind="updateFlightInfo.FlightAvailableSeat" class="form-control mb-2" />
+        <button type="button" class="btn btn-primary" @onclick="UpdateFlightInfoAction">Хадгалах</button>
+        @if (!string.IsNullOrEmpty(successMessage))
+    {
+        <p class="text-success">@successMessage</p>
+    }
+        @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <p class="text-danger">@errorMessage</p>
+    }
+    </div>,
+
+        "delete" => @<div>
+        <h3>Нислэг устгах</h3>
+        <input placeholder="Flight ID" @bind="deleteFlightId" class="form-control mb-2" />
+        <button type="button" class="btn btn-danger" @onclick="DeleteFlight">Устгах</button>
+        @if (!string.IsNullOrEmpty(successMessage))
+    {
+        <p class="text-success">@successMessage</p>
+    }
+        @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <p class="text-danger">@errorMessage</p>
+    }
+    </div>,
+
+        _ => @<p>Invalid view</p>
+    };
+}

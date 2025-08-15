@@ -7,23 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SQLite;
-using static System.Net.Mime.MediaTypeNames;
 using System.Diagnostics;
-using Library;
+using Library.Service;
+using Library.model;
 
 namespace POS_System
 {
     public partial class ManageProductForm : Form
     {
-        private string mode; 
+        ProductService productService;
+        private string mode;
         private int? barcode;
 
-        public ManageProductForm(string mode, int? barcode = null)
+        public ManageProductForm(string mode, int? name = null)
         {
             InitializeComponent();
+            productService = new ProductService();
             this.mode = mode;
-            this.barcode = barcode;
+            this.barcode = name;
             Load += ManageProductForm_Load;
         }
 
@@ -33,90 +34,68 @@ namespace POS_System
 
             if (mode == "Edit" || mode == "Delete")
             {
-                LoadProductDetails((int)barcode);
+                LoadProductDetails(barcode);
             }
         }
 
-        private void LoadProductDetails(int barcode)
+        private void LoadProductDetails(int? name)
         {
-            using var connection = new SQLiteConnection(DatabaseConfig.ConnectionString);
-            connection.Open();
-            string query = "SELECT * FROM Products WHERE Barcode=@Barcode";
-            using var cmd = new SQLiteCommand(query, connection);
-            cmd.Parameters.AddWithValue("@Barcode", barcode);
-            using var reader = cmd.ExecuteReader();
-            if (reader.Read())
+            if(name == null)
             {
-                nameTextBox.Text = reader["Name"].ToString();
-                priceTextBox.Text = reader["Price"].ToString();
-                CategoryIdTextBox.Text = reader["CategoryId"].ToString();
-                ImagePathTextBox.Text = reader["ImagePath"].ToString();
-                DiscountTextBox.Text = reader["Discount"].ToString();
-                barcodeTextBox.Text = reader["Barcode"].ToString();
-                if (mode == "Delete")
-                {
-                    // текст оруулахыг хориглох
-                    nameTextBox.ReadOnly = true;
-                    priceTextBox.ReadOnly = true;
-                    ImagePathTextBox.ReadOnly = true;
-                    DiscountTextBox.ReadOnly = true;
-                    barcodeTextBox.ReadOnly = true;
-                    CategoryIdTextBox.ReadOnly = true;
-
-                    saveButton.Text = "Delete";
-                }
-                if (mode == "Edit") saveButton.Text = "Update";
+                return;
             }
-            
+            Product product = productService.GetProductByBarcode((int)name);
+            nameTextBox.Text = product.Name.ToString();
+            priceTextBox.Text = product.Price.ToString();
+            CategoryIdTextBox.Text = product.CategoryId.ToString();
+            ImagePathTextBox.Text = product.ImagePath.ToString();
+            DiscountTextBox.Text = product.Discount.ToString();
+            barcodeTextBox.Text = product.Barcode.ToString();
+            if (mode == "Delete")
+            {
+                nameTextBox.ReadOnly = true;
+                priceTextBox.ReadOnly = true;
+                ImagePathTextBox.ReadOnly = true;
+                DiscountTextBox.ReadOnly = true;
+                barcodeTextBox.ReadOnly = true;
+                CategoryIdTextBox.ReadOnly = true;
+
+                saveButton.Text = "Delete";
+            }
+            if (mode == "Edit") saveButton.Text = "Update";
         }
 
-       
+
 
         private void barcodeTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void saveButton_Click_1(object sender, EventArgs e)
-        {
-            using var connection = new SQLiteConnection(DatabaseConfig.ConnectionString);
-            connection.Open();
+        private void saveButton_Click_1(object sender, EventArgs e) {
+            
+            Product product = new Product();
+            product.Name = nameTextBox.Text;
+            product.Price = double.Parse(priceTextBox.Text.Trim());
+            product.Discount = int.Parse(DiscountTextBox.Text.Trim());
+            product.ImagePath = ImagePathTextBox.Text.Trim();
+            product.CategoryId = int.Parse(CategoryIdTextBox.Text.Trim());
+            product.Barcode = int.Parse(barcodeTextBox.Text.Trim());
 
             if (mode == "Add")
             {
-                string insertQuery = "INSERT INTO Products (Barcode, Name, Price, Discount, ImagePath, CategoryId) VALUES (@Barcode, @Name, @Price, @Discount, @ImagePath, @CategoryId)";
-                using var cmd = new SQLiteCommand(insertQuery, connection);
-                cmd.Parameters.AddWithValue("@Barcode", int.Parse(barcodeTextBox.Text.Trim()));
-                cmd.Parameters.AddWithValue("@Name", nameTextBox.Text.Trim());
-                cmd.Parameters.AddWithValue("@Discount", int.Parse(DiscountTextBox.Text.Trim()));
-                cmd.Parameters.AddWithValue("@ImagePath", ImagePathTextBox.Text.Trim());
-                cmd.Parameters.AddWithValue("@CategoryId", int.Parse(CategoryIdTextBox.Text.Trim()));
-                cmd.Parameters.AddWithValue("@Price", decimal.Parse(priceTextBox.Text.Trim()));
-                cmd.ExecuteNonQuery();
+                productService.AddProduct(product);
             }
             else if (mode == "Edit")
             {
-                string updateQuery = "UPDATE Products SET Name=@Name, Price=@Price, Discount=@Discount, ImagePath=@ImagePath, CategoryId=@CategoryId WHERE Barcode=@Barcode";
-                using var cmd = new SQLiteCommand(updateQuery, connection);
-                cmd.Parameters.AddWithValue("@Barcode", barcode);
-                cmd.Parameters.AddWithValue("@Name", nameTextBox.Text.Trim());
-                cmd.Parameters.AddWithValue("@Discount", int.Parse(DiscountTextBox.Text.Trim()));
-                cmd.Parameters.AddWithValue("@ImagePath", ImagePathTextBox.Text.Trim());
-                cmd.Parameters.AddWithValue("@CategoryId", int.Parse(CategoryIdTextBox.Text.Trim()));
-                cmd.Parameters.AddWithValue("@Price", decimal.Parse(priceTextBox.Text.Trim()));
-                cmd.ExecuteNonQuery();
+                productService.UpdateProduct(product);
             }
             else if (mode == "Delete")
             {
-                string deleteQuery = "DELETE FROM Products WHERE Barcode=@Barcode";
-                using var cmd = new SQLiteCommand(deleteQuery, connection);
-                cmd.Parameters.AddWithValue("@Barcode", barcode);
-                cmd.ExecuteNonQuery();
+                productService.DeleteProduct(product);
             }
-
             DialogResult = DialogResult.OK;
             Close();
-
         }
     }
 

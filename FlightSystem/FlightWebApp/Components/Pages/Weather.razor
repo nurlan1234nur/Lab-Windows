@@ -1,0 +1,51 @@
+﻿@page "/weather"
+@attribute [StreamRendering]
+@layout Layout.MainLayout
+@rendermode InteractiveServer
+@inject HttpClient Http
+@inject IJSRuntime JS
+
+<PageTitle>Login</PageTitle>
+
+<div class="LoginBox">
+    <h3>Нислэгийн нэгдсэн систем!</h3>
+    <p>и-мэйл</p>
+    <input type="text" placeholder="И-мэйлээ оруулна уу" @bind="email" />
+    <p>нууц үг</p>
+    <input type="password" placeholder="Нууц үгээ оруулна уу" @bind="password" />
+    <button class="btn btn-primary" @onclick="CheckLogin">Login</button>
+</div>
+
+@code {
+    private string email = "";
+    private string password = "";
+
+    private async Task CheckLogin()
+    {
+        var loginData = new
+        {
+            Email = email,
+            Password = password
+        };
+
+        try
+        {
+            var response = await Http.PostAsJsonAsync("http://192.168.216.1:5000/api/auth/login", loginData);
+            if (response.IsSuccessStatusCode)
+            {
+                // Login successful, you can redirect or show a success message
+                await JS.InvokeVoidAsync("alert", "Login successful!");
+            }
+            else
+            {
+                // Handle login failure
+                await JS.InvokeVoidAsync("alert", $"Login failed: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle exceptions
+            await JS.InvokeVoidAsync("alert", $"Error: {ex.Message}");
+        }
+    }
+}

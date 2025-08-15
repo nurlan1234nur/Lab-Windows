@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POS_System", "POS_System\PO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{14BC25B3-33D2-47CA-81FA-04DFB1D67A71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosTestProject", "PosTestProject\PosTestProject.csproj", "{C8C438AA-AAF9-4A08-B6CF-BAD6BF17E804}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{14BC25B3-33D2-47CA-81FA-04DFB1D67A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14BC25B3-33D2-47CA-81FA-04DFB1D67A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14BC25B3-33D2-47CA-81FA-04DFB1D67A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8C438AA-AAF9-4A08-B6CF-BAD6BF17E804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8C438AA-AAF9-4A08-B6CF-BAD6BF17E804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8C438AA-AAF9-4A08-B6CF-BAD6BF17E804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8C438AA-AAF9-4A08-B6CF-BAD6BF17E804}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
