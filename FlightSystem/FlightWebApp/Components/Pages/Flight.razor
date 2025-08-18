@@ -1,4 +1,4 @@
-﻿@page "/counter"
+﻿@page "/flight"
 @inject UserApiClient UserApi
 @inject FlightApiClient FlightApi
 @inject FlightInfoApiClient FlightInfoApi
@@ -25,7 +25,7 @@
     private string errorMessage = "";
     private string successMessage = "";
 
-    private FlightInfoDto? selectedFlightFlightInfo;
+    private FlightInfo? selectedFlightFlightInfo;
     private string? selectedFlightNumber = "";
 
     // Search
@@ -33,7 +33,7 @@
 
     // Update
     private string updateFlightId = "";
-    private FlightInfoDto updateFlightInfo = new();
+    private FlightInfo updateFlightInfo = new();
 
     // Delete
     private string deleteFlightId = "";
@@ -188,20 +188,16 @@
                     <th>Flight Number</th>
                     <th>Pilot Name</th>
                     <th>All Seats</th>
-                    <th>Available Seats</th>
                     <th>Status</th>
-                    <th>Type</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>@selectedFlightFlightInfo.FlightId</td>
-                    <td>@selectedFlightFlightInfo.FlightNumber</td>
+                    <td>@flight.FlightNumber</td>
                     <td>@selectedFlightFlightInfo.PilotName</td>
-                    <td>@selectedFlightFlightInfo.FlightAllSeat</td>
-                    <td>@selectedFlightFlightInfo.FlightAvailableSeat</td>
-                    <td>@selectedFlightFlightInfo.Status</td>
-                    <td>@selectedFlightFlightInfo.Type</td>
+                    <td>@selectedFlightFlightInfo.TotalSeats</td>
+                    <td>@flight.Status</td>
                 </tr>
             </tbody>
         </table>
@@ -223,8 +219,7 @@
         @if (selectedFlightFlightInfo != null)
     {
         <p>Pilot: @selectedFlightFlightInfo.PilotName</p>
-        <p>All Seats: @selectedFlightFlightInfo.FlightAllSeat</p>
-        <p>Available Seats: @selectedFlightFlightInfo.FlightAvailableSeat</p>
+        <p>All Seats: @selectedFlightFlightInfo.TotalSeats</p>
     }
     }
     </div>,
@@ -235,8 +230,7 @@
         <button type="button" class="btn btn-secondary mb-2" @onclick="LoadUpdateFlight">Ачаалах</button>
         <hr />
         <input placeholder="Pilot Name" @bind="updateFlightInfo.PilotName" class="form-control mb-2" />
-        <input placeholder="All Seats" type="number" @bind="updateFlightInfo.FlightAllSeat" class="form-control mb-2" />
-        <input placeholder="Available Seats" type="number" @bind="updateFlightInfo.FlightAvailableSeat" class="form-control mb-2" />
+        <input placeholder="All Seats" type="number" @bind="updateFlightInfo.TotalSeats" class="form-control mb-2" />
         <button type="button" class="btn btn-primary" @onclick="UpdateFlightInfoAction">Хадгалах</button>
         @if (!string.IsNullOrEmpty(successMessage))
     {

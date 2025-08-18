@@ -12,6 +12,7 @@ namespace ApiWithSQLite.Data
         public DbSet<Flight> Flights => Set<Flight>();
         public DbSet<FlightInfo> FlightInfos => Set<FlightInfo>();
         public DbSet<Order> Orders => Set<Order>();
+        public DbSet<Seat> Seats => Set<Seat>();
 
     }
 }

@@ -13,54 +13,56 @@ namespace FlightWebApp.Components.Pages
         public UserApiClient(HttpClient http)
         {
             _http = http;
+            if (_http.BaseAddress == null)
+                _http.BaseAddress = new Uri("http://10.30.29.133:5000/");
         }
 
         // 1️⃣ Бүх хэрэглэгчийг авах
-        public async Task<List<CreateFlightDto>> GetUsersAsync()
+        public async Task<List<User>> GetUsersAsync()
         {
-            var result = await _http.GetFromJsonAsync<List<CreateFlightDto>>(
-                "http://192.168.216.1:5000/api/auth/user-list");
-            return result ?? new List<CreateFlightDto>();
+            var result = await _http.GetFromJsonAsync<List<User>>(
+                "http://10.30.29.133:5000/api/auth/user-list");
+            return result ?? new List<User>();
         }
 
         // 2️⃣ ID-аар хэрэглэгч авах
-        public async Task<CreateFlightDto?> GetUserByIdAsync(string id)
+        public async Task<User?> GetUserByIdAsync(string id)
         {
-            return await _http.GetFromJsonAsync<CreateFlightDto>(
-                $"http://192.168.216.1:5000/api/auth/user-info/{id}");
+            return await _http.GetFromJsonAsync<User>(
+                "api/auth/user-info/{id}");
         }
 
         // 3️⃣ Хэрэглэгч үүсгэх
-        public async Task<(bool IsSuccess, string Message, CreateFlightDto? Data)> CreateUserAsync(CreateUserDto dto)
+        public async Task<(bool IsSuccess, string Message, User? Data)> CreateUserAsync(User dto)
         {
             var response = await _http.PostAsJsonAsync(
-                "http://192.168.216.1:5000/api/auth/user-add", dto);
+                "http://10.30.29.133:5000/api/auth/user-add", dto);
 
             var message = await response.Content.ReadAsStringAsync();
 
-            CreateFlightDto? data = null;
+            User? data = null;
             if (response.IsSuccessStatusCode)
             {
-                data = await response.Content.ReadFromJsonAsync<CreateFlightDto>();
+                data = await response.Content.ReadFromJsonAsync<User>();
             }
 
             return (response.IsSuccessStatusCode, message, data);
         }
 
         // 4️⃣ Хэрэглэгч шинэчлэх
-        public async Task<(bool IsSuccess, string Message)> UpdateUserAsync(CreateFlightDto user)
+        public async Task<(bool IsSuccess, string Message)> UpdateUserAsync(User user)
         {
             // UserDto-г User болгож хувиргаж дамжуулж байна
             var userToUpdate = new
             {
-                Id = user.FlightId,
-                Name = user.,
+                Id = user.Id,
+                Name = user.FirstName,
                 Email = user.Email,
                 Role = user.Role
             };
 
             var res = await _http.PostAsJsonAsync(
-                "http://192.168.216.1:5000/api/auth/user-update", userToUpdate);
+                "api/auth/user-update", userToUpdate);
 
             var message = await res.Content.ReadAsStringAsync();
             return (res.IsSuccessStatusCode, message);
@@ -70,7 +72,7 @@ namespace FlightWebApp.Components.Pages
         public async Task<(bool IsSuccess, string Message)> DeleteUserAsync(string id)
         {
             var res = await _http.DeleteAsync(
-                $"http://192.168.216.1:5000/api/auth/user-delete/{id}");
+                "api/auth/user-delete/{id}");
             var message = await res.Content.ReadAsStringAsync();
             return (res.IsSuccessStatusCode, message);
         }

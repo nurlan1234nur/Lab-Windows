@@ -24,7 +24,6 @@ namespace FlightSystem.Services
 
             existing.PilotName = flightInfo.PilotName;
             existing.TotalSeats = flightInfo.TotalSeats;
-            existing.AvailableSeats = flightInfo.AvailableSeats;
             existing.PlaneModel = flightInfo.PlaneModel;
 
             await _context.SaveChangesAsync();

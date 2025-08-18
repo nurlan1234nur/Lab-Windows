@@ -18,7 +18,7 @@ namespace FlightApiWithSQLite.Controllers
         }
 
         // Бүх нислэгийг авах
-        [HttpGet("list")]
+        [HttpGet("flight-list")]
         public async Task<ActionResult<IEnumerable<Flight>>> GetFlights()
         {
             var flights = await _service.GetFlightsAsync();
@@ -26,7 +26,7 @@ namespace FlightApiWithSQLite.Controllers
         }
 
         // Нислэгийг ID-аар авах
-        [HttpGet("{id}")]
+        [HttpGet("flight/{id}")]
         public async Task<ActionResult<Flight>> GetFlight(string id)
         {
             var flight = await _service.GetFlightByIdAsync(id);
@@ -36,7 +36,7 @@ namespace FlightApiWithSQLite.Controllers
         }
 
         // Шинэ нислэг үүсгэх
-        [HttpPost("add")]
+        [HttpPost("flight-add")]
         public async Task<ActionResult> CreateFlight([FromBody] CreateFlightDto dto, [FromHeader] string uId)
         {
             var result = await _service.CreateFlightAsync(dto, uId);
@@ -48,7 +48,7 @@ namespace FlightApiWithSQLite.Controllers
         }
 
         // Нислэг update хийх
-        [HttpPut("update")]
+        [HttpPut("flight-update")]
         public async Task<ActionResult> UpdateFlight([FromBody] CreateFlightDto createFlightDto, [FromHeader] string uId)
         {
             var result = await _service.UpdateFlightAsync(createFlightDto, uId);
@@ -56,7 +56,7 @@ namespace FlightApiWithSQLite.Controllers
         }
 
         // Нислэг устгах
-        [HttpDelete("delete/{id}")]
+        [HttpDelete("flight-delete/{id}")]
         public async Task<ActionResult> DeleteFlight(string id)
         {
             var result = await _service.DeleteFlightAsync(id);

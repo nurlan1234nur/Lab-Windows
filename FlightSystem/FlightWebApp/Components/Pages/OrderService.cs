@@ -14,14 +14,14 @@ namespace FlightWebApp.Components.Pages
             // BaseAddress-ийг нэг удаа тохируулна
             if (_http.BaseAddress == null)
             {
-                _http.BaseAddress = new Uri("http://192.168.216.1:5000/");
+                _http.BaseAddress = new Uri("http://10.30.29.133:5000/");
             }
         }
 
         // Бүх захиалгууд
         public async Task<List<Order>> GetOrdersAsync()
         {
-            var result = await _http.GetFromJsonAsync<List<Order>>("api/order/order-list");
+            var result = await _http.GetFromJsonAsync<List<Order>>($"api/order/order-list");
             return result ?? new List<Order>();
         }
 
@@ -34,7 +34,7 @@ namespace FlightWebApp.Components.Pages
         // Захиалга үүсгэх
         public async Task<string> CreateOrderAsync(Order order, string uId)
         {
-            var request = new HttpRequestMessage(HttpMethod.Post, "api/order/order-add")
+            var request = new HttpRequestMessage(HttpMethod.Post, $"api/order/order-add")
             {
                 Content = JsonContent.Create(order)
             };
@@ -47,7 +47,7 @@ namespace FlightWebApp.Components.Pages
         // Захиалга шинэчлэх
         public async Task<string> UpdateOrderAsync(Order order, string uId)
         {
-            var request = new HttpRequestMessage(HttpMethod.Post, "api/order/order-update")
+            var request = new HttpRequestMessage(HttpMethod.Post, $"api/order/order-update")
             {
                 Content = JsonContent.Create(order)
             };

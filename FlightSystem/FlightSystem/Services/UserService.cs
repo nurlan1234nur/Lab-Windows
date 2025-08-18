@@ -27,7 +27,7 @@ namespace UserApiWithSQLite.Services
         }
 
         // Шинэ хэрэглэгч үүсгэх
-        public async Task<ServiceResult<User>> CreateUserAsync(CreateUserDto dto)
+        public async Task<ServiceResult<User>> CreateUserAsync(User dto)
         {
             var user = new User
             {

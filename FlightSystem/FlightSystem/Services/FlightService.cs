@@ -58,16 +58,32 @@ namespace FlightSystem.Services
                 FlightId = flightId,
                 PilotName = dto.PilotName,
                 TotalSeats = dto.TotalSeats,
-                AvailableSeats = dto.AvailableSeats,
-                PlaneModel = dto.PlaneModel
+                PlaneModel = dto.PlaneModel,
             };
 
             _context.Flights.Add(flight);
             _context.FlightInfos.Add(flightInfo);
+
+            // ✨ Суудал автоматаар үүсгэх хэсэг
+            var seats = new List<Seat>();
+            for (int i = 1; i <= dto.TotalSeats; i++)
+            {
+                seats.Add(new Seat
+                {
+                    SeatId = Guid.NewGuid().ToString(),
+                    FlightId = flightId,
+                    SeatNumber = $"S{i}",   // жишээ нь S1, S2, ...
+                    IsReserved = false,
+                    OrderId = null
+                });
+            }
+            _context.Seats.AddRange(seats);
+
             await _context.SaveChangesAsync();
 
             return (true, "Нислэг амжилттай нэмэгдлээ.", 201, flightId, flight);
         }
+
 
         // Нислэгийг шинэчлэх
         public async Task<(bool IsSuccess, string Message, int StatusCode)> UpdateFlightAsync(CreateFlightDto dto, string uId)
@@ -94,7 +110,6 @@ namespace FlightSystem.Services
             // FlightInfo талбаруудыг шинэчлэх
             existingFlightInfo.PilotName = dto.PilotName;
             existingFlightInfo.TotalSeats = dto.TotalSeats;
-            existingFlightInfo.AvailableSeats = dto.AvailableSeats;
             existingFlightInfo.PlaneModel = dto.PlaneModel;
 
             await _context.SaveChangesAsync();

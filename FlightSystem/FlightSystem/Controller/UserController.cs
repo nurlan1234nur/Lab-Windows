@@ -30,7 +30,7 @@ namespace UserApiWithSQLite.Controllers
         }
 
         [HttpPost("user-add")]
-        public async Task<ActionResult<User>> CreateUser(CreateUserDto dto)
+        public async Task<ActionResult<User>> CreateUser(User dto)
         {
             var result = await _userService.CreateUserAsync(dto);
             if (!result.Success)

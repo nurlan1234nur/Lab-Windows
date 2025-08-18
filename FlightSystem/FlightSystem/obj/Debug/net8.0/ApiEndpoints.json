@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "FlightSystem.Models.CreateUserDto",
+        "Type": "FlightSystem.Models.User",
         "IsRequired": true
       }
     ],
@@ -183,34 +183,8 @@
   },
   {
     "ContainingType": "FlightApiWithSQLite.Controllers.FlightController",
-    "Method": "GetFlight",
-    "RelativePath": "api/flight/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "FlightSystem.Models.Flight",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "FlightApiWithSQLite.Controllers.FlightController",
     "Method": "CreateFlight",
-    "RelativePath": "api/flight/add",
+    "RelativePath": "api/flight/flight-add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -231,7 +205,7 @@
   {
     "ContainingType": "FlightApiWithSQLite.Controllers.FlightController",
     "Method": "DeleteFlight",
-    "RelativePath": "api/flight/delete/{id}",
+    "RelativePath": "api/flight/flight-delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -247,7 +221,7 @@
   {
     "ContainingType": "FlightApiWithSQLite.Controllers.FlightController",
     "Method": "GetFlights",
-    "RelativePath": "api/flight/list",
+    "RelativePath": "api/flight/flight-list",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -255,6 +229,53 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[FlightSystem.Models.Flight, FlightSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FlightApiWithSQLite.Controllers.FlightController",
+    "Method": "UpdateFlight",
+    "RelativePath": "api/flight/flight-update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createFlightDto",
+        "Type": "FlightSystem.Models.CreateFlightDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "uId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FlightApiWithSQLite.Controllers.FlightController",
+    "Method": "GetFlight",
+    "RelativePath": "api/flight/flight/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FlightSystem.Models.Flight",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -289,27 +310,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "FlightApiWithSQLite.Controllers.FlightController",
-    "Method": "UpdateFlight",
-    "RelativePath": "api/flight/update",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "createFlightDto",
-        "Type": "FlightSystem.Models.CreateFlightDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "uId",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "FlightApiWithSQLite.Controllers.OrderController",
@@ -437,6 +437,91 @@
         "Name": "uId",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FlightSystem.Controller.SeatController",
+    "Method": "GetSeats",
+    "RelativePath": "api/Seat/{flightId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "flightId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FlightSystem.Controller.SeatController",
+    "Method": "GetAvailableSeats",
+    "RelativePath": "api/Seat/available/{flightId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "flightId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FlightSystem.Controller.SeatController",
+    "Method": "CancelReservation",
+    "RelativePath": "api/Seat/cancel/{seatId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "seatId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FlightSystem.Controller.SeatController",
+    "Method": "GetSeatById",
+    "RelativePath": "api/Seat/detail/{seatId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "seatId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FlightSystem.Controller.SeatController",
+    "Method": "ReserveSeat",
+    "RelativePath": "api/Seat/reserve/{seatId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "seatId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderId",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

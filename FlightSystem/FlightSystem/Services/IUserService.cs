@@ -6,7 +6,7 @@ namespace UserApiWithSQLite.Services
     {
         Task<List<User>> GetUsersAsync();
         Task<User?> GetUserAsync(string id);
-        Task<ServiceResult<User>> CreateUserAsync(CreateUserDto dto);
+        Task<ServiceResult<User>> CreateUserAsync(User dto);
         Task<ServiceResult<string>> UpdateUserAsync(User user);
         Task<ServiceResult<string>> DeleteUserAsync(string id);
     }

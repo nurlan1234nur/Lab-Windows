@@ -15,6 +15,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IFlightService, FlightService>();
 builder.Services.AddScoped<IFlightInfoService, FlightInfoService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<ISeatService, SeatService>();
 
 // Та цаашдаа IFlightService, IBookingService гэх мэтүүдийг нэмнэ
 

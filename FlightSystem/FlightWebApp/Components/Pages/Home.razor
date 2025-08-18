@@ -22,16 +22,16 @@
 
 @code {
     private string currentView = "all";
-    private List<CreateUserDto>? users;
+    private List<User>? users;
 
     private string errorMessage = "";
     private string updateMessage = "";
     private string deleteMessage = "";
 
     private string searchId = "";
-    private CreateUserDto? foundUser;
+    private User? foundUser;
 
-    private CreateUserDto updateUser = new CreateUserDto();
+    private User updateUser = new User();
     private string deleteId = "";
 
     private List<FlightDto>? selectedUserFlights;
@@ -152,9 +152,9 @@
             @foreach (var u in users)
         {
             <div class="card p-2" style="width:200px;">
-                <p><b>ID:</b> @u.FirstName</p>
-                <p><b>Нэр:</b> @u.LastName</p>
-                <button type="button" class="btn btn-sm btn-primary" @onclick="() => ShowFlights(u.FirstName, u.LastName)">
+                <p><b>Нэр:</b> @u.FirstName</p>
+                <p><b>Id:</b> @u.Id</p>
+                <button type="button" class="btn btn-sm btn-primary" @onclick="() => ShowFlights(u.Id, u.LastName)">
                     Захиалсан нислэгүүд
                 </button>
             </div>

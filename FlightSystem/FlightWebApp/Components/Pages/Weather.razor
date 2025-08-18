@@ -1,51 +1,118 @@
-﻿@page "/weather"
-@attribute [StreamRendering]
+﻿@page "/seats"
+@inject SeatApiClient SeatApi
+@using FlightSystem.Models
 @layout Layout.MainLayout
 @rendermode InteractiveServer
-@inject HttpClient Http
-@inject IJSRuntime JS
 
-<PageTitle>Login</PageTitle>
+<h3>Суудлууд</h3>
 
-<div class="LoginBox">
-    <h3>Нислэгийн нэгдсэн систем!</h3>
-    <p>и-мэйл</p>
-    <input type="text" placeholder="И-мэйлээ оруулна уу" @bind="email" />
-    <p>нууц үг</p>
-    <input type="password" placeholder="Нууц үгээ оруулна уу" @bind="password" />
-    <button class="btn btn-primary" @onclick="CheckLogin">Login</button>
+<div class="mb-3">
+    <label for="flightIdInput" class="form-label">Flight Id оруулах:</label>
+    <input id="flightIdInput" class="form-control" @bind="FlightId" placeholder="Flight Id оруулна уу..." />
 </div>
 
-@code {
-    private string email = "";
-    private string password = "";
+<button class="btn btn-primary mb-3" @onclick="LoadSeats">Хайх</button>
 
-    private async Task CheckLogin()
+@if (!string.IsNullOrEmpty(ErrorMessage))
+{
+    <div class="alert alert-danger">@ErrorMessage</div>
+}
+else if (Seats == null)
+{
+    <p>Уншиж байна...</p>
+}
+else if (Seats.Count == 0)
+{
+    <p>Суудал олдсонгүй.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Суудлын дугаар</th>
+                <th>Төлөв</th>
+                <th>Үйлдэл</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var seat in Seats)
+            {
+                <tr class="@(!seat.IsReserved ? "table-success" : "table-danger")">
+                    <td>@seat.SeatNumber</td>
+                    <td>@(seat.IsReserved ? "Захиалагдсан" : "Сул")</td>
+                    <td>
+                        @if (!seat.IsReserved)
+                        {
+                            <button class="btn btn-primary btn-sm" @onclick="() => ReserveSeat(seat.SeatId)">Захиалах</button>
+                        }
+                        else
+                        {
+                            <button class="btn btn-warning btn-sm" @onclick="() => CancelSeat(seat.SeatId)">Цуцлах</button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private string FlightId = "";
+    private List<Seat>? Seats;
+    private string ErrorMessage = "";
+
+    private async Task LoadSeats()
     {
-        var loginData = new
+        ErrorMessage = "";
+        Seats = null;
+
+        if (string.IsNullOrWhiteSpace(FlightId))
         {
-            Email = email,
-            Password = password
-        };
+            ErrorMessage = "Flight Id оруулна уу.";
+            return;
+        }
 
         try
         {
-            var response = await Http.PostAsJsonAsync("http://192.168.216.1:5000/api/auth/login", loginData);
-            if (response.IsSuccessStatusCode)
+            Seats = await SeatApi.GetSeatsByFlightAsync(FlightId);
+            if (Seats.Count == 0)
             {
-                // Login successful, you can redirect or show a success message
-                await JS.InvokeVoidAsync("alert", "Login successful!");
-            }
-            else
-            {
-                // Handle login failure
-                await JS.InvokeVoidAsync("alert", $"Login failed: {response.StatusCode}");
+                ErrorMessage = "Суудал олдсонгүй.";
             }
         }
         catch (Exception ex)
         {
-            // Handle exceptions
-            await JS.InvokeVoidAsync("alert", $"Error: {ex.Message}");
+            ErrorMessage = $"Суудлын мэдээлэл авахад алдаа: {ex.Message}";
+        }
+    }
+
+    private async Task ReserveSeat(string seatId)
+    {
+        try
+        {
+            var (IsSuccess, Message) = await SeatApi.ReserveSeatAsync(seatId, "1"); // OrderId-г жишээ болгож өгсөн
+            if (!IsSuccess) ErrorMessage = Message;
+            await LoadSeats();
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"Захиалах үед алдаа: {ex.Message}";
+        }
+    }
+
+    private async Task CancelSeat(string seatId)
+    {
+        try
+        {
+            var (IsSuccess, Message) = await SeatApi.CancelSeatAsync(seatId);
+            if (!IsSuccess) ErrorMessage = Message;
+            await LoadSeats();
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"Цуцлах үед алдаа: {ex.Message}";
         }
     }
 }
+

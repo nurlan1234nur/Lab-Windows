@@ -12,6 +12,7 @@ builder.Services.AddScoped<UserApiClient>();
 builder.Services.AddScoped<OrderApiClient>();
 builder.Services.AddScoped<FlightApiClient>();
 builder.Services.AddScoped<FlightInfoApiClient>();
+builder.Services.AddScoped<SeatApiClient>();
 
 var app = builder.Build();
 

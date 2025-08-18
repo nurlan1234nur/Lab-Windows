@@ -38,13 +38,34 @@ namespace FlightApiWithSQLite.Controllers
         [HttpPost("order-add")]
         public async Task<ActionResult> CreateOrder([FromBody] Order order, [FromHeader] string uId)
         {
+            // Клиентээс ирсэн утгыг зөвшөөрөх талбарууд:
+            // customerId, flightId, quantity, unitPrice
+            if (string.IsNullOrWhiteSpace(order.CustomerId))
+                return BadRequest("CustomerId is required.");
+
+            if (string.IsNullOrWhiteSpace(order.FlightId))
+                return BadRequest("FlightId is required.");
+
+            if (order.Quantity <= 0)
+                order.Quantity = 1; // default
+
+            // Сервер талд шаардлагатай талбаруудыг үүсгэх
+            order.Id = Guid.NewGuid().ToString();
+            order.TotalAmount = order.UnitPrice * order.Quantity;
+            order.OrderDate = DateTime.UtcNow;
+            order.PaymentStatus = "Pending";
+            order.BookingStatus = "Confirmed";
+
             var result = await _orderService.CreateOrderAsync(order, uId);
+
             if (!result.IsSuccess)
                 return StatusCode(result.StatusCode, result.Message);
 
             var createdOrder = await _orderService.GetOrderByIdAsync(result.OrderId!);
             return CreatedAtAction(nameof(GetOrder), new { id = result.OrderId }, createdOrder);
         }
+
+
 
         // Захиалга update хийх
         [HttpPost("order-update")]

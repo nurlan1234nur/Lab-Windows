@@ -15,26 +15,26 @@ namespace FlightWebApp.Components.Pages
         {
             _http = http;
             if (_http.BaseAddress == null)
-                _http.BaseAddress = new Uri("http://192.168.216.1:5000/");
+                _http.BaseAddress = new Uri("http://10.30.29.133:5000/");
         }
 
         // Бүх нислэгүүдийг авах
         public async Task<List<FlightDto>> GetFlightsAsync()
         {
-            var result = await _http.GetFromJsonAsync<List<FlightDto>>("api/flight/flight-list");
+            var result = await _http.GetFromJsonAsync<List<FlightDto>>($"api/flight/flight-list");
             return result ?? new List<FlightDto>();
         }
 
         // ID-аар нислэг авах
         public async Task<FlightDto?> GetFlightByIdAsync(string id)
         {
-            return await _http.GetFromJsonAsync<FlightDto>($"api/flight/flight-info/{id}");
+            return await _http.GetFromJsonAsync<FlightDto>($"api/flight/flight/{id}");
         }
 
         // Нислэг нэмэх
         public async Task<(bool IsSuccess, string Message)> CreateFlightAsync(CreateFlightDto dto, string userId)
         {
-            var request = new HttpRequestMessage(HttpMethod.Post, "api/flight/flight-add")
+            var request = new HttpRequestMessage(HttpMethod.Post, $"api/flight/flight-add")
             {
                 Content = JsonContent.Create(dto)
             };
@@ -48,7 +48,7 @@ namespace FlightWebApp.Components.Pages
         // Нислэг шинэчлэх
         public async Task<(bool IsSuccess, string Message)> UpdateFlightAsync(CreateFlightDto dto, string userId)
         {
-            var request = new HttpRequestMessage(HttpMethod.Post, "api/flight/flight-update")
+            var request = new HttpRequestMessage(HttpMethod.Post, $"api/flight/flight-update")
             {
                 Content = JsonContent.Create(dto)
             };
