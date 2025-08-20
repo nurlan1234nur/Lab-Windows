@@ -4,7 +4,6 @@
 @inject FlightApiClient FlightApi
 @layout Layout.MainLayout
 @rendermode InteractiveServer
-@using FlightWebApp.Components.Pages
 @using FlightSystem.Models
 
 <h2>Хэрэглэгчийн удирдлага</h2>
@@ -34,7 +33,7 @@
     private User updateUser = new User();
     private string deleteId = "";
 
-    private List<FlightDto>? selectedUserFlights;
+    private List<Flight>? selectedUserFlights;
     private string selectedUserName = "";
 
     protected override async Task OnInitializedAsync()
@@ -64,21 +63,28 @@
         }
     }
 
-    async Task ShowFlights(string userId, string userName)
+    async Task ShowFlights(string userPassport, string userName)
     {
         selectedUserName = userName;
-        selectedUserFlights = new List<FlightDto>();
+        selectedUserFlights = new List<Flight>();
         errorMessage = "";
 
         try
         {
-            var orders = await OrderApi.GetOrdersByCustomerIdAsync(userId);
-            foreach (var order in orders)
+            var orders = await OrderApi.GetOrdersByCustomerIdAsync(userPassport);
+            if (orders is null) {
+                Console.WriteLine("ok-1");
+            }
+            else
             {
-                if (!string.IsNullOrEmpty(order.FlightId))
+                Console.WriteLine("ok-2");
+                foreach (var order in orders)
                 {
-                    var flight = await FlightApi.GetFlightByIdAsync(order.FlightId);
-                    if (flight != null) selectedUserFlights.Add(flight);
+                    if (!string.IsNullOrEmpty(order.FlightId))
+                    {
+                        var flight = await FlightApi.GetFlightByIdAsync(order.FlightId);
+                        if (flight != null) selectedUserFlights.Add(flight);
+                    }
                 }
             }
         }
@@ -153,8 +159,9 @@
         {
             <div class="card p-2" style="width:200px;">
                 <p><b>Нэр:</b> @u.FirstName</p>
+                <p><b>Id:</b> @u.PassportNumber</p>
                 <p><b>Id:</b> @u.Id</p>
-                <button type="button" class="btn btn-sm btn-primary" @onclick="() => ShowFlights(u.Id, u.LastName)">
+                <button type="button" class="btn btn-sm btn-primary" @onclick="() => ShowFlights(u.PassportNumber, u.FirstName)">
                     Захиалсан нислэгүүд
                 </button>
             </div>

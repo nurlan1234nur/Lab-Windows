@@ -7,12 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Components\NewFolder\**" />
     <Compile Remove="NewFolder1\**" />
     <Compile Remove="NewFolder\**" />
+    <Content Remove="Components\NewFolder\**" />
     <Content Remove="NewFolder1\**" />
     <Content Remove="NewFolder\**" />
+    <EmbeddedResource Remove="Components\NewFolder\**" />
     <EmbeddedResource Remove="NewFolder1\**" />
     <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="Components\NewFolder\**" />
     <None Remove="NewFolder1\**" />
     <None Remove="NewFolder\**" />
   </ItemGroup>
@@ -23,10 +27,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FlightSystem\FlightSystem.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Components\NewFolder\" />
   </ItemGroup>
 
 </Project>

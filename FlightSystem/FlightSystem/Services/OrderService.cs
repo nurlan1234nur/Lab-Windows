@@ -17,11 +17,11 @@ namespace FlightSystem.Services
             await _context.Orders.FirstOrDefaultAsync(o => o.Id == id);
 
         // Шинэ захиалга үүсгэх
-        public async Task<(bool IsSuccess, string Message, int StatusCode, string? OrderId, Order? Data)> CreateOrderAsync(Order order, string uId)
+        public async Task<(bool IsSuccess, string Message, int StatusCode, string? OrderId, Order? Data)> CreateOrderAsync(Order order)
         {
-            // Хэрэглэгчийн эрх шалгах
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == uId);
-            if (user is null) return (false, "Хэрэглэгч олдсонгүй.", 401, null, null);
+            //// Хэрэглэгчийн эрх шалгах
+            //var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == uId);
+            //if (user is null) return (false, "Хэрэглэгч олдсонгүй.", 401, null, null);
 
             order.Id = Guid.NewGuid().ToString();
             order.OrderDate = DateTime.UtcNow;
@@ -77,7 +77,7 @@ namespace FlightSystem.Services
         }
 
         // Хэрэглэгчийн бүх захиалга авах
-        public async Task<IEnumerable<Order>> GetOrdersByCustomerIdAsync(string customerId) =>
-            await _context.Orders.Where(o => o.CustomerId == customerId).ToListAsync();
+        public async Task<IEnumerable<Order>> GetOrdersByCustomerIdAsync(string UserPassportNumber) =>
+            await _context.Orders.Where(o => o.UserPassportNumber == UserPassportNumber).ToListAsync();
     }
 }

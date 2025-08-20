@@ -20,8 +20,8 @@
 
 @code {
     private string currentView = "all";
-    private List<FlightDto>? flights;
-    private FlightDto? flight;
+    private List<Flight>? flights;
+    private Flight? flight;
     private string errorMessage = "";
     private string successMessage = "";
 
@@ -169,7 +169,6 @@
             <div class="card p-2" style="width:200px;">
                 <p><b>ID:</b> @f.FlightId</p>
                 <p><b>Flight No:</b> @f.FlightNumber</p>
-                <p><b>Type:</b> @f.Type</p>
                 <button type="button" class="btn btn-primary btn-sm" @onclick="() => ShowFlightInfos(f.FlightId)">
                     Нислэгийн мэдээлэл харах
                 </button>
@@ -187,7 +186,7 @@
                     <th>Flight Id</th>
                     <th>Flight Number</th>
                     <th>Pilot Name</th>
-                    <th>All Seats</th>
+                    <th>All Seats</th>  
                     <th>Status</th>
                 </tr>
             </thead>
@@ -215,7 +214,6 @@
     }
         @if (flight != null)
     {
-        <p><b>Flight:</b> @flight.FlightNumber (@flight.Type)</p>
         @if (selectedFlightFlightInfo != null)
     {
         <p>Pilot: @selectedFlightFlightInfo.PilotName</p>

@@ -21,7 +21,7 @@ namespace FlightWebApp.Components.Pages
         // Бүх захиалгууд
         public async Task<List<Order>> GetOrdersAsync()
         {
-            var result = await _http.GetFromJsonAsync<List<Order>>($"api/order/order-list");
+            var result = await _http.GetFromJsonAsync<List<Order>>("api/order/order-list");
             return result ?? new List<Order>();
         }
 
@@ -32,13 +32,13 @@ namespace FlightWebApp.Components.Pages
         }
 
         // Захиалга үүсгэх
-        public async Task<string> CreateOrderAsync(Order order, string uId)
+        public async Task<string> CreateOrderAsync(Order order)
         {
             var request = new HttpRequestMessage(HttpMethod.Post, $"api/order/order-add")
             {
                 Content = JsonContent.Create(order)
             };
-            request.Headers.Add("uId", uId);
+            //request.Headers.Add("uId", uId);
 
             var res = await _http.SendAsync(request);
             return await res.Content.ReadAsStringAsync();
@@ -65,9 +65,10 @@ namespace FlightWebApp.Components.Pages
         }
 
         // Хэрэглэгчийн бүх захиалга авах
-        public async Task<List<Order>> GetOrdersByCustomerIdAsync(string customerId)
+        public async Task<List<Order>> GetOrdersByCustomerIdAsync(string customerPassport)
         {
-            var result = await _http.GetFromJsonAsync<List<Order>>($"api/order/customer-orders/{customerId}");
+            Console.WriteLine(customerPassport + $"api/order/customer-orders/{customerPassport}");
+            var result = await _http.GetFromJsonAsync<List<Order>>($"api/order/customer-orders/{customerPassport}");
             return result ?? new List<Order>();
         }
     }

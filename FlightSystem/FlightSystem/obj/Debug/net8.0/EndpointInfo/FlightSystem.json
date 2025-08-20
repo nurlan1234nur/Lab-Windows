@@ -452,15 +452,6 @@
         "tags": [
           "Order"
         ],
-        "parameters": [
-          {
-            "name": "uId",
-            "in": "header",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -549,14 +540,14 @@
         }
       }
     },
-    "/api/order/customer-orders/{customerId}": {
+    "/api/order/customer-orders/{customerPassport}": {
       "get": {
         "tags": [
           "Order"
         ],
         "parameters": [
           {
-            "name": "customerId",
+            "name": "customerPassport",
             "in": "path",
             "required": true,
             "schema": {
@@ -764,6 +755,45 @@
         }
       }
     },
+    "/api/auth/user-info-byPassport/{userPassportNumber}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "userPassportNumber",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/auth/user-info/{id}": {
       "get": {
         "tags": [
@@ -771,7 +801,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
             "in": "path",
             "required": true,
             "schema": {
@@ -1059,7 +1089,7 @@
             "type": "string",
             "nullable": true
           },
-          "customerId": {
+          "userPassportNumber": {
             "type": "string",
             "nullable": true
           },

@@ -3,72 +3,136 @@
   "WorkspaceRootPath": "D:\\Lab-Windows\\FlightSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\createflightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\createflightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\orderpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\orderpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\seatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\seatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\seatpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\seatpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\flight.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\flight.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\iorderinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\iorderinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\flightinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\flightinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\flightpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\flightpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\controller\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\controller\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\flightinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\flightinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\flightinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\flightinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\flightinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\flightinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\seatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\seatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\createflightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\createflightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\createuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\iflightinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,36 +143,12 @@
       "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\controller\\flightinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\flightinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\flightinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\controller\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\controller\\flightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\controller\\seatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\controller\\seatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\seatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\seatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -127,28 +167,12 @@
       "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\iseatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\seat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\controller\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\controller\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\repo\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -159,23 +183,7 @@
       "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Login.razor.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7155EBF7-52CB-4249-BCDE-3C8F3CBE6CB8}|WorkerUI\\WorkerUI.csproj|d:\\lab-windows\\flightsystem\\workerui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -186,28 +194,8 @@
       "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\pages\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\pages\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\components\\layout\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|d:\\lab-windows\\flightsystem\\flightsystem\\services\\iorderinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F5063CE-8A2C-4D70-A491-BEBD040DEEE7}|FlightSystem\\FlightSystem.csproj|solutionrelative:flightsystem\\services\\iorderinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|d:\\lab-windows\\flightsystem\\flightwebapp\\wwwroot\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -242,10 +230,6 @@
       "RelativeMoniker": "D:0:0:{B4D43EA9-EC52-4812-A14D-6A9D26B5B8F9}|FlightWebApp\\FlightWebApp.csproj|solutionrelative:flightwebapp\\flightwebapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7155EBF7-52CB-4249-BCDE-3C8F3CBE6CB8}|WorkerUI\\WorkerUI.csproj|D:\\Lab-Windows\\FlightSystem\\workerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7155EBF7-52CB-4249-BCDE-3C8F3CBE6CB8}|WorkerUI\\WorkerUI.csproj|solutionrelative:workerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7155EBF7-52CB-4249-BCDE-3C8F3CBE6CB8}|WorkerUI\\WorkerUI.csproj|D:\\Lab-Windows\\FlightSystem\\workerui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7155EBF7-52CB-4249-BCDE-3C8F3CBE6CB8}|WorkerUI\\WorkerUI.csproj|solutionrelative:workerui\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -269,7 +253,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -301,59 +285,333 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "App.razor",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\App.razor",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\App.razor",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\App.razor",
-              "RelativeToolTip": "FlightWebApp\\Components\\App.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-05T02:40:28.276Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Weather.razor",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Weather.razor",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\Weather.razor",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Weather.razor",
-              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\Weather.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-05T02:27:50.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\OrderService.cs",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\OrderService.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\OrderService.cs",
-              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\OrderService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAQwEUAAABEAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "SeatService.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\SeatService.cs",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\SeatService.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\SeatService.cs",
+              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\SeatService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwC0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T04:09:04.432Z",
+              "WhenOpened": "2025-08-18T02:25:04.385Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "OrderPage.razor",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\OrderPage.razor",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\OrderPage.razor",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\OrderPage.razor",
+              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\OrderPage.razor",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T02:29:52.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\OrderController.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Controller\\OrderController.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\OrderController.cs",
+              "RelativeToolTip": "FlightSystem\\Controller\\OrderController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T19:53:23.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Models\\Order.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Order.cs",
+              "RelativeToolTip": "FlightSystem\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T19:48:58.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\UserService.cs",
               "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\UserService.cs",
               "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\UserService.cs",
               "RelativeToolTip": "FlightWebApp\\Components\\Pages\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAlwCMAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-15T04:06:22.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Services\\UserService.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\UserService.cs",
+              "RelativeToolTip": "FlightSystem\\Services\\UserService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB4AAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T21:25:29.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\UserController.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Controller\\UserController.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\UserController.cs",
+              "RelativeToolTip": "FlightSystem\\Controller\\UserController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAhwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T18:58:51.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Services\\IUserService.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IUserService.cs",
+              "RelativeToolTip": "FlightSystem\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T21:26:59.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceResult.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\ServiceResult.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Services\\ServiceResult.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\ServiceResult.cs",
+              "RelativeToolTip": "FlightSystem\\Services\\ServiceResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T21:26:37.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FlightService.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightService.cs",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\FlightService.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightService.cs",
+              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\FlightService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAlwBwAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T04:03:17.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T02:49:13.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SeatPage.razor",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\SeatPage.razor",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\SeatPage.razor",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\SeatPage.razor",
+              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\SeatPage.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T02:27:50.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\OrderService.cs",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\OrderService.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\OrderService.cs",
+              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\OrderService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAApwEMAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T23:30:40.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Services\\OrderService.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\OrderService.cs",
+              "RelativeToolTip": "FlightSystem\\Services\\OrderService.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T20:30:27.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IOrderInterface.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IOrderInterface.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Services\\IOrderInterface.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IOrderInterface.cs",
+              "RelativeToolTip": "FlightSystem\\Services\\IOrderInterface.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAawBgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T20:26:19.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FlightPage.razor",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightPage.razor",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\FlightPage.razor",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightPage.razor",
+              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\FlightPage.razor",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAcwLwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-18T05:00:32.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FLightController.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\FLightController.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Controller\\FLightController.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\FLightController.cs",
+              "RelativeToolTip": "FlightSystem\\Controller\\FLightController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB8AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T04:19:46.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FlightService.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\FlightService.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Services\\FlightService.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\FlightService.cs",
+              "RelativeToolTip": "FlightSystem\\Services\\FlightService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T21:31:58.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IFlightService.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IFlightService.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Services\\IFlightService.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IFlightService.cs",
+              "RelativeToolTip": "FlightSystem\\Services\\IFlightService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T21:32:34.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Flight.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Flight.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Models\\Flight.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Flight.cs",
+              "RelativeToolTip": "FlightSystem\\Models\\Flight.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T04:22:01.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FlightDto.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightDto.cs",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\FlightDto.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightDto.cs",
+              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\FlightDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T19:35:50.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FLightInfoService.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\FLightInfoService.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Services\\FLightInfoService.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\FLightInfoService.cs",
+              "RelativeToolTip": "FlightSystem\\Services\\FLightInfoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T21:34:31.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Seat.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Seat.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Models\\Seat.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Seat.cs",
+              "RelativeToolTip": "FlightSystem\\Models\\Seat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T02:15:45.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FlightInfo.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\FlightInfo.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Models\\FlightInfo.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\FlightInfo.cs",
+              "RelativeToolTip": "FlightSystem\\Models\\FlightInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T18:27:10.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Models\\Users.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Users.cs",
+              "RelativeToolTip": "FlightSystem\\Models\\Users.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA2wBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T05:57:07.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "Login.razor",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\Login.razor",
@@ -366,280 +624,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Home.razor",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\Home.razor",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-05T02:49:13.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FlightService.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightService.cs",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\FlightService.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightService.cs",
-              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\FlightService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Login.cs",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\Login.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Login.cs",
+              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\Login.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T04:03:17.546Z",
+              "WhenOpened": "2025-08-15T03:56:51.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FlightService.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\FlightService.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Services\\FlightService.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\FlightService.cs",
-              "RelativeToolTip": "FlightSystem\\Services\\FlightService.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwAwAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:31:58.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreateFlightDto.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\CreateFlightDto.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Models\\CreateFlightDto.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\CreateFlightDto.cs",
-              "RelativeToolTip": "FlightSystem\\Models\\CreateFlightDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T18:44:25.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SeatService.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\SeatService.cs",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\SeatService.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\SeatService.cs",
-              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\SeatService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAIwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T02:25:04.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\_Imports.razor",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\_Imports.razor",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\_Imports.razor",
-              "RelativeToolTip": "FlightWebApp\\Components\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-05T03:14:04.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "FlightWebApp\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-05T02:27:38.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Flight.razor",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Flight.razor",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\Flight.razor",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Flight.razor",
-              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\Flight.razor",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAOgAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-18T05:00:32.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 27,
               "Title": "FlightInfoService.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightInfoService.cs",
               "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\FlightInfoService.cs",
               "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightInfoService.cs",
               "RelativeToolTip": "FlightWebApp\\Components\\Pages\\FlightInfoService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAvwCEAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-12T22:25:26.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Flight.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Flight.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Models\\Flight.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Flight.cs",
-              "RelativeToolTip": "FlightSystem\\Models\\Flight.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T04:22:01.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CreateUserDto.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\CreateUserDto.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Models\\CreateUserDto.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\CreateUserDto.cs",
-              "RelativeToolTip": "FlightSystem\\Models\\CreateUserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T17:29:41.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FLightInfoService.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\FLightInfoService.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Services\\FLightInfoService.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\FLightInfoService.cs",
-              "RelativeToolTip": "FlightSystem\\Services\\FLightInfoService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:34:31.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IFlightInfoService.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IFlightInfoService.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Services\\IFlightInfoService.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IFlightInfoService.cs",
-              "RelativeToolTip": "FlightSystem\\Services\\IFlightInfoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:34:53.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FlightInfoController.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\FlightInfoController.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Controller\\FlightInfoController.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\FlightInfoController.cs",
-              "RelativeToolTip": "FlightSystem\\Controller\\FlightInfoController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wCYAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T20:03:14.923Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FlightInfo.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\FlightInfo.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Models\\FlightInfo.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\FlightInfo.cs",
-              "RelativeToolTip": "FlightSystem\\Models\\FlightInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T18:27:10.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FlightInfoDto.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightInfoDto.cs",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\FlightInfoDto.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightInfoDto.cs",
-              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\FlightInfoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T22:03:37.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FLightController.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\FLightController.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Controller\\FLightController.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\FLightController.cs",
-              "RelativeToolTip": "FlightSystem\\Controller\\FLightController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAkwBwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T04:19:46.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FlightDto.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightDto.cs",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\FlightDto.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\FlightDto.cs",
-              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\FlightDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T19:35:50.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "SeatController.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\SeatController.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Controller\\SeatController.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\SeatController.cs",
-              "RelativeToolTip": "FlightSystem\\Controller\\SeatController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T02:05:07.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Controller.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Controller.cs",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\Controller.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Controller.cs",
-              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\Controller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T04:21:35.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Routes.razor",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Routes.razor",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Routes.razor",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Routes.razor",
-              "RelativeToolTip": "FlightWebApp\\Components\\Routes.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 28,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "FlightWebApp\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-05T02:40:26.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T02:27:38.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "SeatService.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\SeatService.cs",
               "RelativeDocumentMoniker": "FlightSystem\\Services\\SeatService.cs",
@@ -647,25 +670,95 @@
               "RelativeToolTip": "FlightSystem\\Services\\SeatService.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAAADIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T02:06:25.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T02:06:25.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\OrderController.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Controller\\OrderController.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\OrderController.cs",
-              "RelativeToolTip": "FlightSystem\\Controller\\OrderController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAiwAoAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 31,
+              "Title": "CreateFlightDto.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\CreateFlightDto.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Models\\CreateFlightDto.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\CreateFlightDto.cs",
+              "RelativeToolTip": "FlightSystem\\Models\\CreateFlightDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T19:53:23.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T18:44:25.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\_Imports.razor",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\_Imports.razor",
+              "RelativeToolTip": "FlightWebApp\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T03:14:04.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CreateUserDto.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\CreateUserDto.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Models\\CreateUserDto.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\CreateUserDto.cs",
+              "RelativeToolTip": "FlightSystem\\Models\\CreateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T17:29:41.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IFlightInfoService.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IFlightInfoService.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Services\\IFlightInfoService.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IFlightInfoService.cs",
+              "RelativeToolTip": "FlightSystem\\Services\\IFlightInfoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T21:34:53.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "FlightInfoController.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\FlightInfoController.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Controller\\FlightInfoController.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\FlightInfoController.cs",
+              "RelativeToolTip": "FlightSystem\\Controller\\FlightInfoController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wCYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T20:03:14.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "SeatController.cs",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\SeatController.cs",
+              "RelativeDocumentMoniker": "FlightSystem\\Controller\\SeatController.cs",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\SeatController.cs",
+              "RelativeToolTip": "FlightSystem\\Controller\\SeatController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T02:05:07.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Routes.razor",
+              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Routes.razor",
+              "RelativeToolTip": "FlightWebApp\\Components\\Routes.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T02:40:26.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Program.cs",
               "RelativeDocumentMoniker": "FlightSystem\\Program.cs",
@@ -673,12 +766,11 @@
               "RelativeToolTip": "FlightSystem\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:15:23.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-24T06:15:23.989Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 37,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Program.cs",
               "RelativeDocumentMoniker": "FlightWebApp\\Program.cs",
@@ -686,12 +778,11 @@
               "RelativeToolTip": "FlightWebApp\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T02:41:10.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T02:41:10.448Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 39,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "FlightSystem\\Data\\AppDbContext.cs",
@@ -699,12 +790,11 @@
               "RelativeToolTip": "FlightSystem\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T05:58:26.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-24T05:58:26.05Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 40,
               "Title": "ISeatService.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\ISeatService.cs",
               "RelativeDocumentMoniker": "FlightSystem\\Services\\ISeatService.cs",
@@ -712,38 +802,11 @@
               "RelativeToolTip": "FlightSystem\\Services\\ISeatService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T02:06:40.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T02:06:40.156Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Services\\IUserService.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IUserService.cs",
-              "RelativeToolTip": "FlightSystem\\Services\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:26:59.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Seat.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Seat.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Models\\Seat.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Seat.cs",
-              "RelativeToolTip": "FlightSystem\\Models\\Seat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T02:15:45.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 41,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IAuthService.cs",
               "RelativeDocumentMoniker": "FlightSystem\\Services\\IAuthService.cs",
@@ -751,24 +814,11 @@
               "RelativeToolTip": "FlightSystem\\Services\\IAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:06:03.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T18:06:03.395Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Models\\Order.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Order.cs",
-              "RelativeToolTip": "FlightSystem\\Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T19:48:58.999Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 42,
               "Title": "LogInController.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\LogInController.cs",
               "RelativeDocumentMoniker": "FlightSystem\\Controller\\LogInController.cs",
@@ -776,12 +826,11 @@
               "RelativeToolTip": "FlightSystem\\Controller\\LogInController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwCEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:03:20.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T18:03:20.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "AuthService.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "FlightSystem\\Services\\AuthService.cs",
@@ -793,31 +842,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\UserController.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Controller\\UserController.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Controller\\UserController.cs",
-              "RelativeToolTip": "FlightSystem\\Controller\\UserController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T18:58:51.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Login.cs",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\Login.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Login.cs",
-              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T03:56:51.288Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "Error.razor",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\Error.razor",
@@ -829,7 +854,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 43,
               "Title": "UserRepo.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\repo\\UserRepo.cs",
               "RelativeDocumentMoniker": "FlightSystem\\repo\\UserRepo.cs",
@@ -841,31 +866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Users.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Models\\Users.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Models\\Users.cs",
-              "RelativeToolTip": "FlightSystem\\Models\\Users.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwA8AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T05:57:07.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Services\\UserService.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\UserService.cs",
-              "RelativeToolTip": "FlightSystem\\Services\\UserService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwB0AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:25:29.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "LogIn.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\WorkerUI\\LogIn.cs",
               "RelativeDocumentMoniker": "WorkerUI\\LogIn.cs",
@@ -878,19 +879,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "OrderDto.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\OrderDto.cs",
-              "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\OrderDto.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\OrderDto.cs",
-              "RelativeToolTip": "FlightWebApp\\Components\\Pages\\OrderDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T20:34:36.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "NavMenu.razor.css",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Layout\\NavMenu.razor.css",
               "RelativeDocumentMoniker": "FlightWebApp\\Components\\Layout\\NavMenu.razor.css",
@@ -902,55 +891,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "IFlightService.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IFlightService.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Services\\IFlightService.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IFlightService.cs",
-              "RelativeToolTip": "FlightSystem\\Services\\IFlightService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:32:34.998Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 49,
-              "Title": "ServiceResult.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\ServiceResult.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Services\\ServiceResult.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\ServiceResult.cs",
-              "RelativeToolTip": "FlightSystem\\Services\\ServiceResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:26:37.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Services\\OrderService.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\OrderService.cs",
-              "RelativeToolTip": "FlightSystem\\Services\\OrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T20:30:27.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "IOrderInterface.cs",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IOrderInterface.cs",
-              "RelativeDocumentMoniker": "FlightSystem\\Services\\IOrderInterface.cs",
-              "ToolTip": "D:\\Lab-Windows\\FlightSystem\\FlightSystem\\Services\\IOrderInterface.cs",
-              "RelativeToolTip": "FlightSystem\\Services\\IOrderInterface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-11T20:26:19.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
               "Title": "bootstrap.min.css",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
               "RelativeDocumentMoniker": "FlightWebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
@@ -962,7 +903,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 50,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "FlightWebApp\\Components\\Layout\\MainLayout.razor",
@@ -974,7 +915,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 51,
               "Title": "bootstrap.min.css.map",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
               "RelativeDocumentMoniker": "FlightWebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
@@ -986,7 +927,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 52,
               "Title": "Home.razor.css",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Home.razor.css",
               "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\Home.razor.css",
@@ -998,7 +939,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 53,
               "Title": "Login.razor.css",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Login.razor.css",
               "RelativeDocumentMoniker": "FlightWebApp\\Components\\Pages\\Login.razor.css",
@@ -1010,7 +951,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 54,
               "Title": "app.css",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "FlightWebApp\\wwwroot\\app.css",
@@ -1022,7 +963,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 55,
               "Title": "MainLayout.razor.css",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\Components\\Layout\\MainLayout.razor.css",
               "RelativeDocumentMoniker": "FlightWebApp\\Components\\Layout\\MainLayout.razor.css",
@@ -1034,7 +975,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "Login.razor.razor",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Login.razor.razor",
               "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\FlightSystem\\FlightWebApp\\Components\\Pages\\Login.razor.razor",
@@ -1044,7 +985,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 56,
               "Title": "FlightWebApp.csproj",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\FlightWebApp\\FlightWebApp.csproj",
               "RelativeDocumentMoniker": "FlightWebApp\\FlightWebApp.csproj",
@@ -1056,17 +997,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\WorkerUI\\Form1.cs",
-              "RelativeDocumentMoniker": "WorkerUI\\Form1.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\002 HICHEELUUD\\windows\\FlightSystem\\WorkerUI\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T00:39:56.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 57,
               "Title": "LogIn.cs [Design]",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\WorkerUI\\LogIn.cs",
               "RelativeDocumentMoniker": "WorkerUI\\LogIn.cs",
@@ -1076,7 +1007,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 58,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\WorkerUI\\Form1.cs",
               "RelativeDocumentMoniker": "WorkerUI\\Form1.cs",
@@ -1088,7 +1019,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 59,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\WorkerUI\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "WorkerUI\\Form1.Designer.cs",
@@ -1096,11 +1027,12 @@
               "RelativeToolTip": "WorkerUI\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T17:53:50.307Z"
+              "WhenOpened": "2025-07-30T17:53:50.307Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 60,
               "Title": "LogIn.Designer.cs",
               "DocumentMoniker": "D:\\Lab-Windows\\FlightSystem\\WorkerUI\\LogIn.Designer.cs",
               "RelativeDocumentMoniker": "WorkerUI\\LogIn.Designer.cs",

@@ -59,6 +59,32 @@
   },
   {
     "ContainingType": "UserApiWithSQLite.Controllers.UsersController",
+    "Method": "GetUserByPassport",
+    "RelativePath": "api/auth/user-info-byPassport/{userPassportNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userPassportNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FlightSystem.Models.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserApiWithSQLite.Controllers.UsersController",
     "Method": "GetUser",
     "RelativePath": "api/auth/user-info/{id}",
     "HttpMethod": "GET",
@@ -66,7 +92,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "Id",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -314,13 +340,13 @@
   {
     "ContainingType": "FlightApiWithSQLite.Controllers.OrderController",
     "Method": "GetOrdersByCustomer",
-    "RelativePath": "api/order/customer-orders/{customerId}",
+    "RelativePath": "api/order/customer-orders/{customerPassport}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "customerId",
+        "Name": "customerPassport",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -349,11 +375,6 @@
         "Name": "order",
         "Type": "FlightSystem.Models.Order",
         "IsRequired": true
-      },
-      {
-        "Name": "uId",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []

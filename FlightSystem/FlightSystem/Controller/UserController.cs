@@ -21,10 +21,18 @@ namespace UserApiWithSQLite.Controllers
             return await _userService.GetUsersAsync();
         }
 
-        [HttpGet("user-info/{id}")]
-        public async Task<ActionResult<User>> GetUser(string id)
+        [HttpGet("user-info-byPassport/{userPassportNumber}")]
+        public async Task<ActionResult<User>> GetUserByPassport(string userPassportNumber)
         {
-            var user = await _userService.GetUserAsync(id);
+            var user = await _userService.GetUserByPassportAsync(userPassportNumber);
+            if (user == null) return NotFound();
+            return user;
+        }
+
+        [HttpGet("user-info/{id}")]
+        public async Task<ActionResult<User>> GetUser(string Id)
+        {
+            var user = await _userService.GetUserByIdAsync(Id);
             if (user == null) return NotFound();
             return user;
         }

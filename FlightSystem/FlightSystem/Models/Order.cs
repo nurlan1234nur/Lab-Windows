@@ -4,7 +4,7 @@
     public class Order
     {
         public string Id { get; set; } = Guid.NewGuid().ToString();   // PK
-        public string CustomerId { get; set; } = string.Empty;       // FK → Users.UserId
+        public string UserPassportNumber { get; set; } = string.Empty;       // FK → Users.UserId
         public string FlightId { get; set; } = string.Empty;         // FK → Flights.Id
         public int Quantity { get; set; } = 1;                       // Суудлын тоо
         public decimal UnitPrice { get; set; }                       // Flight-ийн үнэ

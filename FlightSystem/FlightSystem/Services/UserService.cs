@@ -21,9 +21,18 @@ namespace UserApiWithSQLite.Services
         }
 
         // ID-аар нэг хэрэглэгч авах
-        public async Task<User?> GetUserAsync(string id)
+        public async Task<User?> GetUserByIdAsync(string Id)
         {
-            return await _context.Users.FindAsync(id);
+            return await _context.Users.FindAsync(Id);
+        }
+
+        public async Task<User?> GetUserByPassportAsync(string passportNumber)
+        {
+            Console.WriteLine($"------------userPassportNumber: {passportNumber}--------------");
+
+            // PassportNumber нь primary key биш бол FirstOrDefaultAsync ашиглана
+            return await _context.Users
+                                 .FirstOrDefaultAsync(u => u.PassportNumber == passportNumber);
         }
 
         // Шинэ хэрэглэгч үүсгэх

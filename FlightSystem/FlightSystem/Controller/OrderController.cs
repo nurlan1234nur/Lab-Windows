@@ -36,12 +36,12 @@ namespace FlightApiWithSQLite.Controllers
 
         // Шинэ захиалга үүсгэх
         [HttpPost("order-add")]
-        public async Task<ActionResult> CreateOrder([FromBody] Order order, [FromHeader] string uId)
+        public async Task<ActionResult> CreateOrder([FromBody] Order order)
         {
             // Клиентээс ирсэн утгыг зөвшөөрөх талбарууд:
-            // customerId, flightId, quantity, unitPrice
-            if (string.IsNullOrWhiteSpace(order.CustomerId))
-                return BadRequest("CustomerId is required.");
+            //// customerId, flightId, quantity, unitPrice
+            //if (string.IsNullOrWhiteSpace(order.CustomerId))
+            //    return BadRequest("CustomerId is required.");
 
             if (string.IsNullOrWhiteSpace(order.FlightId))
                 return BadRequest("FlightId is required.");
@@ -56,7 +56,7 @@ namespace FlightApiWithSQLite.Controllers
             order.PaymentStatus = "Pending";
             order.BookingStatus = "Confirmed";
 
-            var result = await _orderService.CreateOrderAsync(order, uId);
+            var result = await _orderService.CreateOrderAsync(order);
 
             if (!result.IsSuccess)
                 return StatusCode(result.StatusCode, result.Message);
@@ -84,10 +84,10 @@ namespace FlightApiWithSQLite.Controllers
         }
 
         // Хэрэглэгчийн бүх захиалга авах
-        [HttpGet("customer-orders/{customerId}")]
-        public async Task<ActionResult<IEnumerable<Order>>> GetOrdersByCustomer(string customerId)
+        [HttpGet("customer-orders/{customerPassport}")]
+        public async Task<ActionResult<IEnumerable<Order>>> GetOrdersByCustomer(string customerPassport)
         {
-            var orders = await _orderService.GetOrdersByCustomerIdAsync(customerId);
+            var orders = await _orderService.GetOrdersByCustomerIdAsync(customerPassport);
             return Ok(orders);
         }
     }

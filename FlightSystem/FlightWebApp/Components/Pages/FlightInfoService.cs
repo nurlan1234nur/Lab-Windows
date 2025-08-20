@@ -18,10 +18,10 @@ namespace FlightWebApp.Components.Pages
         }
 
         // FlightInfo жагсаалт авах
-        public async Task<List<FlightInfoDto>> GetFlightInfosAsync()
+        public async Task<List<FlightInfo>> GetFlightInfosAsync()
         {
-            var result = await _http.GetFromJsonAsync<List<FlightInfoDto>>($"api/flight-info/flight-info-list");
-            return result ?? new List<FlightInfoDto>();
+            var result = await _http.GetFromJsonAsync<List<FlightInfo>>($"api/flight-info/flight-info-list");
+            return result ?? new List<FlightInfo>();
         }
 
         // FlightInfo-г FlightId-аар авах

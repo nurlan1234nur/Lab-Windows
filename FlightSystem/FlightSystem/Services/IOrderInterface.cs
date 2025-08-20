@@ -13,7 +13,7 @@ namespace FlightSystem.Services
         Task<Order?> GetOrderByIdAsync(string id);
 
         // Захиалга үүсгэх (Order + OrderItems)
-        Task<(bool IsSuccess, string Message, int StatusCode, string? OrderId, Order? Data)> CreateOrderAsync(Order order, string uId);
+        Task<(bool IsSuccess, string Message, int StatusCode, string? OrderId, Order? Data)> CreateOrderAsync(Order order);
 
         // Захиалга update хийх (Order + OrderItems)
         Task<(bool IsSuccess, string Message, int StatusCode)> UpdateOrderAsync(Order order, string uId);
@@ -22,6 +22,6 @@ namespace FlightSystem.Services
         Task<(bool IsSuccess, string Message, int StatusCode)> DeleteOrderAsync(string id);
 
         // Customer ID-аар захиалгуудыг авах (OrderItems-ийг дагалдуулна)
-        Task<IEnumerable<Order>> GetOrdersByCustomerIdAsync(string customerId);
+        Task<IEnumerable<Order>> GetOrdersByCustomerIdAsync(string customerPassport);
     }
 }

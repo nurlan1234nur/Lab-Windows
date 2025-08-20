@@ -19,16 +19,16 @@ namespace FlightWebApp.Components.Pages
         }
 
         // Бүх нислэгүүдийг авах
-        public async Task<List<FlightDto>> GetFlightsAsync()
+        public async Task<List<Flight>> GetFlightsAsync()
         {
-            var result = await _http.GetFromJsonAsync<List<FlightDto>>($"api/flight/flight-list");
-            return result ?? new List<FlightDto>();
+            var result = await _http.GetFromJsonAsync<List<Flight>>($"api/flight/flight-list");
+            return result ?? new List<Flight>();
         }
 
         // ID-аар нислэг авах
-        public async Task<FlightDto?> GetFlightByIdAsync(string id)
+        public async Task<Flight?> GetFlightByIdAsync(string id)
         {
-            return await _http.GetFromJsonAsync<FlightDto>($"api/flight/flight/{id}");
+            return await _http.GetFromJsonAsync<Flight>($"api/flight/flight/{id}");
         }
 
         // Нислэг нэмэх
@@ -68,10 +68,10 @@ namespace FlightWebApp.Components.Pages
         }
 
         // Нислэг хайх
-        public async Task<List<FlightDto>> SearchFlightsAsync(string query)
+        public async Task<List<Flight>> SearchFlightsAsync(string query)
         {
-            var result = await _http.GetFromJsonAsync<List<FlightDto>>($"api/flight/search?query={query}");
-            return result ?? new List<FlightDto>();
+            var result = await _http.GetFromJsonAsync<List<Flight>>($"api/flight/search?query={query}");
+            return result ?? new List<Flight>();
         }
     }
 }

@@ -28,12 +28,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Lab-Windows/FlightSystem/FlightWebApp/Components/Pages/Flight.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGbGlnaHQucmF6b3I=
+[D:/Lab-Windows/FlightSystem/FlightWebApp/Components/Pages/FlightPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGbGlnaHRQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Lab-Windows/FlightSystem/FlightWebApp/Components/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
+[D:/Lab-Windows/FlightSystem/FlightWebApp/Components/Pages/OrderPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlclBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Lab-Windows/FlightSystem/FlightWebApp/Components/Pages/SeatPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZWF0UGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Lab-Windows/FlightSystem/FlightWebApp/Components/Routes.razor]

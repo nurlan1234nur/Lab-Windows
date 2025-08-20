@@ -1,0 +1,175 @@
+﻿@page "/Order"
+@inject UserApiClient UserApi
+@inject OrderApiClient OrderApi
+@using FlightSystem.Models
+@layout Layout.MainLayout
+@rendermode InteractiveServer
+
+<h3>Захиалга үүсгэх</h3>
+
+<div class="mb-3">
+    <label for="passportInput" class="form-label">Пасспорт дугаар:</label>
+    <input id="passportInput" class="form-control" @bind="UserPassport"  placeholder="Пасспорт дугаар оруулна уу..." />
+</div>
+
+<button class="btn btn-primary mb-3" @onclick="SearchUser">Хайх</button>
+
+@if (!string.IsNullOrEmpty(ErrorMessage))
+{
+    <div class="alert alert-danger">@ErrorMessage</div>
+}
+
+@if (Orders == null)
+{
+    <p>Уншиж байна...</p>
+}
+else if (Orders.Count == 0)
+{
+    <p>Захиалга олдсонгүй.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Хэрэглэгчийн нэр</th>
+                <th>Пасспорт</th>
+                <th>Flight ID</th>
+                <th>Төлөв</th>
+                <th>Үйлдэл</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Orders)
+            {
+                var user = UsersDict.ContainsKey(order.UserPassportNumber) ? UsersDict[order.UserPassportNumber] : null;
+                <tr>
+                    <td>@(user?.FirstName ?? "Unknown")</td>
+                    <td>@order.UserPassportNumber</td>
+                    <td>@order.FlightId</td>
+                    <td>@order.BookingStatus</td>
+                    <td>
+                        <button class="btn btn-success btn-sm" @onclick="() => OpenOrderModal(order.UserPassportNumber)">Захиалга үүсгэх</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<!-- ✅ Bootstrap Modal for Order -->
+@if (IsOrderModalOpen)
+{
+    <div class="modal fade show d-block" style="background-color: rgba(0,0,0,0.5);" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Шинэ захиалга</h5>
+                    <button type="button" class="btn-close" @onclick="CloseOrderModal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label>Flight ID</label>
+                        <input class="form-control" @bind="NewOrder.FlightId" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Quantity</label>
+                        <input type="number" class="form-control" @bind="NewOrder.Quantity" min="1" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Unit Price</label>
+                        <input type="number" class="form-control" step="0.01" @bind="NewOrder.UnitPrice" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" @onclick="CloseOrderModal">Болих</button>
+                    <button class="btn btn-primary" @onclick="SaveOrder">Хадгалах</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private string UserPassport = "";
+    private List<Order> Orders = new();
+    private Dictionary<string, User> UsersDict = new();
+    private string ErrorMessage = "";
+    private bool IsOrderModalOpen = false;
+    private Order NewOrder = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Компонент ачаалагдсаны дараа нэг удаа ажиллах код
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        Orders = await OrderApi.GetOrdersAsync();
+    }
+
+    private async Task SearchUser()
+    {
+        ErrorMessage = "";
+        Orders = new List<Order>();
+        UsersDict.Clear();
+
+        try
+        {
+            {
+                // Тухайн хэрэглэгчийн захиалгыг авах
+                Orders = (await OrderApi.GetOrdersByCustomerIdAsync(UserPassport))?.ToList() ?? new List<Order>();
+
+                var user = await UserApi.GetUserByPassportAsync(UserPassport);
+                if (user != null)
+                {
+                    UsersDict[UserPassport] = user;
+                }
+
+                if (!Orders.Any())
+                {
+                    ErrorMessage = "Хэрэглэгч олдсонгүй.";
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"Хэрэглэгчийн мэдээлэл авахад алдаа: {ex.Message}";
+        }
+    }
+
+    private void OpenOrderModal(string passportNumber)
+    {
+        NewOrder = new Order
+        {
+            UserPassportNumber = passportNumber,
+            Quantity = 1,
+            UnitPrice = 0,
+            OrderDate = DateTime.UtcNow,
+            PaymentStatus = "Pending",
+            BookingStatus = "Confirmed"
+        };
+        IsOrderModalOpen = true;
+    }
+
+    private void CloseOrderModal()
+    {
+        IsOrderModalOpen = false;
+    }
+
+    private async Task SaveOrder()
+    {
+        try
+        {
+            NewOrder.TotalAmount = NewOrder.UnitPrice * NewOrder.Quantity;
+            await OrderApi.CreateOrderAsync(NewOrder);
+            CloseOrderModal();
+            await SearchUser(); // Хэрэглэгчийн захиалгыг шинэчлэх
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"Захиалга үүсгэхэд алдаа: {ex.Message}";
+        }
+    }
+}
