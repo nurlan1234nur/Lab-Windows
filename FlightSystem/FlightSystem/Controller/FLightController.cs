@@ -63,6 +63,18 @@ namespace FlightApiWithSQLite.Controllers
             return StatusCode(result.StatusCode, result.Message);
         }
 
+        // Нислэг хайх origin, destination, date-ээр
+        [HttpGet("flights")]
+        public async Task<ActionResult<IEnumerable<Flight>>> SearchFlights(
+            [FromQuery] string origin,
+            [FromQuery] string destination,
+            [FromQuery] DateTime date)
+        {
+            var flights = await _service.SearchFlightsAsync(origin, destination, date);
+            return Ok(flights);
+        }
+
+
         // Нислэг хайх
         [HttpGet("search")]
         public async Task<ActionResult<IEnumerable<Flight>>> SearchFlights([FromQuery] string keyword)

@@ -1,116 +1,147 @@
-﻿namespace WorkerUI
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace WorkerUI
 {
     partial class LogIn
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        // === NEW controls ===
+        private TableLayoutPanel layoutRoot;
+        private TableLayoutPanel contentGrid;
+        private Panel headerPanel;
+        private Panel panelLogin;
+
+        private PictureBox pictureBox2;   // logo (аль хэдийн байгаа нэр)
+        private Label LoginLabel;
+        private TextBox textBox1;         // username/email
+        private TextBox textBox2;         // password
+        private Button LoginBtn;
+        private LinkLabel SignUpLabel;
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            usernameTxt = new TextBox();
-            passwordTxt = new TextBox();
-            logInLabel = new Label();
-            logInBtn = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
+            SignUpLabel = new LinkLabel();
+            panelLogin = new Panel();
+            LoginLabel = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            LoginBtn = new Button();
+            pictureBox2 = new PictureBox();
+            panelLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // SignUpLabel
             // 
-            pictureBox1.Image = Properties.Resources.sys;
-            pictureBox1.Location = new Point(242, 94);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(395, 268);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            SignUpLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            SignUpLabel.AutoSize = true;
+            SignUpLabel.LinkArea = new LinkArea(20, 7);
+            SignUpLabel.Location = new Point(16, 213);
+            SignUpLabel.Name = "SignUpLabel";
+            SignUpLabel.Size = new Size(192, 25);
+            SignUpLabel.TabIndex = 0;
+            SignUpLabel.TabStop = true;
+            SignUpLabel.Text = "Not registered yet? Sign up";
+            SignUpLabel.UseCompatibleTextRendering = true;
             // 
-            // usernameTxt
+            // panelLogin
             // 
-            usernameTxt.BackColor = SystemColors.ScrollBar;
-            usernameTxt.Location = new Point(242, 385);
-            usernameTxt.Multiline = true;
-            usernameTxt.Name = "usernameTxt";
-            usernameTxt.Size = new Size(395, 41);
-            usernameTxt.TabIndex = 1;
+            panelLogin.Anchor = AnchorStyles.None;
+            panelLogin.BackColor = Color.White;
+            panelLogin.BorderStyle = BorderStyle.FixedSingle;
+            panelLogin.Controls.Add(SignUpLabel);
+            panelLogin.Controls.Add(LoginLabel);
+            panelLogin.Controls.Add(textBox1);
+            panelLogin.Controls.Add(textBox2);
+            panelLogin.Controls.Add(LoginBtn);
+            panelLogin.Location = new Point(406, 202);
+            panelLogin.Name = "panelLogin";
+            panelLogin.Size = new Size(335, 258);
+            panelLogin.TabIndex = 2;
             // 
-            // passwordTxt
+            // LoginLabel
             // 
-            passwordTxt.BackColor = SystemColors.ScrollBar;
-            passwordTxt.Location = new Point(242, 432);
-            passwordTxt.Multiline = true;
-            passwordTxt.Name = "passwordTxt";
-            passwordTxt.Size = new Size(395, 41);
-            passwordTxt.TabIndex = 2;
+            LoginLabel.AutoSize = true;
+            LoginLabel.Font = new Font("Arial", 18F, FontStyle.Bold);
+            LoginLabel.ForeColor = Color.FromArgb(0, 51, 153);
+            LoginLabel.Location = new Point(16, 31);
+            LoginLabel.Name = "LoginLabel";
+            LoginLabel.Size = new Size(95, 35);
+            LoginLabel.TabIndex = 0;
+            LoginLabel.Text = "Login";
             // 
-            // logInLabel
+            // textBox1
             // 
-            logInLabel.AutoSize = true;
-            logInLabel.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            logInLabel.ForeColor = Color.Black;
-            logInLabel.Location = new Point(367, 48);
-            logInLabel.Name = "logInLabel";
-            logInLabel.Size = new Size(142, 25);
-            logInLabel.TabIndex = 3;
-            logInLabel.Text = "Нэвтрэх хуудас";
+            textBox1.Location = new Point(16, 83);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Email ";
+            textBox1.Size = new Size(294, 27);
+            textBox1.TabIndex = 1;
             // 
-            // logInBtn
+            // textBox2
             // 
-            logInBtn.BackColor = SystemColors.ControlLight;
-            logInBtn.Location = new Point(367, 479);
-            logInBtn.Name = "logInBtn";
-            logInBtn.Size = new Size(128, 52);
-            logInBtn.TabIndex = 4;
-            logInBtn.Text = "Нэвтрэх";
-            logInBtn.UseVisualStyleBackColor = false;
-            logInBtn.Click += logInBtn_Click;
+            textBox2.Location = new Point(16, 116);
+            textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "Password";
+            textBox2.Size = new Size(294, 27);
+            textBox2.TabIndex = 2;
+            textBox2.UseSystemPasswordChar = true;
+            textBox2.TextChanged += textBox2_TextChanged;
+            // 
+            // LoginBtn
+            // 
+            LoginBtn.BackColor = SystemColors.HotTrack;
+            LoginBtn.FlatAppearance.BorderSize = 0;
+            LoginBtn.FlatStyle = FlatStyle.Flat;
+            LoginBtn.ForeColor = Color.White;
+            LoginBtn.Location = new Point(16, 167);
+            LoginBtn.Name = "LoginBtn";
+            LoginBtn.Size = new Size(247, 40);
+            LoginBtn.TabIndex = 3;
+            LoginBtn.Text = "LOGIN";
+            LoginBtn.UseVisualStyleBackColor = false;
+            LoginBtn.Click += LoginBtn_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(12, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(250, 201);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // LogIn
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.AppWorkspace;
-            ClientSize = new Size(934, 581);
-            Controls.Add(logInBtn);
-            Controls.Add(logInLabel);
-            Controls.Add(passwordTxt);
-            Controls.Add(usernameTxt);
-            Controls.Add(pictureBox1);
+            AcceptButton = LoginBtn;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1162, 654);
+            Controls.Add(pictureBox2);
+            Controls.Add(panelLogin);
+            DoubleBuffered = true;
             ForeColor = Color.DarkBlue;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LogIn";
             Text = "LogIn";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Load += LogIn_Load_1;
+            panelLogin.ResumeLayout(false);
+            panelLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
-        #endregion
-
-        private PictureBox pictureBox1;
-        private TextBox usernameTxt;
-        private TextBox passwordTxt;
-        private Label logInLabel;
-        private Button logInBtn;
     }
 }

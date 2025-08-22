@@ -215,6 +215,68 @@
         }
       }
     },
+    "/api/flight/flights": {
+      "get": {
+        "tags": [
+          "Flight"
+        ],
+        "parameters": [
+          {
+            "name": "origin",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "destination",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Flight"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Flight"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Flight"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/flight/search": {
       "get": {
         "tags": [
@@ -956,31 +1018,15 @@
             "type": "string",
             "nullable": true
           },
-          "departureTime": {
+          "scheduledDeparture": {
             "type": "string",
             "format": "date-time"
           },
-          "arrivalTime": {
+          "scheduledArrival": {
             "type": "string",
             "format": "date-time"
-          },
-          "price": {
-            "type": "number",
-            "format": "double"
           },
           "airline": {
-            "type": "string",
-            "nullable": true
-          },
-          "status": {
-            "type": "string",
-            "nullable": true
-          },
-          "flightInfoId": {
-            "type": "string",
-            "nullable": true
-          },
-          "pilotName": {
             "type": "string",
             "nullable": true
           },
@@ -988,9 +1034,25 @@
             "type": "integer",
             "format": "int32"
           },
-          "planeModel": {
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "flightInfoId": {
             "type": "string",
             "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "availableSeats": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lastUpdated": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
@@ -1014,25 +1076,25 @@
             "type": "string",
             "nullable": true
           },
-          "departureTime": {
+          "scheduledDeparture": {
             "type": "string",
             "format": "date-time"
           },
-          "arrivalTime": {
+          "scheduledArrival": {
             "type": "string",
             "format": "date-time"
-          },
-          "price": {
-            "type": "number",
-            "format": "double"
           },
           "airline": {
             "type": "string",
             "nullable": true
           },
-          "status": {
-            "type": "string",
-            "nullable": true
+          "totalSeats": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false
@@ -1048,17 +1110,17 @@
             "type": "string",
             "nullable": true
           },
-          "pilotName": {
+          "status": {
             "type": "string",
             "nullable": true
           },
-          "totalSeats": {
+          "availableSeats": {
             "type": "integer",
             "format": "int32"
           },
-          "planeModel": {
+          "lastUpdated": {
             "type": "string",
-            "nullable": true
+            "format": "date-time"
           }
         },
         "additionalProperties": false
@@ -1167,14 +1229,6 @@
           "role": {
             "type": "string",
             "nullable": true
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date-time"
           }
         },
         "additionalProperties": false

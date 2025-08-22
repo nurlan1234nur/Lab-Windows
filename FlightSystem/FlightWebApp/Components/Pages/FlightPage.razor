@@ -185,18 +185,18 @@
                 <tr>
                     <th>Flight Id</th>
                     <th>Flight Number</th>
-                    <th>Pilot Name</th>
-                    <th>All Seats</th>  
                     <th>Status</th>
+                    <th>All Seats</th>  
+                    <th>Total seat</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>@selectedFlightFlightInfo.FlightId</td>
                     <td>@flight.FlightNumber</td>
-                    <td>@selectedFlightFlightInfo.PilotName</td>
-                    <td>@selectedFlightFlightInfo.TotalSeats</td>
-                    <td>@flight.Status</td>
+                    <td>@selectedFlightFlightInfo.Status</td>
+                    <td>@selectedFlightFlightInfo.AvailableSeats</td>
+                    <td>@flight.TotalSeats</td>
                 </tr>
             </tbody>
         </table>
@@ -216,8 +216,8 @@
     {
         @if (selectedFlightFlightInfo != null)
     {
-        <p>Pilot: @selectedFlightFlightInfo.PilotName</p>
-        <p>All Seats: @selectedFlightFlightInfo.TotalSeats</p>
+        <p>Pilot: @selectedFlightFlightInfo.Status</p>
+        <p>All Seats: @selectedFlightFlightInfo.AvailableSeats</p>
     }
     }
     </div>,
@@ -227,8 +227,8 @@
         <input placeholder="Flight ID" @bind="updateFlightId" class="form-control mb-2" />
         <button type="button" class="btn btn-secondary mb-2" @onclick="LoadUpdateFlight">Ачаалах</button>
         <hr />
-        <input placeholder="Pilot Name" @bind="updateFlightInfo.PilotName" class="form-control mb-2" />
-        <input placeholder="All Seats" type="number" @bind="updateFlightInfo.TotalSeats" class="form-control mb-2" />
+    <input placeholder="Status" @bind="updateFlightInfo.Status" class="form-control mb-2" />
+    <input placeholder="AvailableSeats" type="number" @bind="updateFlightInfo.AvailableSeats" class="form-control mb-2" />
         <button type="button" class="btn btn-primary" @onclick="UpdateFlightInfoAction">Хадгалах</button>
         @if (!string.IsNullOrEmpty(successMessage))
     {

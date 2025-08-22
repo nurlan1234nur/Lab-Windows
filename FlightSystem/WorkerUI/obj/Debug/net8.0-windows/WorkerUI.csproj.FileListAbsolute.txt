@@ -67,7 +67,6 @@ D:\Lab-Windows\FlightSystem\WorkerUI\bin\Debug\net8.0-windows\FlightWebApp.dll
 D:\Lab-Windows\FlightSystem\WorkerUI\bin\Debug\net8.0-windows\FlightSystem.pdb
 D:\Lab-Windows\FlightSystem\WorkerUI\bin\Debug\net8.0-windows\FlightWebApp.pdb
 D:\Lab-Windows\FlightSystem\WorkerUI\obj\Debug\net8.0-windows\WorkerUI.csproj.AssemblyReference.cache
-D:\Lab-Windows\FlightSystem\WorkerUI\obj\Debug\net8.0-windows\WorkerUI.Form1.resources
 D:\Lab-Windows\FlightSystem\WorkerUI\obj\Debug\net8.0-windows\WorkerUI.LogIn.resources
 D:\Lab-Windows\FlightSystem\WorkerUI\obj\Debug\net8.0-windows\WorkerUI.Properties.Resources.resources
 D:\Lab-Windows\FlightSystem\WorkerUI\obj\Debug\net8.0-windows\WorkerUI.csproj.GenerateResource.cache
@@ -82,3 +81,4 @@ D:\Lab-Windows\FlightSystem\WorkerUI\obj\Debug\net8.0-windows\refint\WorkerUI.dl
 D:\Lab-Windows\FlightSystem\WorkerUI\obj\Debug\net8.0-windows\WorkerUI.pdb
 D:\Lab-Windows\FlightSystem\WorkerUI\obj\Debug\net8.0-windows\WorkerUI.genruntimeconfig.cache
 D:\Lab-Windows\FlightSystem\WorkerUI\obj\Debug\net8.0-windows\ref\WorkerUI.dll
+D:\Lab-Windows\FlightSystem\WorkerUI\obj\Debug\net8.0-windows\WorkerUI.OrderDetails.resources

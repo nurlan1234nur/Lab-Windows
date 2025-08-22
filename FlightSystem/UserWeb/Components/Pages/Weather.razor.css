@@ -1,0 +1,265 @@
+﻿/* --- Global --- */
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    color: #111827;
+    margin: 0;
+    padding: 0 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: rgba(0, 86, 179, 0.95); /* deep blue */
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.2px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+}
+
+.navbar nav a, .navbar .signup-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.navbar .signup-btn {
+    background: rgba(255,255,255,0.12);
+    border: none;
+    cursor: pointer;
+}
+
+    .navbar .signup-btn:hover {
+        background: rgba(255,255,255,0.18);
+    }
+
+/* --- Page content wrapper --- */
+.content {
+    max-width: 1100px;
+    margin: 1.5rem auto;
+    padding: 0 0.75rem 3rem 0.75rem;
+}
+
+/* --- Flight form --- */
+.flight-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+    .flight-form input[type="text"],
+    .flight-form input[type="date"] {
+        padding: 0.5rem .6rem;
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,0.12);
+        min-width: 160px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.03) inset;
+    }
+
+    .flight-form .btn {
+        padding: 0.55rem 0.9rem;
+        border-radius: 8px;
+        border: none;
+        background: #0056b3;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+        .flight-form .btn:hover {
+            background: #00449e;
+        }
+
+/* --- Cards --- */
+.flight-card, .form-card {
+    background: rgba(255,255,255,0.95);
+    padding: 1rem;
+    margin: 0.75rem 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(16,24,40,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* flight-info */
+.flight-info {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+    .flight-info strong {
+        font-size: 1rem;
+    }
+
+/* Book button */
+.book-btn {
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    background: linear-gradient(180deg,#00a86b,#008a54);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+    .book-btn:hover {
+        transform: translateY(-1px);
+    }
+
+/* --- Table styling --- */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+    .table thead {
+        background: linear-gradient(90deg, rgba(0,86,179,0.95), rgba(0,120,214,0.95));
+        color: #fff;
+    }
+
+    .table th, .table td {
+        text-align: left;
+        padding: 0.75rem 0.9rem;
+        border-bottom: 1px solid rgba(17,24,39,0.06);
+        font-size: 0.95rem;
+    }
+
+    .table tbody tr:hover {
+        background: rgba(0,0,0,0.02);
+    }
+
+/* small-screen responsive table: stack cells */
+@media (max-width: 720px) {
+    .flight-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .flight-form input[type="text"], .flight-form input[type="date"] {
+        min-width: 100%;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+
+        .table tr {
+            margin-bottom: 0.7rem;
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+            padding-bottom: 0.5rem;
+        }
+
+        .table td {
+            padding-left: 50%;
+            position: relative;
+        }
+
+            .table td::before {
+                position: absolute;
+                left: 0.6rem;
+                width: 45%;
+                white-space: nowrap;
+                font-weight: 700;
+            }
+            /* labels for each column — match order in markup */
+            .table td:nth-of-type(1)::before {
+                content: "Flight ID";
+            }
+
+            .table td:nth-of-type(2)::before {
+                content: "Origin";
+            }
+
+            .table td:nth-of-type(3)::before {
+                content: "Destination";
+            }
+
+            .table td:nth-of-type(4)::before {
+                content: "Departure";
+            }
+
+            .table td:nth-of-type(5)::before {
+                content: "Arrival";
+            }
+
+            .table td:nth-of-type(6)::before {
+                content: "Price";
+            }
+}
+
+/* --- Form elements inside form-card --- */
+.form-card label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.form-card input[type="text"], .form-card input[type="email"], .form-card input[type="date"] {
+    width: 100%;
+    padding: 0.5rem .6rem;
+    margin-bottom: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+.form-card button {
+    margin-right: 0.6rem;
+    padding: 0.55rem 0.9rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+    .form-card button[type="submit"] {
+        background: #0056b3;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .form-card button[type="button"] {
+        background: #e6e6e6;
+        color: #111;
+    }
+
+/* subtle utility */
+.text-muted {
+    color: rgba(17,24,39,0.6);
+    font-size: .9rem;
+}

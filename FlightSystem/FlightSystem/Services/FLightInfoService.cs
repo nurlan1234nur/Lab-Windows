@@ -22,9 +22,9 @@ namespace FlightSystem.Services
             if (existing == null)
                 return ("Нислэгийн мэдээлэл олдсонгүй.", 400);
 
-            existing.PilotName = flightInfo.PilotName;
-            existing.TotalSeats = flightInfo.TotalSeats;
-            existing.PlaneModel = flightInfo.PlaneModel;
+            existing.Status = flightInfo.Status;
+            existing.AvailableSeats = flightInfo.AvailableSeats;
+            existing.LastUpdated = flightInfo.LastUpdated;
 
             await _context.SaveChangesAsync();
             return ("Амжилттай шинэчлэгдлээ.", 200);

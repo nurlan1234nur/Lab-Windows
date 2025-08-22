@@ -7,7 +7,7 @@
         "Action": "Start"
       },
       {
-        "Path": "FlightWebApp\\FlightWebApp.csproj",
+        "Path": "WorkerUI\\WorkerUI.csproj",
         "Action": "Start"
       }
     ]

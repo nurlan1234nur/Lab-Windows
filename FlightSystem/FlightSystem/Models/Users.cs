@@ -13,13 +13,8 @@
         public string PassportNumber { get; set; } = string.Empty;
         public string Address { get; set; } = string.Empty;
 
-        // Нэвтрэх/эрхийн мэдээлэл
         public string Password { get; set; } = string.Empty;
-        public string Role { get; set; } = "Customer"; // Admin, Staff, Customer
-
-        // Системийн мөрдөлт
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        public string Role { get; set; } = "Customer"; 
     }
 
 

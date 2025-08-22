@@ -314,6 +314,42 @@
   {
     "ContainingType": "FlightApiWithSQLite.Controllers.FlightController",
     "Method": "SearchFlights",
+    "RelativePath": "api/flight/flights",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "origin",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "destination",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FlightSystem.Models.Flight, FlightSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FlightApiWithSQLite.Controllers.FlightController",
+    "Method": "SearchFlights",
     "RelativePath": "api/flight/search",
     "HttpMethod": "GET",
     "IsController": true,

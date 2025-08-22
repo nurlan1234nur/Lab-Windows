@@ -45,20 +45,19 @@ namespace FlightSystem.Services
                 FlightNumber = flightNumber,
                 Origin = dto.Origin,
                 Destination = dto.Destination,
-                DepartureTime = dto.DepartureTime,
-                ArrivalTime = dto.ArrivalTime,
+                ScheduledDeparture = dto.ScheduledDeparture,
+                ScheduledArrival = dto.ScheduledArrival,
                 Price = dto.Price,
                 Airline = dto.Airline,
-                Status = dto.Status
+                TotalSeats = dto.TotalSeats
             };
 
             // FlightInfo объект үүсгэх
             var flightInfo = new FlightInfo
             {
                 FlightId = flightId,
-                PilotName = dto.PilotName,
-                TotalSeats = dto.TotalSeats,
-                PlaneModel = dto.PlaneModel,
+                Status = dto.Status,
+                AvailableSeats = dto.AvailableSeats,
             };
 
             _context.Flights.Add(flight);
@@ -101,16 +100,17 @@ namespace FlightSystem.Services
             // Flight талбаруудыг шинэчлэх
             existingFlight.Origin = dto.Origin;
             existingFlight.Destination = dto.Destination;
-            existingFlight.DepartureTime = dto.DepartureTime;
-            existingFlight.ArrivalTime = dto.ArrivalTime;
+            existingFlight.ScheduledDeparture = dto.ScheduledDeparture;
+            existingFlight.ScheduledArrival = dto.ScheduledArrival;
             existingFlight.Price = dto.Price;
             existingFlight.Airline = dto.Airline;
-            existingFlight.Status = dto.Status;
+            existingFlight.TotalSeats = dto.TotalSeats;
+            existingFlight.FlightNumber = dto.FlightNumber;
 
             // FlightInfo талбаруудыг шинэчлэх
-            existingFlightInfo.PilotName = dto.PilotName;
-            existingFlightInfo.TotalSeats = dto.TotalSeats;
-            existingFlightInfo.PlaneModel = dto.PlaneModel;
+            existingFlightInfo.Status = dto.Status;
+            existingFlightInfo.AvailableSeats = dto.AvailableSeats;
+            existingFlightInfo.LastUpdated = dto.LastUpdated;
 
             await _context.SaveChangesAsync();
             return (true, "Амжилттай шинэчлэгдлээ.", 200);
@@ -142,6 +142,12 @@ namespace FlightSystem.Services
                     (!string.IsNullOrEmpty(f.Origin) && f.Origin.Contains(keyword, StringComparison.OrdinalIgnoreCase)) ||
                     (!string.IsNullOrEmpty(f.Destination) && f.Destination.Contains(keyword, StringComparison.OrdinalIgnoreCase)))
                 .ToList();
+        }
+        public async Task<List<Flight>> SearchFlightsAsync(string origin, string destination, DateTime date)
+        {
+            return await _context.Flights
+                .Where(f => f.Origin == origin && f.Destination == destination && f.ScheduledDeparture.Date == date.Date)
+                .ToListAsync();
         }
     }
 }

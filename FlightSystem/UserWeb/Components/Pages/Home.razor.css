@@ -1,0 +1,112 @@
+﻿
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.25);
+    color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.signup-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Content */
+.content {
+    padding: 6rem 2rem 2rem 2rem;
+    text-align: center;
+    color: #000;
+}
+
+/* Flight form */
+.flight-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+    .flight-form input,
+    .flight-form button {
+        padding: 0.6rem 0.9rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+        .flight-form input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+/* Search button */
+.btn.btn-primary {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+    .btn.btn-primary:hover {
+        background: #0056b3;
+    }
+
+/* Flight cards */
+.flight-card {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.flight-info {
+    text-align: left;
+}
+
+.book-btn {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    .book-btn:hover {
+        background: #218838;
+    }

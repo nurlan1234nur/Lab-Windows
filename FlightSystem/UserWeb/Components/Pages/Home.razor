@@ -1,0 +1,185 @@
+﻿@page "/"
+@using FlightSystem.Models;
+@inject FlightApiClient FlightApi
+@inject OrderApiClient OrderApi
+@inject UserApiClient UserApi
+@rendermode InteractiveServer
+@inject IJSRuntime JS
+
+<PageTitle>Home</PageTitle>
+
+<style>
+    body {
+        background: url('https://images.pexels.com/photos/1059608/pexels-photo-1059608.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+    }
+
+    .flight-card, .form-card {
+        background: rgba(255,255,255,0.9);
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+</style>
+
+<header class="navbar">
+    <div class="logo">MyTrip</div>
+    <nav>
+        <ul>
+            <li><a href="flights">Flights</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Sign in</a></li>
+            <li><button class="signup-btn">Sign up</button></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <h2>Flights</h2>
+
+    @if (SelectedFlight == null)
+    {
+        <!-- Flight search form -->
+        <div class="flight-form">
+            <input type="text" placeholder="From" @bind="Origin" required />
+            <input type="text" placeholder="To" @bind="Destination" required />
+            <input type="date" @bind="SelectedDate" required />
+            <button type="button" class="btn btn-primary" @onclick="() => SearchFlights()">Search</button>
+        </div>
+
+        @if (FilteredFlights != null && FilteredFlights.Any())
+        {
+            @foreach (var flight in FilteredFlights)
+            {
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <strong>@flight.Origin -> @flight.Destination</strong><br />
+                        Date: @flight.ScheduledDeparture.ToString("yyyy-MM-dd")<br />
+                        Price: $@flight.Price
+                    </div>
+                    <button class="book-btn" @onclick="@(() => SelectFlight(flight))">Book</button>
+                </div>
+            }
+        }
+        else if (FilteredFlights != null)
+        {
+            <p>No flights found.</p>
+        }
+    }
+    else
+    {
+        <!-- User form -->
+        <div class="form-card">
+            <h3>Enter Passenger Information</h3>
+
+            <EditForm Model="@userModel" OnValidSubmit="HandleBooking">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
+                <div>
+                    <label>First Name: </label>
+                    <InputText @bind-Value="userModel.FirstName" />
+                </div>
+                <div>
+                    <label>Last Name: </label>
+                    <InputText @bind-Value="userModel.LastName" />
+                </div>
+                <div>
+                    <label>Email: </label>
+                    <InputText @bind-Value="userModel.Email" />
+                </div>
+                <div>
+                    <label>Mobile: </label>
+                    <InputText @bind-Value="userModel.Mobile" />
+                </div>
+                <div>
+                    <label>Passport: </label>
+                    <InputText @bind-Value="userModel.PassportNumber" />
+                </div>
+                <div>
+                    <label>Address: </label>
+                    <InputText @bind-Value="userModel.Address" />
+                </div>
+
+                <button type="submit">Confirm Booking</button>
+                <button type="button" @onclick="() => CancelBooking()">Cancel</button>
+            </EditForm>
+        </div>
+    }
+</div>
+
+@code {
+    private string? Origin;
+    private string? Destination;
+    private DateTime SelectedDate { get; set; } = DateTime.Today;
+    private List<Flight>? Flights;
+    private List<Flight>? FilteredFlights;
+
+    private Flight? SelectedFlight;    // book дарсан flight
+    private User userModel = new();    // form бөглөх user
+
+    protected override async Task OnInitializedAsync()
+    {
+        Flights = await FlightApi.GetFlightsAsync();
+        FilteredFlights = Flights;
+    }
+
+    async Task SearchFlights()
+    {
+        if (!string.IsNullOrWhiteSpace(Origin) && !string.IsNullOrWhiteSpace(Destination))
+        {
+            FilteredFlights = await FlightApi.SearchFlightsAsync(Origin, Destination, SelectedDate);
+        }
+    }
+
+    private void SelectFlight(Flight flight)
+    {
+        SelectedFlight = flight;
+        userModel = new User(); // reset form
+    }
+
+    private void CancelBooking()
+    {
+        SelectedFlight = null;
+    }
+
+    private async Task HandleBooking()
+    {
+        try
+        {
+            // эхлээд User үүсгэнэ
+            var createdUser = await UserApi.CreateUserAsync(userModel);
+            if (!createdUser.IsSuccess)
+            {
+                await JS.InvokeVoidAsync("alert", "Failed to create user!");
+                return;
+            }
+
+            // дараа нь Order үүсгэнэ
+            var order = new Order
+            {
+                UserPassportNumber = userModel.PassportNumber,
+                FlightId = SelectedFlight!.FlightId,
+                Quantity = 1,
+                UnitPrice = SelectedFlight.Price,
+                TotalAmount = SelectedFlight.Price,
+                OrderDate = DateTime.UtcNow,
+                PaymentStatus = "Pending",
+                BookingStatus = "Confirmed"
+            };
+
+            var response = await OrderApi.CreateOrderAsync(order);
+            await JS.InvokeVoidAsync("alert", "Flight booked successfully!");
+
+            SelectedFlight = null; // reset state
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error booking flight: " + ex.Message);
+        }
+    }
+}

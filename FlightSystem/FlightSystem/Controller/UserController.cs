@@ -25,7 +25,7 @@ namespace UserApiWithSQLite.Controllers
         public async Task<ActionResult<User>> GetUserByPassport(string userPassportNumber)
         {
             var user = await _userService.GetUserByPassportAsync(userPassportNumber);
-            if (user == null) return NotFound();
+            if (user == null) return Ok(null);
             return user;
         }
 

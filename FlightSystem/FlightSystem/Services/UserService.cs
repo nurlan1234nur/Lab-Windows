@@ -28,11 +28,7 @@ namespace UserApiWithSQLite.Services
 
         public async Task<User?> GetUserByPassportAsync(string passportNumber)
         {
-            Console.WriteLine($"------------userPassportNumber: {passportNumber}--------------");
-
-            // PassportNumber нь primary key биш бол FirstOrDefaultAsync ашиглана
-            return await _context.Users
-                                 .FirstOrDefaultAsync(u => u.PassportNumber == passportNumber);
+            return await _context.Users.FirstOrDefaultAsync(u => u.PassportNumber == passportNumber);
         }
 
         // Шинэ хэрэглэгч үүсгэх
@@ -50,8 +46,6 @@ namespace UserApiWithSQLite.Services
                 Address = dto.Address ?? string.Empty,
                 Password = dto.Password ?? string.Empty,
                 Role = dto.Role ?? "Customer",
-                CreatedAt = DateTime.UtcNow,
-                UpdatedAt = DateTime.UtcNow
             };
 
             _context.Users.Add(user);
@@ -76,7 +70,6 @@ namespace UserApiWithSQLite.Services
             existingUser.Address = user.Address;
             existingUser.Password = user.Password;
             existingUser.Role = user.Role;
-            existingUser.UpdatedAt = DateTime.UtcNow;
 
             await _context.SaveChangesAsync();
             return ServiceResult<string>.SuccessResult("Амжилттай шинэчилсэн.");

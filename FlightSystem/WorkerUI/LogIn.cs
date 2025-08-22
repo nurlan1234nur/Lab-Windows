@@ -1,67 +1,72 @@
 ﻿using System.Text;
 using FlightWebApp.Components.Pages;
+using WorkerUI.Service;
 namespace WorkerUI
 {
     public partial class LogIn : Form
     {
+        private String UserName = "naran1@gmail.com";
+        private String Password = "P@ssw0rd123";
         public LogIn()
         {
             InitializeComponent();
+
         }
 
-        public string? username;
-        public string? password;
-        private async void logInBtn_Click(object sender, EventArgs e)
+        private void LogIn_Load(object sender, EventArgs e)
         {
-            username = usernameTxt.Text;
-            password = passwordTxt.Text;
 
-            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogIn_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void LoginBtn_Click(object sender, EventArgs e)
+        {
+            UserName = textBox1.Text.Trim();
+            Password = textBox2.Text.Trim();
+            UserName = "naran1@gmail.com";
+            Password = "P@ssw0rd123";
+        LoginDtoAdmin loginDto = new LoginDtoAdmin
             {
-                MessageBox.Show("Нэвтрэх нэр болон нууц үгээ бөглөнө үү.");
+                Email = UserName,
+                Password = Password
+            };
+            if (string.IsNullOrEmpty(UserName) || string.IsNullOrEmpty(Password))
+            {
+                MessageBox.Show("Please enter both username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            var client = new HttpClient();
-
-            var loginData = new
-            {
-                Email = username,
-                Password = password
-            };
-
-            var content = new StringContent(
-                System.Text.Json.JsonSerializer.Serialize(loginData),
-                Encoding.UTF8,
-                "application/json"
-            );
+            var client = new UserApiClientAdmin(new HttpClient());
 
             try
             {
-                var response = await client.PostAsync("http://192.168.216.1:5000/api/auth/login", content);
-
-                
-                if (response.IsSuccessStatusCode)
+                var user = await client.AuthUser(loginDto);
+                if (user.IsSuccess)
                 {
-                    var responseBody = await response.Content.ReadAsStringAsync();
-                    var result = System.Text.Json.JsonSerializer.Deserialize<LoginResponse>(responseBody);
-
-                    // дараагийн Form-руу шилжих
-                    var dashboard = new Form1(); // эсвэл main form
-                    dashboard.PreviousForm = this;
-                    dashboard.Show();
-                    this.Hide();
+                    OrderDetails OrderForm = new OrderDetails
+                    {
+                        PreviousForm = this
+                    };
+                    OrderForm.Show();
+                    this.Hide(); 
                 }
                 else
                 {
-                    MessageBox.Show("Нэвтрэх нэр эсвэл нууц үг буруу байна.");
+                    MessageBox.Show(user.Message, "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Алдаа гарлаа: {ex.Message}");
+                MessageBox.Show($"An error occurred while logging in: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlightWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd717e31c9d61081bfa0c28bbbad131fabfa7cff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e88eb7f49868fac100855dafc39235b91ac584d")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlightWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlightWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
